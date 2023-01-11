@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+@include('partials/head.html')
+
+<body>
+  @include('partials/mobile-menu.html')
+
+  @include('partials/header.html')
+
+  <div class="wrapper">
+    <main class="main">
+      @include('partials/UI/fixed-socials.html')
+
+      <div class="fixed-calc">
+        <a href="#!" class="fixed-calc-btn" data-bs-toggle="modal" data-bs-target="#calc-form-modal">
+          <img src="images/icons/calc-icon.svg" alt="">
+          <span>Калькулятор аренды</span>
+        </a>
+      </div>
+
+      <section class="rent-sec margin-for-header for-all">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-lg-4">
+              <aside class="catalog-aside">
+                <div class="filter">
+                  <form action="#" class="filters">
+                    <img src="images/icons/cross.svg" alt="icon" class="filters-cross">
+                    <div class="filters-item">
+                      <h3 class="drop">Оборудование
+                        <img src="images/icons/arrow-drop.svg" alt="icon">
+                      </h3>
+                      <div class="filters-content">
+                        <a href="#" class="filters-link">Электронные тахеометры</a>
+                        <a href="#" class="filters-link">Лазерные сканеры / Системы лазерного сканирования</a>
+                        <a href="#" class="filters-link">Геодезические GNSS приемники</a>
+                        <a href="#" class="filters-link">Модемы для GNSS приемников</a>
+                        <a href="#" class="filters-link">Нивелиры</a>
+                        <a href="#" class="filters-link">Теодолиты</a>
+                        <a href="#" class="filters-link">Модемы для GNSS приемников</a>
+                        <a href="#" class="filters-link">Приборы вертикального проектирования</a>
+                        <a href="#" class="filters-link">Квадранты</a>
+                        <a href="#" class="filters-link">Гравиметры</a>
+                        <a href="#" class="filters-link">Беспилотные воздушные судна <br>/ БПЛА</a>
+                        <a href="#" class="filters-link">Трассоискатели</a>
+                        <a href="#" class="filters-link">Эхолоты</a>
+                        <a href="#" class="filters-link">Георадары</a>
+                        <a href="#" class="filters-link">Аксессуары</a>
+                        <a href="#" class="filters-link">Софт</a>
+                      </div>
+                    </div>
+                    <div class="filters-item">
+                      <h3 class="drop">Производитель
+                        <img src="images/icons/arrow-drop.svg" alt="icon">
+                      </h3>
+                      <div class="filters-content">
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">Trimble
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">Leica
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">Sokkia
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">Topcon
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">Nikon
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">Spectra Precision
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">South
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">Ruide
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="filters-w">
+                          <input type="checkbox" class="filters__checkbox">
+                          <div class="filters-block">
+                            <p class="drop">Geomax
+                              <img src="images/icons/arrow-drop.svg" alt="icon">
+                            </p>
+                            <ul class="filters-drop">
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S3</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S5</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S7</p>
+                                </label>
+                              </li>
+                              <li>
+                                <label class="filters-label">
+                                  <input type="checkbox" class="filters__checkbox">
+                                  <p>S9</p>
+                                </label>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <form action="#" class="aside-form">
+                  <p class="aside-form__title">Оставьте заявку, <br> мы детально изучим особенности Вашего проекта и
+                    подберем оптимальное решение исходя из задач и бюджета</p>
+                  <input required type="text" placeholder="Ваше имя" class="cta-input">
+                  <input required minlength="18" pattern=".{18,18}" type="tel" name="phone" placeholder="Ваш телефон"
+                    class="cta-input">
+                  <input required type="text" placeholder="Комментарий" class="cta-input">
+                  <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal"
+                    data-bs-target="#thanks">Получить консультацию</button>
+                  <label class="cta-label">
+                    <input type="checkbox" required checked class="cta-checkbox">
+                    <p>Оставляя заявку вы соглашаетесь <br> с <a href="#!">обработкой персональных данных</a></p>
+                  </label>
+                </form>
+              </aside>
+            </div>
+
+            <div class="col-xl-9 col-lg-8">
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="breadcrumbs">
+                    <ul>
+                      <li class="active relative drop-container">
+                        <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                        <div class="drop">
+                          <ul class="drop-menu">
+                            <li><a href="#">Поверка оборудования</a></li>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Подбор оборудования</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="active relative drop-container">
+                        <span>Каталог <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                        <div class="drop">
+                          <ul class="drop-menu">
+                            <li><a href="#">Электронные тахеометры</a></li>
+                            <li><a href="#">Геодезическое оборудование</a></li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li><span>Аренда тахеометров</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-xl-7 col-lg-12">
+                  <div class="rent-text rent-block">
+                    <div class="title">
+                      <h2>Аренда <br> Тахеометров</h2>
+                      <p>Всегда большой выбор инструментов для всевозможных задач. Технические, инженерные или
+                        роботизированные. Возьми тахеометр на несколько дней или месяцев и выполни в срок поставленные
+                        задачи.</p>
+                    </div>
+                    <div class="for-pc">
+                      <div class="rent-list">
+                        <ul>
+                          <li>Всегда в наличии на складе</li>
+                          <li>Оборудование исправно и имеет свидетельство о поверке</li>
+                          <li>Быстрая доставка в любую точку РФ</li>
+                        </ul>
+                      </div>
+                      <div class="service-center-social rent-social">
+                        <a href="#!" class="btn-main" data-bs-toggle="modal" data-bs-target="#exampleModal">Получить
+                          консультацию</a>
+                        <p>Задать вопрос в мессенджеры</p>
+                        <ul class="social">
+                          <li class="social-item tg">
+                            <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                          </li>
+                          <li class="social-item w">
+                            <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-5 col-lg-12">
+                  <div class="rent-calc step-one active">
+                    <div class="calc-title">
+                      <h3>Калькулятор аренды</h3>
+                      <p>Шаг 1 из 2</p>
+                    </div>
+                    <form action="#!">
+                      <div class="row">
+                        <div class="col-lg-6 pr-10">
+                          <div class="form-group">
+                            <span>Производитель *</span>
+                            <select name="rent-calc" id="rent-calc">
+                              <option value="Leica">Leica</option>
+                              <option value="Leica2">Leica2</option>
+                              <option value="Leica3">Leica3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 pl-10">
+                          <div class="form-group">
+                            <span>Модель*</span>
+                            <select name="rent-calc" id="rent-calc">
+                              <option value="Leica TCR 800">Leica TCR 800</option>
+                              <option value="Leica TCR 8002">Leica TCR 8002</option>
+                              <option value="Leica TCR 8003">Leica TCR 8003</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 pr-10">
+                          <div class="form-group">
+                            <span>ИНН</span>
+                            <input type="text" id="inn">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 pl-10">
+                          <div class="form-group">
+                            <span>Итоговая сумма, ₽</span>
+                            <input type="text" id="total">
+                          </div>
+                        </div>
+                      </div>
+
+                      <p>Минимальный срок аренды - 3 дня.</p>
+                      <h4>Добавить аксессуары</h4>
+                      <label class="cta-label">
+                        <input type="checkbox" required checked class="cta-checkbox">
+                        <p>Штатив, веха, отражатель</p>
+                      </label>
+                      <div class="form-btn">
+                        <a href="#!" class="btn-main calc-next">Вперед <img src="images/icons/white-arrow.svg"
+                            alt=""></a>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="rent-calc step-two">
+                    <div class="calc-title">
+                      <h3>Калькулятор аренды</h3>
+                      <p>Шаг 2 из 2</p>
+                    </div>
+                    <form action="#!">
+                      <div class="row">
+                        <div class="col-lg-6 pr-10">
+                          <div class="form-group">
+                            <span>Имя *</span>
+                            <input type="text" name="calc-name" id="calc-name" required>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 pl-10">
+                          <div class="form-group">
+                            <span>E-mail*</span>
+                            <input type="email" name="calc-email" id="calc-email" required>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 pr-10">
+                          <div class="form-group">
+                            <span>Количество дней*</span>
+                            <input type="number" name="amount-days" id="amount-days" required>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 pl-10">
+                          <div class="form-group">
+                            <span>Телефон*</span>
+                            <input type="tel" name="phone" id="phone" required>
+                          </div>
+                        </div>
+                      </div>
+
+                      <label class="cta-label">
+                        <input type="checkbox" required checked class="cta-checkbox">
+                        <p>Даю свое согласие на <a href="#!">обработку персональных данных</a></p>
+                      </label>
+                      <div class="service-center-social calc-social">
+                        <p>Задать вопрос в мессенджеры</p>
+                        <ul class="social">
+                          <li class="social-item tg">
+                            <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                          </li>
+                          <li class="social-item w">
+                            <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="form-btn">
+                        <a href="#!" class="calc-back"><img src="images/icons/white-arrow.svg" alt=""> Назад <br>
+                          уточнить детали</a>
+                        <button type="submit" class="btn-main" data-bs-toggle="modal"
+                          data-bs-target="#calc-modal">Оставить заявку</button>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="for-mob">
+                    <div class="rent-list">
+                      <ul>
+                        <li>Всегда в наличии на складе</li>
+                        <li>Оборудование исправно и имеет свидетельство о поверке</li>
+                        <li>Быстрая доставка в любую точку РФ</li>
+                      </ul>
+                    </div>
+                    <div class="service-center-social rent-social">
+                      <a href="#!" class="btn-main">Получить консультацию</a>
+                      <p>Задать вопрос в мессенджеры</p>
+                      <ul class="social">
+                        <li class="social-item tg">
+                          <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                        </li>
+                        <li class="social-item w">
+                          <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="rent-client">
+                <div class="rent-title">
+                  <h2>Станьте нашим постоянным клиентом и пользуйтесь специальными привилегиями</h2>
+                </div>
+
+                <div class="client-block">
+                  <div class="client-item">
+                    <img src="images/icons/rent-client-icon1.svg" alt="">
+                    <p>Аренда <br> оборудования <br> БЕЗ залога</p>
+                  </div>
+                  <div class="client-item">
+                    <img src="images/icons/rent-client-icon2.svg" alt="">
+                    <p>Дополнительные <br> скидки <br> на аренду</p>
+                  </div>
+                  <div class="client-item">
+                    <img src="images/icons/rent-client-icon3.svg" alt="">
+                    <p>Бесплатный <br> подменный парк <br> на время ремонта</p>
+                  </div>
+                  <div class="client-item">
+                    <img src="images/icons/rent-client-icon4.svg" alt="">
+                    <p>Приоритетная <br> техподдержка и ремонт <br> в сервисе без очеридей</p>
+                  </div>
+                </div>
+
+                <div class="for-mob">
+                  <a href="#!" class="btn-main filters-mob">Фильтр</a>
+                </div>
+              </div>
+
+              <div class="rent-product">
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/card-2.jpg">
+                            <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                          </a>
+                          <a href="images/card-3.jpg">
+                            <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/order-examine-img2.jpg">
+                            <img class="card-slider__img" src="images/order-examine-img2.jpg" alt="img">
+                          </a>
+                          <a href="images/card-2.jpg">
+                            <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/card-3.jpg">
+                            <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                          </a>
+                          <a href="images/card-1.jpg">
+                            <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/card-2.jpg">
+                            <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                          </a>
+                          <a href="images/card-3.jpg">
+                            <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/order-examine-img2.jpg">
+                            <img class="card-slider__img" src="images/order-examine-img2.jpg" alt="img">
+                          </a>
+                          <a href="images/card-2.jpg">
+                            <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/card-3.jpg">
+                            <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                          </a>
+                          <a href="images/card-1.jpg">
+                            <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/card-2.jpg">
+                            <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                          </a>
+                          <a href="images/card-3.jpg">
+                            <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/order-examine-img2.jpg">
+                            <img class="card-slider__img" src="images/order-examine-img2.jpg" alt="img">
+                          </a>
+                          <a href="images/card-2.jpg">
+                            <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-6 rent-col">
+                    <div class="card card--rent">
+                      <div class="card-main">
+                        <p class="card__label card__label--rent">Аренда</p>
+                        <div class="card-arrows">
+                          <div class="card-arrow card-arrow--prev">
+                            <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                          </div>
+                          <div class="card-arrow card-arrow--next">
+                            <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                          </div>
+                        </div>
+                        <div class="card-slider">
+                          <a href="images/card-3.jpg">
+                            <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                          </a>
+                          <a href="images/card-1.jpg">
+                            <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                          </a>
+                        </div>
+                        <div class="card-top">
+                          <p class="card-title">Leica TCR 400</p>
+                          <p class="card-t">В наличии</p>
+                        </div>
+                        <div class="card-count">
+                          <div class="card-count__w">
+                            <p>Дней</p>
+                            <input class="card-num" type="text">
+                          </div>
+                          <p class="card-eq">=</p>
+                          <div class="card-count__w">
+                            <p class="card-sum" class>Сумма</p>
+                            <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                          </div>
+                        </div>
+                        <button class="card__description">
+                          Описание и комплектация
+                          <div class="popup">
+                            <h4>Описание</h4>
+                            <ul>
+                              <li>Точность угловых измерений — 1″ — 2″ — 3″ — 5″</li>
+                              <li>Тип тахеометра – Инженерный</li>
+                              <li>Комплектация: тахеометр на треггере, кабель данных USB, аккумуляторная батарея (2
+                                шт.), зарядное устройство, сетевой кабель, CD диск с руководством пользователя и ПО,
+                                кейс, сертификат (копия), свидетельство о поверке (копия); штатив универсальный, веха
+                                телескопическая в чехле/минивеха, отражатель однопризменный/минипризма с минивехой</li>
+                            </ul>
+                          </div>
+                        </button>
+                      </div>
+                      <div class="card-bottom">
+                        <button class="btn-main card-click">Заказать</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="pagination">
+                  <a href="#" class="pagination-prev">
+                    <img class="pagination-img" src="images/icons/arrow-drop.svg" alt="img">
+                  </a>
+                  <ul class="pagination-list">
+                    <li class="pagination-list__item active"><a href="#!">1</a></li>
+                    <li class="pagination-list__item"><a href="#!">2</a></li>
+                    <li class="pagination-list__item"><a href="#!">3</a></li>
+                    <li class="pagination-list__item"><a href="#!">4</a></li>
+                    <li class="pagination-list__item"><span>...</span></li>
+                    <li class="pagination-list__item"><a href="#!">23</a></li>
+                  </ul>
+                  <a href="#" class="pagination-next">
+                    <img class="pagination-img" src="images/icons/arrow-drop.svg" alt="img">
+                  </a>
+                </div>
+              </div>
+
+              <div class="rent-end-text">
+                <p>Тахеометры используются при проведении геодезических изысканий и во время строительных работ для
+                  определения угловых расстояний между точками и измерения линейных расстояний от реперной точки до
+                  вешки. Современные электронные устройства позволяют выполнять измерения на удалении до нескольких
+                  километров с миллиметровой погрешностью. Однако использовать их не всегда возможно, так как купить
+                  товар этого типа могут позволить себе далеко не все геодезические компании.</p>
+                <p>Если приобрести измерительные приборы компания не хочет или не может, оптимальным вариантом будет
+                  аренда тахеометра. Стоимость этой услуги намного меньше, чем затраты на приобретение инструментов. Но
+                  благодаря аренде можно в течение дня получить тахеометр с нужными характеристиками и выполнить
+                  планируемый объем работ.</p>
+              </div>
+            </div>
+
+            <div class="for-mob">
+              <form action="#" class="aside-form">
+                <p class="aside-form__title">Оставьте заявку, <br> мы детально изучим особенности Вашего проекта и
+                  подберем оптимальное решение исходя из задач и бюджета</p>
+                <input required type="text" placeholder="Ваше имя" class="cta-input">
+                <input required minlength="18" pattern=".{18,18}" type="tel" name="phone" placeholder="Ваш телефон"
+                  class="cta-input">
+                <input required type="text" placeholder="Комментарий" class="cta-input">
+                <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal" data-bs-target="#thanks">Получить
+                  консультацию</button>
+                <label class="cta-label">
+                  <input type="checkbox" required checked class="cta-checkbox">
+                  <p>Оставляя заявку вы соглашаетесь <br> с <a href="#!">обработкой персональных данных</a></p>
+                </label>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @include('partials/footer.html')
+    @include('partials/arrow-top.html')
+  </div>
+
+  @include('partials/modals.html')
+  @include('partials/thanks-modals.html')
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

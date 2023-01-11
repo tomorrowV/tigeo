@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('partials/head.html')
+
+<body>
+    <!-- <div id="preloader">
+        <div id="loader"></div>
+    </div> -->
+    @include('partials/mobile-menu.html')
+
+    @include('partials/header.html')
+
+    <div class="wrapper">
+        <main class="main">
+            @include('partials/UI/fixed-socials.html')
+
+            <div class="catalog">
+                <div class="container">
+                    <div class="catalog-wrapper">
+                        <img src="images/catalog-bg.svg" alt="img" class="catalog-bg">
+                        <aside class="catalog-aside">
+                            <div class="filter">
+                                <form action="#" class="filters">
+                                    <img src="images/icons/cross.svg" alt="icon" class="filters-cross">
+                                    <div class="filters-item">
+                                        <h3 class="drop">Подбор оборудования <br> по задачам
+                                            <img src="images/icons/arrow-drop.svg" alt="icon">
+                                        </h3>
+                                        <div class="filters-content">
+                                            <label class="filters-label custom-checkbox">
+                                                Обследование сооружений
+                                                <input class="filters__checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                            <label class="filters-label custom-checkbox">
+                                                Промышленные обмеры
+                                                <input class="filters__checkbox" type="checkbox">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="filters-item">
+                                        <h3 class="drop">Оборудование
+                                            <img src="images/icons/arrow-drop.svg" alt="icon">
+                                        </h3>
+                                        <div class="filters-content">
+                                            <a href="#" class="filters-link">Электронные тахеометры</a>
+                                            <a href="#" class="filters-link">Лазерные сканеры / Системы лазерного
+                                                сканирования</a>
+                                            <a href="#" class="filters-link">Геодезические GNSS приемники</a>
+                                            <a href="#" class="filters-link">Модемы для GNSS приемников</a>
+                                            <a href="#" class="filters-link">Нивелиры</a>
+                                            <a href="#" class="filters-link">Теодолиты</a>
+                                            <a href="#" class="filters-link">Модемы для GNSS приемников</a>
+                                            <a href="#" class="filters-link">Приборы вертикального проектирования</a>
+                                            <a href="#" class="filters-link">Квадранты</a>
+                                            <a href="#" class="filters-link">Гравиметры</a>
+                                            <a href="#" class="filters-link">Беспилотные воздушные судна <br>/ БПЛА</a>
+                                            <a href="#" class="filters-link">Трассоискатели</a>
+                                            <a href="#" class="filters-link">Эхолоты</a>
+                                            <a href="#" class="filters-link">Георадары</a>
+                                            <a href="#" class="filters-link">Аксессуары</a>
+                                            <a href="#" class="filters-link">Софт</a>
+                                        </div>
+                                    </div>
+                                    <div class="filters-item">
+                                        <h3 class="drop">Производитель
+                                            <img src="images/icons/arrow-drop.svg" alt="icon">
+                                        </h3>
+                                        <div class="filters-content">
+                                            <div class="filters-w">
+                                                <label class="filters-label custom-checkbox">
+                                                    Trimble
+                                                    <input class="filters__checkbox" type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <img src="images/icons/arrow-drop.svg" alt="icon">
+                                                </label>
+                                                <ul class="filters-drop">
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S3
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S5
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S7
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S9
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filters-w">
+                                                <label class="filters-label custom-checkbox">
+                                                    Leica
+                                                    <input class="filters__checkbox" type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <img src="images/icons/arrow-drop.svg" alt="icon">
+                                                </label>
+                                                <ul class="filters-drop">
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S3
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S5
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S7
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S9
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filters-w">
+                                                <label class="filters-label custom-checkbox">
+                                                    Sokkia
+                                                    <input class="filters__checkbox" type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <img src="images/icons/arrow-drop.svg" alt="icon">
+                                                </label>
+                                                <ul class="filters-drop">
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S3
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S5
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S7
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S9
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filters-w">
+                                                <label class="filters-label custom-checkbox">
+                                                    Topcon
+                                                    <input class="filters__checkbox" type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <img src="images/icons/arrow-drop.svg" alt="icon">
+                                                </label>
+                                                <ul class="filters-drop">
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S3
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S5
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S7
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S9
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filters-w">
+                                                <label class="filters-label custom-checkbox">
+                                                    Nikon
+                                                    <input class="filters__checkbox" type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <img src="images/icons/arrow-drop.svg" alt="icon">
+                                                </label>
+                                                <ul class="filters-drop">
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S3
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S5
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S7
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S9
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filters-w">
+                                                <label class="filters-label custom-checkbox">
+                                                    Spectra Precision
+                                                    <input class="filters__checkbox" type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <img src="images/icons/arrow-drop.svg" alt="icon">
+                                                </label>
+                                                <ul class="filters-drop">
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S3
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S5
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S7
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S9
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filters-w">
+                                                <label class="filters-label custom-checkbox">
+                                                    South
+                                                    <input class="filters__checkbox" type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <img src="images/icons/arrow-drop.svg" alt="icon">
+                                                </label>
+                                                <ul class="filters-drop">
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S3
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S5
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S7
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S9
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="filters-w">
+                                                <label class="filters-label custom-checkbox">
+                                                    Ruide
+                                                    <input class="filters__checkbox" type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                    <img src="images/icons/arrow-drop.svg" alt="icon">
+                                                </label>
+                                                <ul class="filters-drop">
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S3
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S5
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S7
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                    <li>
+                                                        <label class="filters-label custom-checkbox">
+                                                            S9
+                                                            <input class="filters__checkbox" type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filters-item">
+                                        <h3 class="drop">Стоимость
+                                            <img src="images/icons/arrow-drop.svg" alt="icon">
+                                        </h3>
+                                        <div class="filters-content">
+                                            <div class="extra-controls">
+                                                <input type="number" class="js-input-from" />
+                                                <input type="number" class="js-input-to" />
+                                            </div>
+                                            <div class="range-slider">
+                                                <div class="js-range-slider"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filters-item">
+                                        <label class="filters-label custom-checkbox">
+                                            Акция %
+                                            <input class="filters__checkbox" type="checkbox">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </form>
+                            </div>
+                            <form action="#" class="aside-form">
+                                <p class="aside-form__title">Оставьте заявку, <br> мы детально изучим особенности Вашего
+                                    проекта и
+                                    подберем оптимальное решение исходя из задач и бюджета</p>
+                                <input required type="text" placeholder="Ваше имя" class="cta-input">
+                                <input required minlength="18" pattern=".{18,18}" type="tel" name="phone"
+                                    placeholder="Ваш телефон" class="cta-input">
+                                <input required type="text" placeholder="Комментарий" class="cta-input">
+                                <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal"
+                                    data-bs-target="#thanks">Получить
+                                    консультацию</button>
+                                <label class="control control--checkbox">
+                                    <input type="checkbox" checked="checked">
+                                    <div class="control__indicator"></div>
+                                    <span>Оставляя заявку вы соглашаетесь с &nbsp;<a href="#!">обработкой персональных
+                                            данных</a></span>
+                                </label>
+                            </form>
+                        </aside>
+                        <div class="catalog-main">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li class="active relative drop-container">
+                                        <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Поверка оборудования</a></li>
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Подбор оборудования</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="active relative drop-container">
+                                        <span>Каталог <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Электронные тахеометры</a></li>
+                                                <li><a href="#">Геодезическое оборудование</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <h2 class="catalog__title">Каталог оборудования</h2>
+                            <div class="catalog-w">
+                                <p class="filters-mob">Фильтр</p>
+                                <div class="catalog-sort">
+                                    <span>Сортировать по:</span>
+                                    <ul class="catalog-sort__list">
+                                        <li data-sort="0" class="catalog-sort__item active">Возрастанию цены</li>
+                                        <li data-sort="1" class="catalog-sort__item">Убыванию цены</li>
+                                        <li data-sort="2" class="catalog-sort__item">Популярности</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="catalog-list">
+                                @include('partials/UI/card-discount.html', {
+                                label: "hits"
+                                })
+                                @include('partials/UI/card-discount.html', {
+                                label: "discount"
+                                })
+                                @include('partials/UI/card-discount.html', {
+                                label: "hits"
+                                })
+                                @include('partials/UI/card-discount.html', {
+                                label: "rent"
+                                })
+                                @include('partials/UI/card-discount.html', {
+                                label: "hits"
+                                })
+                                @include('partials/UI/card-discount.html', {
+                                label: "discount"
+                                })
+                                @include('partials/UI/card-discount.html', {
+                                label: "hits"
+                                })
+                                @include('partials/UI/card-discount.html', {
+                                label: "hits"
+                                })
+                                @include('partials/UI/card-discount.html', {
+                                label: "rent"
+                                })
+                            </div>
+                            <div class="pagination">
+                                <a href="#" class="pagination-prev">
+                                    <img class="pagination-img" src="images/icons/arrow-drop.svg" alt="img">
+                                </a>
+                                <ul class="pagination-list">
+                                    <li class="pagination-list__item active">
+                                        <a href="#">
+                                            1
+                                        </a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#">
+                                            2
+                                        </a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#">
+                                            3
+                                        </a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#">
+                                            4
+                                        </a>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <span>
+                                            ...
+                                        </span>
+                                    </li>
+                                    <li class="pagination-list__item">
+                                        <a href="#">
+                                            23
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="#" class="pagination-next">
+                                    <img class="pagination-img" src="images/icons/arrow-drop.svg" alt="img">
+                                </a>
+                            </div>
+                            <div class="accessories">
+                                <h2 class="accessories__title">Каталог аксессуаров</h2>
+                                <div class="accessories-list swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="card card--accessories">
+                                                <div class="card-main">
+                                                    <div class="card-arrows">
+                                                        <div class="card-arrow card-arrow--prev">
+                                                            <img class="card-a" src="images/icons/slider-arrow-left.svg"
+                                                                alt="img">
+                                                        </div>
+                                                        <div class="card-arrow card-arrow--next">
+                                                            <img class="card-a" src="images/icons/slider-arrow.svg"
+                                                                alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slider swiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-1.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-1.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-2.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-2.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-t card-t--mob">В наличии</p>
+                                                    <p class="card-title">Алюминиевый штатив RGK S6-D со сферической
+                                                        площадкой
+                                                    </p>
+
+                                                    <div class="card-wrap">
+                                                        <p class="card-price">318 600 ₽</p>
+                                                        <p class="card-t">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-bottom">
+                                                    <button class="card-click btn-main">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card card--accessories">
+                                                <div class="card-main">
+                                                    <div class="card-arrows">
+                                                        <div class="card-arrow card-arrow--prev">
+                                                            <img class="card-a" src="images/icons/slider-arrow-left.svg"
+                                                                alt="img">
+                                                        </div>
+                                                        <div class="card-arrow card-arrow--next">
+                                                            <img class="card-a" src="images/icons/slider-arrow.svg"
+                                                                alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slider swiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-1.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-1.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-2.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-2.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-t card-t--mob">В наличии</p>
+                                                    <p class="card-title">Алюминиевый штатив RGK S6-D со сферической
+                                                        площадкой
+                                                    </p>
+
+                                                    <div class="card-wrap">
+                                                        <p class="card-price">318 600 ₽</p>
+                                                        <p class="card-t">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-bottom">
+                                                    <button class="card-click btn-main">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card card--accessories">
+                                                <div class="card-main">
+                                                    <div class="card-arrows">
+                                                        <div class="card-arrow card-arrow--prev">
+                                                            <img class="card-a" src="images/icons/slider-arrow-left.svg"
+                                                                alt="img">
+                                                        </div>
+                                                        <div class="card-arrow card-arrow--next">
+                                                            <img class="card-a" src="images/icons/slider-arrow.svg"
+                                                                alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slider swiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-1.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-1.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-2.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-2.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-t card-t--mob">В наличии</p>
+                                                    <p class="card-title">Алюминиевый штатив RGK S6-D со сферической
+                                                        площадкой
+                                                    </p>
+
+                                                    <div class="card-wrap">
+                                                        <p class="card-price">318 600 ₽</p>
+                                                        <p class="card-t">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-bottom">
+                                                    <button class="card-click btn-main">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card card--accessories">
+                                                <div class="card-main">
+                                                    <div class="card-arrows">
+                                                        <div class="card-arrow card-arrow--prev">
+                                                            <img class="card-a" src="images/icons/slider-arrow-left.svg"
+                                                                alt="img">
+                                                        </div>
+                                                        <div class="card-arrow card-arrow--next">
+                                                            <img class="card-a" src="images/icons/slider-arrow.svg"
+                                                                alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slider swiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-1.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-1.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-2.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-2.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-t card-t--mob">В наличии</p>
+                                                    <p class="card-title">Алюминиевый штатив RGK S6-D со сферической
+                                                        площадкой
+                                                    </p>
+
+                                                    <div class="card-wrap">
+                                                        <p class="card-price">318 600 ₽</p>
+                                                        <p class="card-t">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-bottom">
+                                                    <button class="card-click btn-main">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card card--accessories">
+                                                <div class="card-main">
+                                                    <div class="card-arrows">
+                                                        <div class="card-arrow card-arrow--prev">
+                                                            <img class="card-a" src="images/icons/slider-arrow-left.svg"
+                                                                alt="img">
+                                                        </div>
+                                                        <div class="card-arrow card-arrow--next">
+                                                            <img class="card-a" src="images/icons/slider-arrow.svg"
+                                                                alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slider swiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-1.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-1.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-2.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-2.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-t card-t--mob">В наличии</p>
+                                                    <p class="card-title">Алюминиевый штатив RGK S6-D со сферической
+                                                        площадкой
+                                                    </p>
+
+                                                    <div class="card-wrap">
+                                                        <p class="card-price">318 600 ₽</p>
+                                                        <p class="card-t">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-bottom">
+                                                    <button class="card-click btn-main">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card card--accessories">
+                                                <div class="card-main">
+                                                    <div class="card-arrows">
+                                                        <div class="card-arrow card-arrow--prev">
+                                                            <img class="card-a" src="images/icons/slider-arrow-left.svg"
+                                                                alt="img">
+                                                        </div>
+                                                        <div class="card-arrow card-arrow--next">
+                                                            <img class="card-a" src="images/icons/slider-arrow.svg"
+                                                                alt="img">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-slider swiper">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-1.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-1.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                            <div class="swiper-slide">
+                                                                <a href="images/card-2.jpg">
+                                                                    <img class="card-slider__img"
+                                                                        src="images/card-2.jpg" alt="img">
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <p class="card-t card-t--mob">В наличии</p>
+                                                    <p class="card-title">Алюминиевый штатив RGK S6-D со сферической
+                                                        площадкой
+                                                    </p>
+
+                                                    <div class="card-wrap">
+                                                        <p class="card-price">318 600 ₽</p>
+                                                        <p class="card-t">В наличии</p>
+                                                    </div>
+                                                </div>
+                                                <div class="card-bottom">
+                                                    <button class="card-click btn-main">
+                                                        В корзину
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accessories-arrows">
+                                    <div class="accessories-arrow swiper-button-prev accessories-arrow--prev">
+                                        <img class="accessories-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                                    </div>
+                                    <div class="accessories-arrow swiper-button-next accessories-arrow--next">
+                                        <img class="accessories-a" src="images/icons/slider-arrow.svg" alt="img">
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-main accessories-all">
+                                    Все аксессуары
+                                </a>
+                            </div>
+                        </div>
+                        <form action="#" class="aside-form aside-form--mob">
+                            <p class="aside-form__title">Оставьте заявку, <br> мы детально изучим особенности Вашего
+                                проекта и
+                                подберем оптимальное решение исходя из задач и бюджета</p>
+                            <input required type="text" placeholder="Ваше имя" class="cta-input">
+                            <input required minlength="18" pattern=".{18,18}" type="tel" name="phone"
+                                placeholder="Ваш телефон" class="cta-input">
+                            <input required type="text" placeholder="Комментарий" class="cta-input">
+                            <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal"
+                                data-bs-target="#thanks">Получить
+                                консультацию</button>
+                            <label class="control control--checkbox">
+                                <input type="checkbox" checked="checked">
+                                <div class="control__indicator"></div>
+                                <span>Даю свое согласие на&nbsp;<a href="#!">обработку персональных данных</a></span>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        @include('partials/footer.html')
+        @include('partials/arrow-top.html')
+    </div>
+
+
+    @include('partials/modals.html')
+    @include('partials/thanks-modals.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

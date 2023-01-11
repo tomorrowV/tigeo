@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Tigeo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="mob-menu">
+    <ul class="mob-list">
+        <li>
+            <a href="main.html">
+                <img src="images/icons/mob-1.svg" alt="img">
+                <span>Главная</span>
+            </a>
+        </li>
+        <li class="search-btn mobile">
+            <a href="#">
+                <img src="images/icons/mob-2.svg" alt="img">
+                <span>Поиск</span>
+            </a>
+        </li>
+        <li class="mob-m">
+            <a href="#">
+                <img src="images/icons/mob-3.svg" alt="img">
+                <span>Меню</span>
+            </a>
+        </li>
+        <li>
+            <a href="tel:+555555555">
+                <img src="images/icons/mob-4.svg" alt="img">
+                <span>Телефон</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="mob-basket">
+                <img src="images/icons/mob-5.svg" alt="img">
+                <span>Корзина</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+    <!-- <div id="preloader"></div> -->
+
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__w">
+                <p class="header-top__place">Головное подразделение: Москва, Амурская 9/6 строение 9</p>
+                <div class="header-top__block">
+                    <ul class="header-top__list list-reset">
+                        <li>
+                            <a href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="mailto:info@tigeo.ru" class="header-mail">info@tigeo.ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-m">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main__w">
+                    <a href="#" class="logo">
+                        <img width="70" height="70" src="images/icons/logo.png" alt="img">
+                        <p class="header-main__t">
+                            Геодезическое оборудование. <br> Продажа — Аренда — Выкуп — Trade In
+                        </p>
+                    </a>
+                    <div class="header-search--mob">
+                        <img class="search-cross" src="images/icons/cross.svg" alt="icon">
+                        <div class="header-search">
+                            <button>
+                                <img src="images/icons/search.svg" alt="search">
+                            </button>
+                            <input type="search" placeholder="Поиск">
+                        </div>
+                    </div>
+                    <ul class="social list-reset">
+                        <li class="social-item tg">
+                            <a href="#">
+                                <img src="images/icons/tg.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="social-item w">
+                            <a href="#">
+                                <img src="images/icons/w.svg" alt="icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contacts-i">
+                        <a href="tel:88000000000">8 (800) 000-00-00</a>
+                        <p>Пн-Пт: с 9:30 до 19:00 <br> Сб: с 10:00 до 15:00</p>
+                    </div>
+                    <button data-modal="exampleModal" class="btn-main header-btn">Заказать
+                        звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <img class="header-cross" src="images/icons/cross.svg" alt="img">
+            <div class="nav-search for-mob">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" name="nav-search" id="nav-search" placeholder="Поиск">
+                        <button><img src="images/icons/search.svg" alt=""></button>
+                    </div>
+                </form>
+                <div class="nav-compare">
+                    <a href="#" class="compare-link">
+                        <span class="icon">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 17V8H2.59961C2.03956 8 1.75981 8 1.5459 8.10899C1.35774 8.20487 1.20487 8.35786 1.10899 8.54602C1 8.75993 1 9.03992 1 9.59998V17H7ZM7 17H13M7 17V2.59998C7 2.03992 7 1.75993 7.10899 1.54602C7.20487 1.35786 7.35774 1.20487 7.5459 1.10899C7.75981 1 8.03956 1 8.59961 1H11.3996C11.9597 1 12.2405 1 12.4544 1.10899C12.6425 1.20487 12.7948 1.35786 12.8906 1.54602C12.9996 1.75993 13 2.03992 13 2.59998V17M13 17L19 17V6.59998C19 6.03992 18.9996 5.75993 18.8906 5.54602C18.7948 5.35786 18.6425 5.20487 18.4544 5.10899C18.2405 5 17.9601 5 17.4 5H13V17Z"
+                                    stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <p>Сравнения</p>
+                    </a>
+                    <span class="compare-count">0</span>
+                </div>
+            </div>
+            <div class="header__container container">
+                <div class="header-nav__w">
+                    <ul class="header-list list-reset">
+                        <li>
+                            <a class="drop" href="#">Каталог
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none" class="drop-arrow replaced-svg">
+                                    <path
+                                        d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                        fill="white"></path>
+
+                                </svg></a>
+                            <ul class="drop-list">
+                                <li class="drop-list__item drop-list__item--tasks">
+                                    <span>
+                                        Подбор оборудования по задачам
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Обследование сооружений </a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Промышленные обмеры</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Обмеры фасадов</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Дизайнерам интерьера</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для градуировки и последующей поверки резервуаров</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Электронные тахеометры
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Nikon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Sokkia</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Ruide</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">South</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Spectra </a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">South</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Precision</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Topcon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Лазерные сканеры / Системы лазерного сканирования
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Faro</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Topcon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Z+F</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Geomax</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">CHCNAV</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Riegl</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Софт</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Геодезические GNSS приемники
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Sokkia</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Topcon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Prince</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Spectra Precision</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">South</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">EFT</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Geomax</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Javad</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Софт</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Полевые контроллеры
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Sokkia</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Topcon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Prince</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Spectra Precision</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">South</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Javad</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Geomax</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Getac</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">BlackView</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Софт</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Модемы для GNSS приемников
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Satel</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Pacific Crest</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Нивелиры
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Оптические</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Электронные</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Лазерные</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Ротационные</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Софт</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Теодолиты
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Оптические</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Электронные</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Модемы для GNSS приемников
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">RGK</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Bosch</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Condtrol</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Приборы вертикального проектирования</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Квадранты</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Гравиметры</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Беспилотные воздушные судна / БПЛА</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Трассоискатели</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Эхолоты</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a clas="#">Георадары</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Аксессуары
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Отражатели</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Марки</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Вехи</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Рейки</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Штативы</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Кейсы</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Клипсы для кейсов</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Рюкзаки</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Чехлы</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Трегеры</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Адаптеры</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аккумуляторы</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Зарядные устройства</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Антенны</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Карты памяти</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Рулетки</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Рации</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Софт
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для тахеометров</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для GNSS приемников</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для контроллеров</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">ДЛЯ сканеров</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для нивелиров</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для БПЛА</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="drop" href="#">Аренда
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none" class="drop-arrow replaced-svg">
+                                    <path
+                                        d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+                            <ul class="drop-list list-reset">
+                                <li class="drop-list__item">
+                                    <a href="#">3D сканеры</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#"></a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">GNSS приёмники</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Нивелиры цифровые</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Теодолиты</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Трассоискатели</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Аксессуары</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#">Выкуп и Trade-in</a>
+                        </li>
+                        <li>
+                            <a class="drop" href="#">Сервис
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none" class="drop-arrow replaced-svg">
+                                    <path
+                                        d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+                            <ul class="drop-list list-reset">
+                                <li class="drop-list__item">
+                                    <a href="#">Сервисный центр</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Техподдержка и обучение</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Инструкции и сертификаты</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Работы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Геодезические услуги</a></li>
+                        <li><a href="#">Поверка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="header-basket">
+                        <a class="header-basket-compare" href="#!">
+                            <span>3</span>
+                            <img src="images/icons/comp-white.svg" alt="">
+                        </a>
+                        <div class="head-basket-block">
+                            <a href="#" class="head-basket-btn">
+                                <div class="inner">
+                                    <img src="images/icons/basket.svg" alt="icon">
+                                    <span class="count">4</span>
+                                </div>
+                                <span>3 333 119 ₽</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="header-mob">
+                        <div class="header-top__block">
+                            <ul class="header-top__list">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                            </ul>
+                            <a href="mailto:info@tigeo.ru" class="header-mail">info@tigeo.ru</a>
+                            <p class="header-top__place">Головное подразделение: Москва, Амурская 9/6 строение 9</p>
+                        </div>
+                        <div class="contacts-i">
+                            <a href="tel:88000000000">8 (800) 000-00-00</a>
+                            <a href="tel:8 (800) 2222-801">8 (800) 2222-801</a>
+                            <p>Пн-Пт: с 9:30 до 19:00 <br> Сб: с 10:00 до 15:00</p>
+                        </div>
+                        <ul class="social">
+                            <li class="social-item tg">
+                                <a href="#">
+                                    <img src="images/icons/tg.svg" alt="icon">
+                                </a>
+                            </li>
+                            <li class="social-item w">
+                                <a href="#">
+                                    <img src="images/icons/w.svg" alt="icon">
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="btn-main header-btn order-call" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Заказать звонок
+                        </button>
+                    </div>
+                </div>
+                <div class="basket-order">
+    <h3>Ваш заказ</h3>
+    <div class="basket-order-block">
+        <div class="basket-order-img">
+            <div class="img-block">
+                <img src="images/your-order-img1.jpg" alt="">
+            </div>
+            <span>Тахеометр Nikon Nivo 5M б/у</span>
+        </div>
+        <div class="basket-order-count">
+            <div class="count">
+                <span class="minus">-</span>
+                <div class="count-in">
+                    <input type='number' min='0' max='1000' step='1' value='1'>
+                    <p>шт.</p>
+                </div>
+                <span class="plus active">+</span>
+            </div>
+            <p>333 119 ₽</p>
+            <a href="#!" class="icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="#414042" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="basket-order-block">
+        <div class="basket-order-img">
+            <div class="img-block">
+                <img src="images/your-order-img1.jpg" alt="">
+            </div>
+            <span>Тахеометр Nikon Nivo 5M б/у</span>
+        </div>
+        <div class="basket-order-count">
+            <div class="count">
+                <span class="minus">-</span>
+                <div class="count-in">
+                    <input type='number' min='0' max='1000' step='1' value='1'>
+                    <p>шт.</p>
+                </div>
+                <span class="plus active">+</span>
+            </div>
+            <p>333 119 ₽</p>
+            <a href="#!" class="icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="#414042" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="basket-order-block">
+        <div class="basket-order-img">
+            <div class="img-block">
+                <img src="images/your-order-img1.jpg" alt="">
+            </div>
+            <span>Тахеометр Nikon Nivo 5M б/у</span>
+        </div>
+        <div class="basket-order-count">
+            <div class="count">
+                <span class="minus">-</span>
+                <div class="count-in">
+                    <input type='number' min='0' max='1000' step='1' value='1'>
+                    <p>шт.</p>
+                </div>
+                <span class="plus active">+</span>
+            </div>
+            <p>333 119 ₽</p>
+            <a href="#!" class="icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="#414042" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="basket-order-block">
+        <div class="basket-order-img">
+            <div class="img-block">
+                <img src="images/your-order-img1.jpg" alt="">
+            </div>
+            <span>Тахеометр Nikon Nivo 5M б/у</span>
+        </div>
+        <div class="basket-order-count">
+            <div class="count">
+                <span class="minus">-</span>
+                <div class="count-in">
+                    <input type='number' min='0' max='1000' step='1' value='1'>
+                    <p>шт.</p>
+                </div>
+                <span class="plus active">+</span>
+            </div>
+            <p>333 119 ₽</p>
+            <a href="#!" class="icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="#414042" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="basket-order-total">
+        <p>Сумма заказа</p>
+        <h2>3 333 119 ₽</h2>
+    </div>
+    <div class="basket-order-btn">
+        <button class="btn-main">Перейти к оформлению</button>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</header>
+    <div class="wrapper">
+        <main class="main">
+            <div class="fixed-socials">
+                <a href="#" class="tel"><img src="images/icons/te-icon.svg" alt=""></a>
+                <a href="#" class="telegram"><img src="images/icons/telegram-icon.svg" alt=""></a>
+                <a href="#" class="whatsapp"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
+            </div>
+
+            <section class="policy hero">
+                <div class="container">
+                    <h1>Политика конфендициальности</h1>
+                    <div class="policy__block">
+                        <h3>1. ОПРЕДЕЛЕНИЕ ТЕРМИНОВ</h3>
+                        <p>I. Существующая на текущий момент политика конфиденциальности персональных данных (далее —
+                            Политика конфиденциальности) работает со следующими понятиями: 1. «Администрация сайта» Так
+                            называют представляющих интересы организации специалистов, в чьи обязанности входит
+                            управление
+                            сайтом, то есть организация и (или) обработка поступивших на него персональных данных. Для
+                            выполнения этих обязанностей они должны чётко представлять, для чего обрабатываются
+                            сведения,
+                            какие сведения должна быть обработаны, какие действия (операции) должны производиться с
+                            полученными сведениями. 2. «Персональные данные» — сведения, имеющие прямое или косвенное
+                            отношение к определённому либо определяемому физическому лицу (также называемому субъектом
+                            персональных данных). 3. «Обработка персональных данных» — любая операция (действие) либо
+                            совокупность таковых, которые Администрация производит с персональными данными. Их могут
+                            собирать, записывать, систематизировать, накапливать, хранить, уточнять (при необходимости
+                            обновлять или изменять), извлекать, использовать, передавать (распространять, предоставлять,
+                            открывать к ним доступ), обезличивать, блокировать, удалять и даже уничтожать. Данные
+                            операции
+                            (действия) могут выполняться как автоматически, так и вручную. 4. «Конфиденциальность
+                            персональных данных» — обязательное требование, предъявляемое к Оператору или иному
+                            работающему
+                            с данными Пользователя должностному лицу, хранить полученные сведения в тайне, не посвящая в
+                            них
+                            посторонних, если предоставивший персональные данные Пользователь не изъявил своё согласие,
+                            а
+                            также отсутствует законное основание для разглашения. 5. «Пользователь сайта
+                            Интернет-магазина»
+                            (далее — Пользователь)» — человек, посетивший сайт Интернет-магазина, а также пользующийся
+                            его
+                            программами и продуктами. 6. «Cookies» — короткий фрагмент данных, пересылаемый
+                            веб-браузером
+                            или веб-клиентом веб-серверу в HTTP-запросе, всякий раз, когда Пользователь пытается открыть
+                            страницу Интернет-магазина. Фрагмент хранится на компьютере Пользователя. 7. «IP-адрес» —
+                            уникальный сетевой адрес узла в компьютерной сети, построенной по протоколу TCP/IP.</p>
+                    </div>
+                    <div class="policy__block">
+                        <h3>2. ОБЩИЕ ПОЛОЖЕНИЯ</h3>
+                        <p>Просмотр сайта, а также использование его программ и продуктов подразумевают автоматическое
+                            согласие с принятой там Политикой конфиденциальности, подразумевающей предоставление
+                            Пользователем персональных данных на обработку. I. Если Пользователь не принимает
+                            существующую
+                            Политику конфиденциальности, Пользователь должен покинуть сайт. II. Имеющаяся Политика
+                            конфиденциальности распространяется только на сайт. Если по ссылкам, размещённым на сайте,
+                            Пользователь зайдёт на ресурсы третьих лиц, Сайт за его действия ответственности не несёт.
+                            III.
+                            Проверка достоверности персональных данных, которые решил сообщить принявший Политику
+                            конфиденциальности Пользователь, не входит в обязанности Администрации сайта.</p>
+                    </div>
+                    <div class="policy__block">
+                        <h3>3. ПРЕДМЕТ ПОЛИТИКИ КОНФИДЕНЦИАЛЬНОСТИ</h3>
+                        <p>Согласно проводимой в текущий период Политике конфиденциальности Администрация обязана не
+                            разглашать персональные данные, сообщаемые Пользователями, регистрирующимися на сайте или
+                            оформляющими заказ на покупку товара, а также обеспечивать этим данным абсолютную
+                            конфиденциальность. I. Чтобы сообщить персональные данные, Пользователь заполняет
+                            расположенные
+                            на сайте электронные формы. Персональными данными Пользователя, которые подлежат обработке,
+                            являются: 1. его фамилия, имя, отчество; 2. его контактный телефон; 3. его электронный адрес
+                            (e-mail); II. Защита данных, автоматически передаваемых при просмотре рекламных блоков и
+                            посещении страниц с установленными на них статистическими скриптами системы (пикселями)
+                            осуществляется сайтом. Вот перечень этих данных: IP-адрес; сведения из cookies; сведения о
+                            браузере (либо другой программе, через которую становится доступен показ рекламы); время
+                            посещения сайта; адрес страницы, на которой располагается рекламный блок; реферер (адрес
+                            предыдущей страницы). III. Последствием отключения cookies может стать невозможность доступа
+                            к
+                            требующим авторизации частям сайта. IV. Любые другие неоговорённые выше персональные
+                            сведения (о
+                            том, когда и какие покупки были сделаны, какой при этом использовался браузер, какая была
+                            установлена операционная система и пр.) надёжно хранятся и не распространяются. Исключение
+                            существующая Политика конфиденциальности предусматривает для случаев, описанных в п. п. 5.2 и
+                            5.3.</p>
+                    </div>
+                    <div class="policy__block">
+                        <h3>4. ЦЕЛИ СБОРА ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЯ
+                        </h3>
+                        <p>Сбор персональных данных Пользователя Администрацией Интернет-магазина проводится ради того,
+                            чтобы: 1. Идентифицировать Пользователя, который прошёл процедуру регистрации на сайте,
+                            чтобы
+                            оформить заказ и (или) приобрести товар или услугу данного сайта дистанционно. 2. Открыть
+                            Пользователю доступ к персонализированным ресурсам данного сайта. 3. Установить с
+                            Пользователем
+                            обратную связь, под которой подразумевается, в частности, рассылка запросов и уведомлений,
+                            касающихся использования сайта, обработка пользовательских запросов и заявок, оказание
+                            прочих
+                            услуг. 4. Определить местонахождение Пользователя, чтобы обеспечить безопасность платежей и
+                            предотвратить мошенничество. 5. Подтвердить, что данные, которые предоставил Пользователь,
+                            полны
+                            и достоверны. 6. Обрабатывать и получать платежи, подтверждать налог или налоговые льготы,
+                            оспаривать платёж, определять, целесообразно ли предоставить конкретному Пользователю
+                            кредитную
+                            линию. 7. Обеспечить Пользователю максимально быстрое решение проблем, встречающихся при
+                            использовании сайта, за счёт эффективной клиентской и технической поддержки. 8. Своевременно
+                            информировать Пользователя об обновлённой продукции, ознакомлять его с уникальными
+                            предложениями, новыми прайсами, новостями о деятельности сайта или его партнёров и прочими
+                            сведениями, если Пользователь изъявит на то своё согласие. 9. Рекламировать товары сайта,
+                            если
+                            Пользователь изъявит на то своё согласие. 10. Предоставить Пользователю доступ на сайты или
+                            сервисы сайта, помогая ему тем самым получать продукты, обновления и услуги.
+                        </p>
+                    </div>
+                    <div class="policy__block">
+                        <h3>5. СПОСОБЫ И СРОКИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ
+                        </h3>
+                        <p>Срок обработки персональных данных Пользователя ничем не ограничен. Процедура обработки может
+                            проводиться любым предусмотренным законодательством способом. В частности, с помощью
+                            информационных систем персональных данных, которые могут вестись автоматически либо без
+                            средств
+                            автоматизации. I. Обработанные Администрацией сайта персональные данные Пользователя могут
+                            передаваться третьим лицам, в число которых входят курьерские службы, организации почтовой
+                            связи, операторы электросвязи. Делается это для того, чтобы выполнить заказ Пользователя,
+                            оставленный им на сайте, и доставить товар по адресу. Согласие Пользователя на подобную
+                            передачу
+                            предусмотрено правилами политики сайта. II. Также обработанные Администрацией сайта
+                            персональные
+                            данные могут передаваться уполномоченным органов государственной власти Российской
+                            Федерации,
+                            если это осуществляется на законных основаниях и в предусмотренном российским
+                            законодательством
+                            порядке. III. Если персональные данные будут утрачены или разглашены, Пользователь
+                            уведомляется
+                            об этом Администрацией сайта. IV. Все действия Администрации сайта направлены на то, чтобы
+                            не
+                            допустить к персональным данным Пользователя третьих лиц (за исключением п. п. 5.2, 5.3).
+                            Последним эта информация не должна быть доступна даже случайно, дабы те не уничтожили её, не
+                            изменили и не блокировали, не копировали и не распространяли, а также не совершали прочие
+                            противозаконные действия. Для защиты пользовательских данных Администрация располагает
+                            комплексом организационных и технических мер. V. Если персональные данные будут утрачены
+                            либо
+                            разглашены, Администрация сайта совместно с Пользователем готова принять все возможные меры,
+                            дабы предотвратить убытки и прочие негативные последствия, вызванные данной ситуацией.
+
+                        </p>
+                    </div>
+                    <div class="policy__block">
+                        <h3>6. ОБЯЗАТЕЛЬСТВА СТОРОН
+                        </h3>
+                        <p>В обязанности Пользователя входит: 1. Сообщение соответствующих требованиям сайта сведений о
+                            себе. 2. Обновление и дополнение предоставляемых им сведений в случае изменения таковых. I.
+                            В
+                            обязанности Администрации сайта входит: 1. Применение полученных сведений исключительно в
+                            целях,
+                            обозначенных в п. 4 существующей Политики конфиденциальности. 2. Обеспечение
+                            конфиденциальности
+                            поступивших от Пользователя сведений. Они не должны разглашаться, если Пользователь не даст
+                            на
+                            то письменное разрешение. Также Администрация не имеет права продавать, обменивать,
+                            публиковать
+                            либо разглашать прочими способами переданные Пользователем персональные данные, исключая
+                            п. п.
+                            5.2 и 5.3 существующей Политики конфиденциальности. 3. Принятие мер предосторожности, дабы
+                            персональные данные Пользователя оставались строго конфиденциальными, точно также, как
+                            остаются
+                            конфиденциальными такого рода сведения в современном деловом обороте. 4. Блокировка
+                            персональных
+                            пользовательских данных с того момента, с которого Пользователь либо его законный
+                            представитель
+                            сделает соответствующий запрос. Право сделать запрос на блокировку также предоставляется
+                            органу,
+                            уполномоченному защищать права Пользователя, предоставившего Администрации сайта свои
+                            данные, на
+                            период проверки, в случае обнаружения недостоверности сообщённых персональных данных либо
+                            неправомерности действий.
+
+                        </p>
+                    </div>
+                    <div class="policy__block">
+                        <h3>7. ОТВЕТСТВЕННОСТЬ СТОРОН
+                        </h3>
+                        <p>В случае неисполнения Администрацией сайта собственных обязательств и, как следствие, убытков
+                            Пользователя, понесённых из-за неправомерного использования предоставленной им информации,
+                            ответственность возлагается на неё. Об этом, в частности, утверждает российское
+                            законодательство. Исключение существующая в настоящее время Политика конфиденциальности
+                            делает
+                            для случаев, отражённых в п. п. 5.2, 5.3 и 7.2. I. Но существует ряд случаев, когда
+                            Администрация
+                            сайта ответственности не несёт, если пользовательские данные утрачиваются или разглашаются.
+                            Это
+                            происходит тогда, когда они: 1. Превратились в достояние общественности до того, как были
+                            утрачены или разглашены. 2. Были предоставлены третьими лицами до того, как их получила
+                            Администрация сайта. 3. Разглашались с согласия Пользователя.
+
+                        </p>
+                    </div>
+                    <div class="policy__block">
+                        <h3>8. РАЗРЕШЕНИЕ СПОРОВ
+                        </h3>
+                        <p>Если Пользователь недоволен действиями Администрации сайта и намерен отстаивать свои права в
+                            суде, до того как обратиться с иском, он в обязательном порядке должен предъявить претензию
+                            (письменно предложить урегулировать конфликт добровольно). I. Получившая претензию
+                            Администрация
+                            обязана в течение 30 календарных дней с даты её получения письменно уведомить Пользователя о
+                            её
+                            рассмотрении и принятых мерах. II. Если обе стороны так и не смогли договориться, спор
+                            передаётся в судебный орган, где его должны рассмотреть согласно действующему российскому
+                            законодательству. III. Регулирование отношений Пользователя и Администрации сайта в Политике
+                            конфиденциальности проводится согласно действующему российскому законодательству.
+
+                        </p>
+                    </div>
+                    <div class="policy__block">
+                        <h3>9. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ
+                        </h3>
+                        <p>Администрация сайта вправе менять существующую на текущий момент Политику конфиденциальности,
+                            не
+                            спрашивая согласия у Пользователя. I. Вступление в силу новой Политики конфиденциальности
+                            начинается после того, как информация о ней будет выложена на сайт, если изменившаяся
+                            Политика
+                            не подразумевает иного варианта размещения. II. Все предложения, пожелания, требования или
+                            вопросы по настоящей Политике конфиденциальности следует сообщать в раздел обратной связи,
+                            расположенный по адресу: http://business-up.orginess-up.org. Или путем отправки электронного
+                            письма по адресу (mircredit@mail.ru) III. Прочитать о существующей Политике
+                            конфиденциальности
+                            можно, зайдя на страницу по адресу http://business-up.orginess-up.org Обновлено «1» июля
+                            2017
+                            года
+
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-main">
+                <div class="container">
+                    <div class="footer-wrapper">
+                        <a href="#" class="logo">
+                            <img src="images/icons/logo.png" alt="img">
+                            <p class="footer-m ftr-cat-btn">Каталог оборудования <img src="images/icons/cat-arrow.svg"
+                                    alt="" class="for-mob"></p>
+
+                        </a>
+                        <div class="footer-nav">
+                            <p class="footer-nav__title">Каталог оборудования</p>
+                            <div class="footer-nav__w">
+                                <ul class="footer-nav__list">
+                                    <li>
+                                        <a href="#">
+                                            Электронные тахеометры
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Лазерные сканеры <br>/ Системы лазерного <br> сканирования
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Геодезические GNSS приемники
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Геодезические GNSS приемники
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Модемы для GNSS приемников
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Нивелиры
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Теодолиты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Модемы для GNSS приемников
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav__list">
+                                    <li>
+                                        <a href="#">
+                                            Приборы вертикального <br> проектирования
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Квадранты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Гравиметры
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Беспилотные воздушные <br> судна/ БПЛА
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Трассоискатели
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Эхолоты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Георадары
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Аксессуары
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Софт
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-nav__list">
+                                    <li>
+                                        <a href="#">
+                                            Аренда
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Выкуп и Trade-in
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Сервисный центр
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Техподдержка и обучение
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Поверка оборудования
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Инструкции и сертификаты
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            О компании
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Блог
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Услуги по геодезии
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Доставка и оплата
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-block">
+                            <div class="footer-w">
+                                <h4>Контакты</h4>
+                                <div class="contacts-i">
+                                    <a href="tel:88000000000">8 (800) 000-00-00</a>
+                                    <a href="tel:8 (800) 2222-801">8 (800) 2222-801</a>
+                                    <p>Пн-Пт: с 9:30 до 19:00 <br> Сб: с 10:00 до 15:00</p>
+                                </div>
+                                <ul class="social">
+                                    <li class="social-item tg">
+                                        <a href="#">
+                                            <img src="images/icons/tg.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li class="social-item w">
+                                        <a href="#">
+                                            <img src="images/icons/w.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-w">
+                                <h4>Сервис и техподдержка:</h4>
+                                <div class="contacts-i">
+                                    <a href="tel:+79295499535">+7 929 549-95-35</a>
+                                </div>
+                                <ul class="social">
+                                    <li class="social-item tg">
+                                        <a href="#">
+                                            <img src="images/icons/tg.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                    <li class="social-item w">
+                                        <a href="#">
+                                            <img src="images/icons/w.svg" alt="icon">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-list">
+                                <p>Головное подразделение: <br> Москва, Москва, Амурская <br> 9/6 строение 9</p>
+                                <p class="footer-btn">Представительства в регионах</p>
+                                <p>
+                                    <a href="mailto:info@tigeo.ru">info@tigeo.ru</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="footer-bottom__w">
+                        <p class="footer-conf">Политика конфиденциальности</p>
+                        <p>@ 2013 — 2022 ТИГЕО | ТРЕЙД-ИН-ГЕО Все права защищены</p>
+                        <p class="footer-agency">
+                            <span>Разработка сайта</span>
+                            <a href="#">
+                                <img src="images/icons/agency.svg" alt="img">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Back to top button -->
+        <a href="#" id="scroll-top"><img src="images/icons/top-arrow.svg" alt=""></a>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,249 @@
+body {
+  background-color: #F6F6F6;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 130%;
+  color: #414042;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 110%;
+}
+
+.dir-list {
+  margin-top: 250px;
+}
+
+.dir-list ul {
+  padding-left: 0;
+  margin-left: auto;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.subtitle {
+  font-size: 22px;
+  line-height: 110%;
+  margin-top: 30px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1330px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.btn-main {
+  position: relative;
+  background: #53C5E2;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  max-width: 240px;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  transition: all, .3s;
+  font-size: 14px;
+  line-height: 17px;
+  overflow: hidden;
+}
+
+.btn-main::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateX(-0.5em) skewX(-45deg);
+  animation-name: moveLight;
+  animation-duration: 4000ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  transition: all, .3s;
+}
+
+.breadcrumbs ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #909397;
+}
+
+.breadcrumbs ul span {
+  color: #414042;
+}
+
+.breadcrumbs ul li {
+  position: relative;
+}
+
+.breadcrumbs ul li::after {
+  position: absolute;
+  content: '';
+  background-image: url("../images/icons/bread-arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 9px;
+  height: 9px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: -16px;
+}
+
+.breadcrumbs ul li:last-child::after {
+  display: none;
+}
+
+.mfp-counter {
+  display: none;
+}
+
+.pagination {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 38px;
+  justify-content: center;
+}
+
+.pagination-prev {
+  border-radius: 4px;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all, .3s;
+}
+
+.pagination-prev svg {
+  transform: rotate(90deg);
+  transition: all, .3s;
+}
+
+.pagination-prev svg path {
+  transition: all, .3s;
+}
+
+.pagination-next {
+  border-radius: 4px;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all, .3s;
+}
+
+.pagination-next svg {
+  transform: rotate(-90deg);
+  transition: all, .3s;
+}
+
+.pagination-next svg path {
+  transition: all, .3s;
+}
+
+.pagination-list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.pagination-list__item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  transition: all, .3s;
+}
+
+.pagination-list__item.active {
+  color: #fff;
+  background-color: #53C5E2;
+}
+
+.pagination-list__item a,
+.pagination-list__item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes moveLight {
+  0% {
+    transform: translateX(-4em) skewX(-45deg);
+  }
+  100% {
+    transform: translateX(300em) skewX(-45deg);
+  }
+}
+
+@media (max-width: 992px) {
+  h2 {
+    font-size: 32px;
+    line-height: 110%;
+  }
+  .subtitle {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .dir-list {
+    margin-top: 130px;
+  }
+}

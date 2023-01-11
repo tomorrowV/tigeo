@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+
+@include('partials/head.html')
+
+<body>
+  @include('partials/mobile-menu.html')
+
+  @include('partials/header.html')
+  <div class="wrapper">
+    <main class="main">
+      @include('partials/UI/fixed-socials.html')
+      <section class="examine-sec margin-for-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="breadcrumbs">
+                <ul>
+                  <li class="active relative drop-container">
+                    <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                    <div class="drop">
+                      <ul class="drop-menu">
+                        <li><a href="#">Поверка оборудования</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Подбор оборудования</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="active relative drop-container">
+                    <span>Каталог <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                    <div class="drop">
+                      <ul class="drop-menu">
+                        <li><a href="#">Электронные тахеометры</a></li>
+                        <li><a href="#">Геодезическое оборудование</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><span>Поверка оборудования</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="title">
+                <h2>Метрологическая поверка и калибровка</h2>
+              </div>
+              <div class="examine-title">
+                <p><b>Получите сертификат</b> о калибровке установленной формы с указанием действительных значений
+                  метрологических характеристик <b>за 1 день!</b></p>
+              </div>
+              <div class="examine-social">
+                <a href="#!" class="btn-main order-call" data-bs-toggle="modal" data-bs-target="#modal-examine">Получить
+                  консультацию</a>
+                <p>Задать вопрос в мессенджеры</p>
+                <ul class="social">
+                  <li class="social-item tg">
+                    <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                  </li>
+                  <li class="social-item w">
+                    <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="examine-title-text for-pc">
+                <p>Поверка средств измерений — совокупность операций, выполняемых в целях подтверждения соответствия
+                  средств измерений метрологическим характеристикам.</p>
+                <p>Наша компания оказывает услуги по метрологической поверки средств измерений. Подтверждением
+                  результатов поверки является электронная запись сведений о поверке Федерального информационного фонда
+                  по обеспечению единства измерений (ФГИС «АРШИН»). Поверка на бумажном носителе с 2021 года не
+                  обязательна. Выдача свидетельства о поверке на бумажном носителе будет производиться за дополнительную
+                  плату.</p>
+                <p>После выполнения работ по калибровке СИ выдается сертификат о калибровке установленной формы с
+                  указанием действительных значений метрологических характеристик. Данные сертификата калибровки не
+                  вносятся в реестр ФГИС «АРШИН».</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="about-video examine-video" data-video-url="./video.mp4">
+                <video preload="auto" no-controls loop autoplay playsinline muted>
+                  <source src="./video.mp4" type="video/mp4">
+                </video>
+              </div>
+
+              <div class="examine-title-text for-mob">
+                <p>Поверка средств измерений — совокупность операций, выполняемых в целях подтверждения соответствия
+                  средств измерений метрологическим характеристикам.</p>
+                <p>Наша компания оказывает услуги по метрологической поверки средств измерений. Подтверждением
+                  результатов поверки является электронная запись сведений о поверке Федерального информационного фонда
+                  по обеспечению единства измерений (ФГИС «АРШИН»). Поверка на бумажном носителе с 2021 года не
+                  обязательна. Выдача свидетельства о поверке на бумажном носителе будет производиться за дополнительную
+                  плату.</p>
+                <p>После выполнения работ по калибровке СИ выдается сертификат о калибровке установленной формы с
+                  указанием действительных значений метрологических характеристик. Данные сертификата калибровки не
+                  вносятся в реестр ФГИС «АРШИН».</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="order-examine">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 title">
+              <h2>Заказать поверку</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-6 oe-col pr-10">
+              <a href="#!" class="order-examine-block">
+                <div class="order-examine-in">
+                  <div class="order-examine-img">
+                    <img src="images/order-examine-img1.jpg" alt="">
+                  </div>
+                  <div class="order-examine-name">
+                    <span>Тахеометры</span>
+                  </div>
+                </div>
+                <div class="order-examine-price">
+                  <h4>5 000 ₽</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 oe-col pl-10">
+              <a href="#!" class="order-examine-block">
+                <div class="order-examine-in">
+                  <div class="order-examine-img">
+                    <img src="images/order-examine-img2.jpg" alt="">
+                  </div>
+                  <div class="order-examine-name">
+                    <span>GNSS приёмник геодезический</span>
+                  </div>
+                </div>
+                <div class="order-examine-price">
+                  <h4>5 000 ₽</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 oe-col pr-10">
+              <a href="#!" class="order-examine-block">
+                <div class="order-examine-in">
+                  <div class="order-examine-img">
+                    <img src="images/order-examine-img3.jpg" alt="">
+                  </div>
+                  <div class="order-examine-name">
+                    <span>Оптический нивелира или теодолит</span>
+                  </div>
+                </div>
+                <div class="order-examine-price">
+                  <h4>1 500 ₽</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 oe-col pl-10">
+              <a href="#!" class="order-examine-block">
+                <div class="order-examine-in">
+                  <div class="order-examine-img">
+                    <img src="images/order-examine-img4.jpg" alt="">
+                  </div>
+                  <div class="order-examine-name">
+                    <span>GNSS приёмник геодезический</span>
+                  </div>
+                </div>
+                <div class="order-examine-price">
+                  <h4>5 000 ₽</h4>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-6 oe-col pr-10">
+              <a href="#!" class="order-examine-block">
+                <div class="order-examine-in">
+                  <div class="order-examine-img">
+                    <img src="images/order-examine-img2.jpg" alt="">
+                  </div>
+                  <div class="order-examine-name">
+                    <span>Тахеометры</span>
+                  </div>
+                </div>
+                <div class="order-examine-price">
+                  <h4>5 000 ₽</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 oe-col pl-10">
+              <a href="#!" class="order-examine-block">
+                <div class="order-examine-in">
+                  <div class="order-examine-img">
+                    <img src="images/order-examine-img3.jpg" alt="">
+                  </div>
+                  <div class="order-examine-name">
+                    <span>GNSS приёмник геодезический</span>
+                  </div>
+                </div>
+                <div class="order-examine-price">
+                  <h4>5 000 ₽</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 oe-col pr-10">
+              <a href="#!" class="order-examine-block">
+                <div class="order-examine-in">
+                  <div class="order-examine-img">
+                    <img src="images/order-examine-img1.jpg" alt="">
+                  </div>
+                  <div class="order-examine-name">
+                    <span>Оптический нивелира или теодолит</span>
+                  </div>
+                </div>
+                <div class="order-examine-price">
+                  <h4>1 500 ₽</h4>
+                </div>
+              </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-6 oe-col pl-10">
+              <a href="#!" class="order-examine-block">
+                <div class="order-examine-in">
+                  <div class="order-examine-img">
+                    <img src="images/order-examine-img2.jpg" alt="">
+                  </div>
+                  <div class="order-examine-name">
+                    <span>GNSS приёмник геодезический</span>
+                  </div>
+                </div>
+                <div class="order-examine-price">
+                  <h4>5 000 ₽</h4>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="examine-form">
+        <div class="container">
+          <div class="examine-form-block">
+            <img src="images/examine-form-img.png" alt="" class="examine-img">
+            <div class="row">
+              <div class="col-lg-12 title">
+                <h2>Заполните данные и мы свяжемся с вами в рабочее время</h2>
+              </div>
+            </div>
+            <form action="#!" id="examine-form-id">
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="row">
+                    <div class="col-lg-6 form-group">
+                      <input type="text" name="inn" id="inn" placeholder="ИНН">
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="tel" name="phone" id="phone" placeholder="Телефон*" required>
+                    </div>
+
+                    <div class="col-lg-6 form-group">
+                      <input type="text" name="name" id="name" placeholder="Имя *" required>
+                    </div>
+                    <div class="col-lg-6 form-group">
+                      <input type="text" name="model" id="model" placeholder="Модель прибора и серийный номер">
+                    </div>
+                    <div class="col-lg-6 examine-btn">
+                      <button class="btn-main" type="submit" data-bs-toggle="modal"
+                        data-bs-target="#thanks">Заказать</button>
+                    </div>
+                    <div class="check">
+                      <label class="control control--checkbox">
+                        <input type="checkbox" checked />
+                        <div class="control__indicator"></div>
+                        <span>Даю свое согласие на <a href="#!">обработку персональных данных</a></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="examine-service">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 title">
+              <h2>Сервис и техобслуживание оборудования</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-6 pr-10 ex-ser-one">
+              <div class="examine-service-img">
+                <img src="images/service-1.jpg" alt="">
+              </div>
+              <div class="examine-service-name">
+                <p>Сервисный центр</p>
+                <a href="#!" class="service-link">Подробнее <img src="images/icons/arrow-blue.svg" alt=""></a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-6 pr-10 ex-ser-two">
+              <div class="examine-service-img">
+                <img src="images/service-2.jpg" alt="">
+              </div>
+              <div class="examine-service-name">
+                <p>Техподдержка и обучение</p>
+                <a href="#!" class="service-link">Подробнее <img src="images/icons/arrow-blue.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="examine-questions ex-q">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 title">
+              <h2>Ответы на частые вопросы о поверке оборудования</h2>
+            </div>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="row">
+              <div class="col-lg-6 pr-10">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                        Ответ</span>
+                      <span class="icon">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Тахеометры используются при проведении геодезических изысканий и во время строительных работ
+                        для определения угловых расстояний между точками и измерения линейных расстояний от реперной
+                        точки до вешки. Современные электронные устройства позволяют выполнять измерения на удалении до
+                        нескольких километров с миллиметровой погрешностью. Однако использовать их не всегда возможно,
+                        так как купить товар этого типа могут позволить себе далеко не все геодезические компании.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                        Ответ</span>
+                      <span class="icon">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Тахеометры используются при проведении геодезических изысканий и во время строительных работ для
+                      определения угловых расстояний между точками и измерения линейных расстояний от реперной точки до
+                      вешки. Современные электронные устройства позволяют выполнять измерения на удалении до нескольких
+                      километров с миллиметровой погрешностью. Однако использовать их не всегда возможно, так как купить
+                      товар этого типа могут позволить себе далеко не все геодезические компании.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                        Ответ</span>
+                      <span class="icon">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Тахеометры используются при проведении геодезических изысканий и во время строительных работ
+                        для определения угловых расстояний между точками и измерения линейных расстояний от реперной
+                        точки до вешки. Современные электронные устройства позволяют выполнять измерения на удалении до
+                        нескольких километров с миллиметровой погрешностью. Однако использовать их не всегда возможно,
+                        так как купить товар этого типа могут позволить себе далеко не все геодезические компании.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pl-10">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                        Ответ</span>
+                      <span class="icon">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Тахеометры используются при проведении геодезических изысканий и во время строительных работ для
+                      определения угловых расстояний между точками и измерения линейных расстояний от реперной точки до
+                      вешки. Современные электронные устройства позволяют выполнять измерения на удалении до нескольких
+                      километров с миллиметровой погрешностью. Однако использовать их не всегда возможно, так как купить
+                      товар этого типа могут позволить себе далеко не все геодезические компании.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                      <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                        Ответ</span>
+                      <span class="icon">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Тахеометры используются при проведении геодезических изысканий и во время строительных работ для
+                      определения угловых расстояний между точками и измерения линейных расстояний от реперной точки до
+                      вешки. Современные электронные устройства позволяют выполнять измерения на удалении до нескольких
+                      километров с миллиметровой погрешностью. Однако использовать их не всегда возможно, так как купить
+                      товар этого типа могут позволить себе далеко не все геодезические компании.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                      <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                        Ответ</span>
+                      <span class="icon">
+                        <span class="one"></span>
+                        <span class="two"></span>
+                      </span>
+                    </button>
+                  </h2>
+                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <p>Тахеометры используются при проведении геодезических изысканий и во время строительных работ
+                        для определения угловых расстояний между точками и измерения линейных расстояний от реперной
+                        точки до вешки. Современные электронные устройства позволяют выполнять измерения на удалении до
+                        нескольких километров с миллиметровой погрешностью. Однако использовать их не всегда возможно,
+                        так как купить товар этого типа могут позволить себе далеко не все геодезические компании.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="examine-end">
+            <div class="end-in">
+              <p>Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео</p>
+              <p>Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео</p>
+            </div>
+            <a href="#!" class="btn-main more-text-btn">Подробнее</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @include('partials/footer.html')
+
+    @include('partials/arrow-top.html')
+  </div>
+  @include('partials/video-modal.html')
+  @include('partials/modals.html')
+  @include('partials/thanks-modals.html')
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

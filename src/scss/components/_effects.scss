@@ -1,0 +1,255 @@
+@media (min-width: 993px) {
+  .header-top__list a:hover::before {
+    width: 100%;
+  }
+
+  .header-mail:hover::after {
+    width: 100%;
+  }
+
+  .header-search:hover {
+    border-color: #53C5E2;
+    box-shadow: 4px 4px 8px 0px rgba(83, 197, 226, 0.2);
+  }
+
+  .cta-input:hover {
+    border-color: #53C5E2;
+    box-shadow: 4px 4px 8px 0px rgba(83, 197, 226, 0.2);
+  }
+
+  .header-search button:hover img {
+    transform: scale(1.15);
+  }
+
+  .tg:hover a {
+    background: #028DD4;
+  }
+
+  .w:hover a {
+    background: #009711;
+  }
+
+  .contacts-i a:hover {
+    color: #53C5E2;
+  }
+
+  .btn-main:hover {
+    box-shadow: 6px 6px 8px 0px rgba(83, 197, 226, 0.4);
+    background: #12ABD2;
+  }
+
+  .header-list a:hover::before {
+    width: 100%;
+  }
+
+  .header-basket a:hover img {
+    transform: scale(1.15);
+  }
+
+  .hero-arrow:hover,
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    background-color: darken(#e7e1e0, 10%) !important;
+  }
+
+  .hero-arrow:hover path {
+    fill: #fff;
+  }
+
+  .cards-arrow:hover path,
+  .card-arrow:hover path {
+    fill: #fff;
+  }
+
+  .hero .slick-dots button:hover {
+    background-color: #BCA59F;
+  }
+
+  .advantages-list__item:hover::before {
+    background: #BCA59F;
+    transition: all, .3s;
+  }
+
+  .advantages-list__item:hover {
+    box-shadow: 4px 4px 8px 0px rgba(188, 165, 159, 0.4);
+  }
+
+  .advantages-list__item:hover img {
+    transform: scale(1.15);
+  }
+
+  .hero-list li:hover img {
+    transform: scale(1.15);
+  }
+
+  .hero-list li:hover::before {
+    background: #BCA59F;
+  }
+
+  .card:hover .card-slider::before {
+    opacity: 1;
+  }
+
+  .card:hover .card-arrow {
+    opacity: 1;
+  }
+
+  .card-basket:hover {
+    background: #B37600;
+  }
+
+  .card-comparison:hover {
+    background: #B5B5B5;
+  }
+
+  .card__description:hover {
+    color: #005F77;
+  }
+
+  .service-list__item:hover .service-list__img img {
+    transform: scale(1.1);
+  }
+
+  .service-link:hover img {
+    transform: translateX(10px);
+  }
+
+  .extra-list__item:hover .extra-list__img img {
+    transform: scale(1.1);
+  }
+
+  .extra-link:hover img {
+    transform: translateX(10px);
+  }
+
+  .about-list__item:hover {
+    box-shadow: 4px 4px 8px 0px rgba(188, 165, 159, 0.4);
+  }
+
+  .about-list__item:hover::before {
+    background: #BCA59F;
+    transition: all, .3s;
+  }
+
+  .brends-list__item:hover img {
+    transform: scale(1.1);
+  }
+
+  .brends-arrow:hover,
+  .brends-arrow:hover {
+    background-color: #BCA59F;
+  }
+
+  .brends-arrow:hover path,
+  .brends-arrow:hover path {
+    fill: #fff;
+  }
+
+  .about-video:hover::before {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  .reviews-item:hover .reviews-i::before {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  .reviews-item:hover .reviews-v::before {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  .reviews-arrow:hover,
+  .reviews-arrow:hover {
+    background-color: #BCA59F;
+  }
+
+  .reviews-arrow:hover path,
+  .reviews-arrow:hover path {
+    fill: #fff;
+  }
+
+  .articles-arrow:hover,
+  .articles-arrow:hover {
+    background-color: #BCA59F;
+  }
+
+  .articles-arrow:hover path,
+  .articles-arrow:hover path {
+    fill: #fff;
+  }
+
+  .accessories-arrow:hover,
+  .accessories-arrow:hover {
+    background-color: #BCA59F;
+  }
+
+  .accessories-arrow:hover path,
+  .accessories-arrow:hover path {
+    fill: #fff;
+  }
+
+  .articles-item:hover .articles-img img {
+    transform: scale(1.1);
+  }
+
+  .articles-link:hover img {
+    transform: translateX(10px);
+  }
+
+  .footer-btn:hover {
+    color: #005F77;
+  }
+
+  .footer-nav__list li:hover {
+    color: #53C5E2;
+  }
+
+  .footer-list a:hover {
+    color: #53C5E2;
+  }
+
+  .footer-conf:hover {
+    color: #53C5E2;
+  }
+
+  .filters-link:hover {
+    color: #53C5E2;
+  }
+
+  .catalog-sort__item:hover {
+    background-color: #53C5E2;
+    border-color: #53C5E2;
+    color: #fff;
+  }
+
+  .pagination-list__item:hover {
+    color: #fff;
+    background-color: #53C5E2;
+  }
+
+  .pagination-prev:hover,
+  .pagination-next:hover {
+    color: #fff;
+    background-color: #53C5E2;
+  }
+
+  .pagination-prev:hover svg path,
+  .pagination-next:hover svg path {
+    fill: #fff;
+  }
+
+
+
+  .header-list li:hover .drop-list {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .drop-list__item:hover .drop-list2 {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .drop-list2__item:hover {
+    color: #53C5E2;
+  }
+}

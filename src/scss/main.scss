@@ -1,0 +1,40 @@
+@import './components/old-styles';
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+@import './components/UI/comparison';
+@import './components/UI/modal-video';
+@import './components/UI/modals';
+@import './components/UI/select';
+
+// подключения компонентов страницы
+@import './components/card';
+@import "./components/about";
+@import "./components/advantages";
+@import './components/header';
+@import './components/effects';
+@import './components/hero';
+@import './components/cards';
+@import './components/service';
+@import './components/extra';
+@import './components/brends';
+@import './components/cta';
+@import './components/reviews';
+@import './components/articles';
+@import './components/footer';
+@import './components/catalog/catalog';
+
+.swiper-wrapper {
+    align-items: stretch;
+}
+
+.swiper-slide {
+    height: auto;
+
+    &>div {
+        height: 100%;
+    }
+}

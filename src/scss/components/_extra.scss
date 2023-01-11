@@ -1,0 +1,147 @@
+.extra {
+  position: relative;
+  background: linear-gradient(100.12deg, #BCA59F 0.79%, #CFBEBA 99.2%);
+  margin-top: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.extra-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 1110px;
+}
+
+.extra-bg2 {
+  display: none;
+}
+
+.extra-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.extra__title {
+  color: #fff;
+}
+
+.extra-list {
+  position: relative;
+  margin-top: 40px;
+  max-width: 900px;
+  display: flex;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.extra-list__block {
+  margin-top: 20px;
+}
+
+.extra-list__item {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  flex-grow: 1;
+}
+
+.extra-list__img {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 260px;
+}
+
+.extra-list__img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all, .3s linear;
+}
+
+.extra h4 {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.extra h4 br {
+  display: none;
+}
+
+.extra-link {
+  margin-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #53C5E2;
+  display: flex;
+  align-items: center;
+  transition: all, .3s;
+}
+
+.extra-link img {
+  transition: all, .3s;
+}
+
+@media (max-width: 1300px) {
+  .extra-img {
+    max-width: 33%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .extra-list {
+    max-width: 776px;
+  }
+}
+
+@media (max-width: 992px) {
+  .extra {
+    padding-bottom: 0;
+  }
+  .extra-img {
+    margin-top: 27px;
+    position: relative;
+    margin-left: auto;
+  }
+  .extra-list {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .extra-img {
+    min-width: 312px;
+  }
+  .extra-list__img {
+    height: 192px;
+  }
+  .extra-list__item {
+    padding: 10px;
+  }
+  .extra h4 {
+    font-size: 16px;
+    line-height: 110%;
+  }
+}
+
+@media (max-width: 576px) {
+  .extra {
+    padding-top: 60px;
+    margin-top: 60px;
+  }
+  .extra-bg {
+    display: none;
+  }
+  .extra-bg2 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    max-width: 380px;
+  }
+}

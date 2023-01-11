@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body>
+  @include('partials/mobile-menu.html')
+
+  @include('partials/header.html')
+
+  <div class="wrapper">
+    <main class="main">
+
+      @include('partials/UI/fixed-socials.html')
+
+      <section class="works-service margin-for-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="breadcrumbs">
+                <ul>
+                  <li class="active relative drop-container">
+                    <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                    <div class="drop">
+                      <ul class="drop-menu">
+                        <li><a href="#">Поверка оборудования</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Подбор оборудования</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="active relative drop-container">
+                    <span>Каталог <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                    <div class="drop">
+                      <ul class="drop-menu">
+                        <li><a href="#">Электронные тахеометры</a></li>
+                        <li><a href="#">Геодезическое оборудование</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><span>Геодезические услуги</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="service-center-left service-center-block">
+                <div class="title">
+                  <h2>Геодезические услуги</h2>
+                  <p>Реализуем любые геодезические задачи “под ключ” по всей территории РФ</p>
+                </div>
+                <div class="about-video works-video for-mob" data-video-url="./video.mp4">
+                  <video preload="auto" no-controls loop autoplay playsinline muted>
+                    <source src="./video.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div class="service-center-list for-after">
+                  <div class="list-in">
+                    <ul>
+                      <li>17 лет опыта в решении геодезических задач и проведении точных рассчетов</li>
+                      <li>Собственный парк современного оборудования</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="service-center-social">
+                  <a href="#!" class="btn-main order-call" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Получить
+                    консультацию</a>
+                  <p>Задать вопрос в мессенджеры</p>
+                  <ul class="social">
+                    <li class="social-item tg">
+                      <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                    </li>
+                    <li class="social-item w">
+                      <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="about-video works-video for-pc" data-video-url="./video.mp4">
+                <video preload="auto" no-controls loop autoplay playsinline muted>
+                  <source src="./video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works-our">
+        <div class="container">
+          <div class="row works-our-rov">
+            <div class="col-lg-12 title">
+              <h2>Наши ключевые инженерные геодезические изыскания</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-6">
+              <a href="#!" class="our-block">
+                <span class="our-img">
+                  <img src="images/works-img1.jpg" alt="">
+                </span>
+                <span class="our-text">Топографическая съемка территорий</span>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <a href="#!" class="our-block">
+                <span class="our-img">
+                  <img src="images/works-img2.jpg" alt="">
+                </span>
+                <span class="our-text">Геодезическое сопровождение строительства</span>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <a href="#!" class="our-block">
+                <span class="our-img">
+                  <img src="images/works-img3.jpg" alt="">
+                </span>
+                <span class="our-text">Строительный инжиниринг</span>
+              </a>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-6">
+              <a href="#!" class="our-block">
+                <span class="our-img">
+                  <img src="images/works-img4.jpg" alt="">
+                </span>
+                <span class="our-text">Геодезический строительный контроль</span>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <a href="#!" class="our-block">
+                <span class="our-img">
+                  <img src="images/works-img5.jpg" alt="">
+                </span>
+                <span class="our-text">Обмерные работы сооружений</span>
+              </a>
+            </div>
+            <div class="col-lg-4 col-md-4 col-6">
+              <a href="#!" class="our-block">
+                <span class="our-img">
+                  <img src="images/works-img6.jpg" alt="">
+                </span>
+                <span class="our-text">Вынос границ земельных участков</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="works-keys">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 title">
+              <h2>Кейсы</h2>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="keys-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="keys-block">
+                      <div class="d-flex keys-block-in">
+                        <div class="col-lg-5 keys-left-col">
+                          <div class="keys-img keys-height">
+                            <img src="images/keys-img.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="col-lg-7 keys-right-col">
+                          <div class="keys-right keys-height">
+                            <div class="keys-text">
+                              <div class="title">
+                                <h3>Сканирование и моделирование кинотеатра «Родина» в Москвеи РФ</h3>
+                              </div>
+                              <p><span>Выполненные работы:</span> Внутренние обмеры, Выполненные проекты, Моделирование,
+                                Фасады</p>
+                              <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка
+                                производилось с помощью лазерных сканеров Faro s70, а также с помощью квадрокоптера. В
+                                результате получены облака точек всех объектов и точные текстурированные модели объектов
+                                в среде ArchiCad.</p>
+                            </div>
+
+                            <div class="service-center-social keys-social">
+                              <a href="#!" class="btn-main order-call" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Получить консультацию</a>
+                              <p>Задать вопрос в мессенджеры</p>
+                              <ul class="social">
+                                <li class="social-item tg">
+                                  <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                </li>
+                                <li class="social-item w">
+                                  <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="keys-block">
+                      <div class="d-flex keys-block-in">
+                        <div class="col-lg-5 keys-left-col">
+                          <div class="keys-img keys-height">
+                            <img src="images/keys-img.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="col-lg-7 keys-right-col">
+                          <div class="keys-right keys-height">
+                            <div class="keys-text">
+                              <div class="title">
+                                <h3>Сканирование и моделирование кинотеатра «Родина» в Москвеи РФ</h3>
+                              </div>
+                              <p><span>Выполненные работы:</span> Внутренние обмеры, Выполненные проекты, Моделирование,
+                                Фасады</p>
+                              <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка
+                                производилось с помощью лазерных сканеров Faro s70, а также с помощью квадрокоптера. В
+                                результате получены облака точек всех объектов и точные текстурированные модели объектов
+                                в среде ArchiCad.</p>
+                            </div>
+
+                            <div class="service-center-social keys-social">
+                              <a href="#!" class="btn-main order-call" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Получить консультацию</a>
+                              <p>Задать вопрос в мессенджеры</p>
+                              <ul class="social">
+                                <li class="social-item tg">
+                                  <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                </li>
+                                <li class="social-item w">
+                                  <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="keys-block">
+                      <div class="d-flex keys-block-in">
+                        <div class="col-lg-5 keys-left-col">
+                          <div class="keys-img keys-height">
+                            <img src="images/keys-img.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="col-lg-7 keys-right-col">
+                          <div class="keys-right keys-height">
+                            <div class="keys-text">
+                              <div class="title">
+                                <h3>Сканирование и моделирование кинотеатра «Родина» в Москвеи РФ</h3>
+                              </div>
+                              <p><span>Выполненные работы:</span> Внутренние обмеры, Выполненные проекты, Моделирование,
+                                Фасады</p>
+                              <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка
+                                производилось с помощью лазерных сканеров Faro s70, а также с помощью квадрокоптера. В
+                                результате получены облака точек всех объектов и точные текстурированные модели объектов
+                                в среде ArchiCad.</p>
+                            </div>
+
+                            <div class="service-center-social keys-social">
+                              <a href="#!" class="btn-main order-call" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Получить консультацию</a>
+                              <p>Задать вопрос в мессенджеры</p>
+                              <ul class="social">
+                                <li class="social-item tg">
+                                  <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                </li>
+                                <li class="social-item w">
+                                  <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="keys-block">
+                      <div class="d-flex keys-block-in">
+                        <div class="col-lg-5 keys-left-col">
+                          <div class="keys-img keys-height">
+                            <img src="images/keys-img.jpg" alt="">
+                          </div>
+                        </div>
+                        <div class="col-lg-7 keys-right-col">
+                          <div class="keys-right keys-height">
+                            <div class="keys-text">
+                              <div class="title">
+                                <h3>Сканирование и моделирование кинотеатра «Родина» в Москвеи РФ</h3>
+                              </div>
+                              <p><span>Выполненные работы:</span> Внутренние обмеры, Выполненные проекты, Моделирование,
+                                Фасады</p>
+                              <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка
+                                производилось с помощью лазерных сканеров Faro s70, а также с помощью квадрокоптера. В
+                                результате получены облака точек всех объектов и точные текстурированные модели объектов
+                                в среде ArchiCad.</p>
+                            </div>
+
+                            <div class="service-center-social keys-social">
+                              <a href="#!" class="btn-main order-call" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Получить консультацию</a>
+                              <p>Задать вопрос в мессенджеры</p>
+                              <ul class="social">
+                                <li class="social-item tg">
+                                  <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                </li>
+                                <li class="social-item w">
+                                  <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="keys-slide-btns">
+                  <div class="keys-button-prev">
+                    <img class="pagination-img" src="images/icons/arrow-drop.svg" alt="img">
+                  </div>
+                  <div class="keys-pagination"></div>
+                  <div class="keys-button-next">
+                    <img class="pagination-img" src="images/icons/arrow-drop.svg" alt="img">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta">
+        <div class="container">
+          <div class="cta-wrapper">
+            <img src="images/cta-1.png" alt="img" class="cta-img">
+            <div class="cta-info">
+              <h4><span>Оставьте заявку, мы детально <br> изучим особенности Вашего <br> проекта</span> и подберем <br>
+                оптимальное решение <br> исходя из задач и&nbsp;бюджета</h4>
+              <p class="cta-info__text">Наш менеджер свяжется с&nbsp;вами в течение 15 минут</p>
+            </div>
+            <form action="#" class="cta-form">
+              <input required type="text" placeholder="Ваше имя" class="cta-input">
+              <input required minlength="18" pattern=".{18,18}" type="tel" name="phone" placeholder="Ваш телефон"
+                class="cta-input">
+              <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal" data-bs-target="#thanks">Получить
+                консультацию</button>
+              <label class="cta-label">
+                <input type="checkbox" required checked class="cta-checkbox">
+                <p>Оставляя заявку вы соглашаетесь <br> с <a href="#!">обработкой персональных данных</a></p>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @include('partials/footer.html')
+
+    @include('partials/arrow-top.html')
+
+
+  </div>
+  @include('partials/video-modal.html')
+  @include('partials/modals.html')
+  @include('partials/thanks-modals.html')
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+.brends {
+  padding-top: 100px;
+  position: relative;
+
+  h2 {
+    margin-bottom: 40px;
+  }
+}
+
+.brends-list__item {
+  padding: 25px;
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 4px;
+  min-height: 150px;
+}
+
+.brends-list__item img {
+  transition: all, .3s;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 96px;
+}
+
+.brends-list__item::before {
+  position: absolute;
+  content: '';
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  background: linear-gradient(-52deg, #BCA59F 0%, #FFFFFF 31.36%, #FFFFFF 64.49%, #BCA59F 100%);
+  border-radius: 4px;
+  transition: all, .3s;
+  z-index: -1;
+}
+
+
+.brends-a {
+  transition: all, .3s;
+}
+
+.brends-a path {
+  transition: all, .3s;
+}
+
+@media (max-width: 576px) {
+  .brends {
+    padding-top: 60px;
+
+    h2 {
+      margin-bottom: 30px;
+    }
+  }
+  .brends-list__item {
+    min-height: 120px;
+  }
+  .brends-list__item img {
+    max-width: 68px;
+  }
+
+}
+
+.brands-slider-wrapper {
+  position: relative;
+
+  .swiper-pagination {
+    width: 100%;
+    top: 50%;
+    @include small-tablet {
+      margin-top: 60px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      justify-content: center;
+      position: static;
+      transform: none;
+      .swiper-button-prev, .swiper-button-next {
+        position: static;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body>
+    @include('partials/mobile-menu.html')
+
+    @include('partials/header.html')
+
+
+    <div class="wrapper">
+        <main class="main">
+            @include('partials/UI/fixed-socials.html')
+            <!--        hero-->
+            <section class="hero">
+                <div class="hero__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="hero__slide">
+                                <div class="bg">
+                                    <img class="hero-slide__img" src="images/hero-bg.jpg" alt="img">
+                                </div>
+                                <div class="hero__container container">
+                                    <div class="hero-info">
+                                        <h1 class="hero__title">Продажа и аренда <br> геодезического <br>
+                                            оборудования
+                                        </h1>
+                                        <p class="hero__text">Самый большой <br> шоурум в Москве</p>
+                                        <button data-modal="exampleModal" class="btn-main hero__btn">Получить
+                                            консультацию
+                                        </button>
+                                    </div>
+                                    <ul class="hero-list">
+                                        <li>
+                                            <img src="images/icons/hero-1.svg" alt="icon">
+                                            <p>Новое оборудование и б/у</p>
+                                        </li>
+                                        <li>
+                                            <img src="images/icons/hero-2.svg" alt="icon">
+                                            <p>Сервис и техподдержка</p>
+                                        </li>
+                                        <li>
+                                            <img src="images/icons/hero-3.svg" alt="icon">
+                                            <p>Выкуп и Trade-in</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__slide">
+                                <div class="bg">
+                                    <img class="hero-slide__img" src="images/hero-bg2.jpg" alt="img">
+                                </div>
+                                <div class="hero__container container">
+                                    <div class="hero-info">
+                                        <h1 class="hero__title">Продажа и аренда <br> геодезического <br> оборудования
+                                        </h1>
+                                        <p class="hero__text">Самый большой <br> шоурум</p>
+                                        <button data-modal="exampleModal" class="btn-main hero__btn">Получить
+                                            консультацию
+                                        </button>
+                                    </div>
+                                    <ul class="hero-list">
+                                        <li>
+                                            <img src="images/icons/hero-1.svg" alt="icon">
+                                            <p>Новое оборудование </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/icons/hero-2.svg" alt="icon">
+                                            <p>Сервис и техподдержка</p>
+                                        </li>
+                                        <li>
+                                            <img src="images/icons/hero-3.svg" alt="icon">
+                                            <p>Выкуп</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="hero__slide">
+                                <div class="bg">
+                                    <img class="hero-slide__img" src="images/hero-bg3.jpg" alt="img">
+                                </div>
+                                <div class="hero__container container">
+                                    <div class="hero-info">
+                                        <h1 class="hero__title">Новинки недели</h1>
+                                        <p class="hero__text">Новая линейка тахеометров Leica</p>
+                                        <button data-modal="exampleModal" class="btn-main hero__btn mt-6">Получить
+                                            консультацию
+                                        </button>
+                                    </div>
+                                    <ul class="hero-list">
+                                        <li>
+                                            <img src="images/icons/hero-1.svg" alt="icon">
+                                            <p>Новое оборудование </p>
+                                        </li>
+                                        <li>
+                                            <img src="images/icons/hero-2.svg" alt="icon">
+                                            <p>Сервис и техподдержка</p>
+                                        </li>
+                                        <li>
+                                            <img src="images/icons/hero-3.svg" alt="icon">
+                                            <p>Выкуп</p>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-arrows">
+                    <div class="hero-arrow hero-arrow--prev swiper-button-prev">
+                        <img class="hero-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                    </div>
+                    <div class="hero-arrow hero-arrow--next swiper-button-next">
+                        <img class="hero-a" src="images/icons/slider-arrow.svg" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </section>
+            <!--        hero-->
+            <!--        advantages-->
+            <section class="advantages">
+                <div class="container">
+                    <ul class="advantages-list">
+                        <li class="advantages-list__item block-hover">
+                            <div class="advantages-list__info">
+                                <h3>Все оборудование <br> на сайте доступно к заказу</h3>
+                                <p>Если вы не нашли нужный прибор <br> привезем его специально для вас</p>
+                            </div>
+                            <img src="images/icons/advantages-1.svg" alt="icon">
+                        </li>
+                        <li class="advantages-list__item block-hover">
+                            <div class="advantages-list__info">
+                                <h3>Официальная <br> гарантия</h3>
+                                <p>Производителя на новые товары. На б/у приборы - 1 год</p>
+                            </div>
+                            <img src="images/icons/advantages-2.svg" alt="icon">
+                        </li>
+                        <li class="advantages-list__item block-hover">
+                            <div class="advantages-list__info">
+                                <h3>Удаленная <br> техподдержка</h3>
+                                <p>Удаленная техподдержка. Обучение при продаже</p>
+                            </div>
+                            <img src="images/icons/advantages-3.svg" alt="icon">
+                        </li>
+                        <li class="advantages-list__item block-hover">
+                            <div class="advantages-list__info">
+                                <h3>Беззалоговая <br> аренда</h3>
+                                <p>Оборудования <br> для постоянных клиентов</p>
+                            </div>
+                            <img src="images/icons/advantages-4.svg" alt="icon">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--        advantages-->
+            <!--        cards-->
+            <section class="cards cards--hits">
+                <div class="container">
+                    <h2 class="cards__title">Хиты продаж</h2>
+                    <p class="subtitle cards__subtitle">Выбор наших покупателей</p>
+                    <div class="cards-list-wrapper">
+                        <div class="cards-list swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-discount.html', {
+                                    label: "hits"
+                                    })
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-discount.html', {
+                                    label: "hits"
+                                    })
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-discount.html', {
+                                    label: "hits"
+                                    })
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-discount.html', {
+                                    label: "hits"
+                                    })
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-discount.html', {
+                                    label: "hits"
+                                    })
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-discount.html', {
+                                    label: "hits"
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards-arrows">
+                            <div class="cards-arrow cards-arrow--prev">
+                                <img class="cards-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                            </div>
+                            <div class="cards-arrow cards-arrow--next">
+                                <img class="cards-a" src="images/icons/slider-arrow.svg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--        cards-->
+            <!--        cards-->
+            <section class="cards cards--rent">
+                <div class="container">
+                    <h2 class="cards__title">Аренда оборудования</h2>
+                    <p class="subtitle cards__subtitle">Популярные приборы</p>
+                    <div class="cards-list-wrapper">
+                        <div class="cards-list swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html')
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html')
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html')
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html')
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html')
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html')
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards-arrows">
+                            <div class="cards-arrow cards-arrow--prev">
+                                <img class="cards-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                            </div>
+                            <div class="cards-arrow cards-arrow--next">
+                                <img class="cards-a" src="images/icons/slider-arrow.svg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--        cards-->
+            <!--        service-->
+            <section class="service">
+                <div class="container">
+                    <h2 class="service__title">Сервис и&nbsp;техподдержка</h2>
+                    <p class="subtitle servie__subtitle">В какой бы точке РФ вы ни находились</p>
+                    <ul class="service-list">
+                        <li class="service-list__item">
+                            <a href="#" class="service-list__img">
+                                <img src="images/service-1.jpg" alt="img">
+                            </a>
+                            <div class="service-list__block">
+                                <h4>Сервисный <br> центр</h4>
+                                <a href="#" class="service-link">
+                                    Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="service-list__item">
+                            <a href="#" class="service-list__img">
+                                <img src="images/service-2.jpg" alt="img">
+                            </a>
+                            <div class="service-list__block">
+                                <h4>Техподдержка и обучение</h4>
+                                <a href="#" class="service-link">
+                                    Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="service-list__item">
+                            <a href="#" class="service-list__img">
+                                <img src="images/service-3.jpg" alt="img">
+                            </a>
+                            <div class="service-list__block">
+                                <h4>Поверка оборудования</h4>
+                                <a href="#" class="service-link">
+                                    Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!--        service-->
+            <!--        cards-->
+            <section class="cards cards--discount">
+                <div class="container">
+                    <h2 class="cards__title">Скидки недели</h2>
+                    <p class="subtitle cards__subtitle">Оборудование по выгодным ценам</p>
+                    <div class="cards-list-wrapper">
+                        <div class="cards-list swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html'})
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html'})
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html'})
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html'})
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html'})
+                                </div>
+                                <div class="swiper-slide">
+                                    @include('partials/UI/card-rent.html'})
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cards-arrows">
+                            <div class="cards-arrow cards-arrow--prev">
+                                <img class="cards-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                            </div>
+                            <div class="cards-arrow cards-arrow--next">
+                                <img class="cards-a" src="images/icons/slider-arrow.svg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--        cards-->
+            <!--        extra-->
+            <section class="extra">
+                <img src="images/extra-bg.png" alt="img" class="extra-bg">
+                <img src="images/extra-bg2.png" alt="img" class="extra-bg2">
+
+                <div class="container">
+                    <div class="extra-wrapper">
+                        <h2 class="extra__title">Дополнительные услуги</h2>
+                        <ul class="extra-list">
+                            <li class="extra-list__item">
+                                <a href="#" class="extra-list__img">
+                                    <img src="images/extra-1.jpg" alt="img">
+                                </a>
+                                <div class="extra-list__block">
+                                    <h4>Выкуп <br> оборудования <br> и Trade-In</h4>
+                                    <a href="#" class="extra-link">
+                                        Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="extra-list__item">
+                                <a href="#" class="extra-list__img">
+                                    <img src="images/extra-2.jpg" alt="img">
+                                </a>
+                                <div class="extra-list__block">
+                                    <h4>Геодезические <br> работы</h4>
+                                    <a href="#" class="extra-link">
+                                        Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="extra-btn">
+                            <button data-modal="exampleModal" class="btn-main">Рассчитать
+                                стоимость</button>
+                        </div>
+                    </div>
+                </div>
+                <img class="extra-img" src="images/extra-1.png" alt="img">
+            </section>
+            <!--        extra-->
+            <!--        about-->
+            <section class="about">
+                <div class="container">
+                    <h2 class="about__title">О компании</h2>
+                    <p class="about-info__text about-info__text--mob">На сегодняшний день, для проведения геодезических
+                        работ мало обладать специализированными навыками и опытом <br> в данной сфере деятельности.
+                        Учитывая
+                        требования современного строительства, проектирования, промышленности и аграрного сектора,
+                        важно.
+                    </p>
+                    <div class="about-wrapper">
+                        <div class="about-video" data-video-url="./video.mp4">
+                            <video preload="auto" no-controls loop autoplay playsinline muted>
+                                <source src="./video.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="about-info">
+                            <p class="about-info__text">На сегодняшний день, для проведения геодезических работ мало
+                                обладать специализированными навыками и опытом <br> в данной сфере деятельности.
+                                Учитывая
+                                требования современного строительства, проектирования, промышленности и аграрного
+                                сектора,
+                                важно.</p>
+                            <ul class="nums about-list">
+                                <li class="about-list__item">
+                                    <h4><span class="num">8</span> лет</h4>
+                                    <p>Успешно работаем <br> на рынке геодезического оборудования</p>
+                                </li>
+                                <li class="about-list__item">
+                                    <h4><span class="num">12 374</span></h4>
+                                    <p>Приборов <br> мы продали за все <br> время нашей работы</p>
+                                </li>
+                                <li class="about-list__item">
+                                    <h4><span class="num">560</span></h4>
+                                    <p>Завершенных геодезических <br> проектов</p>
+                                </li>
+                                <li class="about-list__item">
+                                    <h4><span class="num">23</span></h4>
+                                    <p>Награды <br> мы выиграли <br> в области</p>
+                                </li>
+                            </ul>
+                            <a href="#" class="btn-main about-link">Читать подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--        about-->
+            <!--        brends-->
+            <section class="brends">
+                <img src="images/company-bg.svg" alt="" class="brends-bg">
+                <div class="container">
+                    <h2 class="brends__title">В ассортименте исключительно <br> оригинальное оборудование</h2>
+                    <div class="brands-slider-wrapper">
+                        <div class="brands-slider swiper">
+                            <div class="brends-list swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="brends-list__item block-hover">
+                                        <img src="images/brend-1.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brends-list__item block-hover">
+                                        <img src="images/brend-2.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brends-list__item block-hover">
+                                        <img src="images/brend-1.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brends-list__item block-hover">
+                                        <img src="images/brend-2.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brends-list__item block-hover">
+                                        <img src="images/brend-1.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brends-list__item block-hover">
+                                        <img src="images/brend-2.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brends-list__item block-hover">
+                                        <img src="images/brend-1.svg" alt="img">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brends-list__item block-hover">
+                                        <img src="images/brend-2.svg" alt="img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination">
+                            <div class="swiper-button-prev">
+                                <img class="brends-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img class="brends-a" src="images/icons/slider-arrow.svg" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <!--        brends-->
+            <!--        cta-->
+            <div class="cta">
+                <div class="container">
+                    <div class="cta-wrapper">
+                        <img src="images/cta-1.png" alt="img" class="cta-img">
+                        <div class="cta-info">
+                            <h4><span>Оставьте заявку, мы детально <br> изучим особенности Вашего <br> проекта</span> и
+                                подберем <br> оптимальное решение <br> исходя из задач и&nbsp;бюджета</h4>
+                            <p class="cta-info__text">Наш менеджер свяжется с&nbsp;вами в течение 15 минут</p>
+                        </div>
+                        <form action="#" class="cta-form">
+                            <input required type="text" placeholder="Ваше имя" class="cta-input">
+                            <input required minlength="18" type="tel" name="phone" placeholder="Ваш телефон"
+                                class="cta-input">
+                            <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal"
+                                data-bs-target="#thanks">
+                                Получить консультацию
+                            </button>
+                            <label class="cta-label custom-checkbox">
+                                <span>Оставляя заявку вы соглашаетесь <a href="policy.html">с обработкой персональных
+                                        данных</a></span>
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--        cta-->
+            <!--        reviews-->
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="reviews__title">Отзывы наших клиентов</h2>
+                    <div class="reviews-slider swiper">
+                        <div class="reviews-wrap swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div data-video-url="./video-2.mp4" class="reviews-v">
+                                        <video preload="auto" no-controls loop autoplay playsinline muted>
+                                            <source src="./video-2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div class="reviews-i">
+                                        <a href="images/doc-1.png" class="rev-icon"><img src="images/zoom-icon.svg"
+                                                alt=""></a>
+                                        <a href="images/doc-1.png">
+                                            <img src="images/doc-1.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div data-video-url="./video-2.mp4" class="reviews-v">
+                                        <video preload="auto" no-controls loop autoplay playsinline muted>
+                                            <source src="./video-2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div class="reviews-i">
+                                        <a href="images/doc-1.png" class="rev-icon"><img src="images/zoom-icon.svg"
+                                                alt=""></a>
+                                        <a href="images/doc-1.png">
+                                            <img src="images/doc-1.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div data-video-url="./video-2.mp4" class="reviews-v">
+                                        <video preload="auto" no-controls loop autoplay playsinline muted>
+                                            <source src="./video-2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div class="reviews-i">
+                                        <a href="images/doc-1.png" class="rev-icon"><img src="images/zoom-icon.svg"
+                                                alt=""></a>
+                                        <a href="images/doc-1.png">
+                                            <img src="images/doc-1.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-arrows">
+                        <div class="swiper-button-prev reviews-arrow--prev">
+                            <img class="reviews-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                        </div>
+                        <div class="swiper-button-next reviews-arrow--next">
+                            <img class="reviews-a" src="images/icons/slider-arrow.svg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--        reviews-->
+            <!--        articles-->
+            <section class="articles">
+                <div class="container">
+                    <h2 class="articles__title">Почитайте полезные статьи <br> и актуальные новости</h2>
+                    <div class="articles-slider swiper">
+                        <div class="articles-wrapper swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="articles-item block-hover">
+                                    <a href="#" class="articles-img">
+                                        <img src="images/arricle-1.jpg" alt="img">
+                                    </a>
+                                    <h3>Тахеометр Trimble S5 5″ Robotic, DR Plus</h3>
+                                    <p>Приборы созданы для того, чтобы убрать недочеты <br> в работе геодезистов,
+                                        которые
+                                        возникают
+                                        из-за влияния...</p>
+                                    <a href="#" class="articles-link">
+                                        Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="articles-item block-hover">
+                                    <a href="#" class="articles-img">
+                                        <img src="images/arricle-2.jpg" alt="img">
+                                    </a>
+                                    <h3>Тахеометр Trimble S5 5″ Robotic, DR Plus</h3>
+                                    <p>Приборы созданы для того, чтобы убрать недочеты <br> в работе геодезистов,
+                                        которые
+                                        возникают
+                                        из-за влияния...</p>
+                                    <a href="#" class="articles-link">
+                                        Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="articles-item block-hover">
+                                    <a href="#" class="articles-img">
+                                        <img src="images/arricle-2.jpg" alt="img">
+                                    </a>
+                                    <h3>Тахеометр Trimble S5 5″ Robotic, DR Plus</h3>
+                                    <p>Приборы созданы для того, чтобы убрать недочеты <br> в работе геодезистов,
+                                        которые
+                                        возникают
+                                        из-за влияния...</p>
+                                    <a href="#" class="articles-link">
+                                        Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="articles-item block-hover">
+                                    <a href="#" class="articles-img">
+                                        <img src="images/arricle-2.jpg" alt="img">
+                                    </a>
+                                    <h3>Тахеометр Trimble S5 5″ Robotic, DR Plus</h3>
+                                    <p>Приборы созданы для того, чтобы убрать недочеты <br> в работе геодезистов,
+                                        которые
+                                        возникают
+                                        из-за влияния...</p>
+                                    <a href="#" class="articles-link">
+                                        Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="articles-item block-hover">
+                                    <a href="#" class="articles-img">
+                                        <img src="images/arricle-2.jpg" alt="img">
+                                    </a>
+                                    <h3>Тахеометр Trimble S5 5″ Robotic, DR Plus</h3>
+                                    <p>Приборы созданы для того, чтобы убрать недочеты <br> в работе геодезистов,
+                                        которые
+                                        возникают
+                                        из-за влияния...</p>
+                                    <a href="#" class="articles-link">
+                                        Подробнее <img src="images/icons/arrow-blue.svg" alt="img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="articles-arrows swiper-pagination">
+                        <div class="swiper-button-prev articles-arrow--prev">
+                            <img class="articles-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                        </div>
+                        <div class="swiper-button-next articles-arrow--next">
+                            <img class="articles-a" src="images/icons/slider-arrow.svg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--    articles-->
+
+            @include('partials/footer.html')
+        </main>
+        <!-- Back to top button -->
+        @include('partials/arrow-top.html')
+
+    </div>
+    @include('partials/video-modal.html')
+    @include('partials/modals.html')
+    @include('partials/thanks-modals.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

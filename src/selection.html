@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body>
+  @include('partials/mobile-menu.html')
+
+  @include('partials/header.html')
+
+  <div class="wrapper">
+    <main class="main">
+      <div class="fixed-socials">
+        <a href="#!" class="tel"><img src="images/icons/te-icon.svg" alt=""></a>
+        <a href="#!" class="telegram"><img src="images/icons/telegram-icon.svg" alt=""></a>
+        <a href="#!" class="whatsapp"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
+      </div>
+
+      <section class="selection-sec margin-for-header for-all">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="breadcrumbs">
+                <ul>
+                  <li class="active relative drop-container">
+                    <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                    <div class="drop">
+                      <ul class="drop-menu">
+                        <li><a href="#">Поверка оборудования</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Подбор оборудования</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Подбор оборудования</a></li>
+                  <li><span>Обследование сооружений</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="selection-text selection-top">
+                <div class="title">
+                  <h2>Оборудование для обследования сооружений</h2>
+                </div>
+                <span>Выкупим или зачетм в Trade-In ваше геодезическое оборудование за 1 день</span>
+                <div class="selection-img selection-top for-mob">
+                  <img src="images/selection-img1.jpg" alt="">
+                </div>
+                <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка производилось с помощью
+                  лазерных сканеров Faro s70, а также с помощью квадрокоптера. В результате получены облака точек всех
+                  объектов и точные текстурированные модели объектов в среде ArchiCad.</p>
+                <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка производилось с помощью
+                  лазерных сканеров Faro s70, а также с помощью квадрокоптера. В результате получены облака точек всех
+                  объектов и точные текстурированные модели объектов в среде ArchiCad.</p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <div class="selection-img selection-top for-pc">
+                <img src="images/selection-img1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+
+          <div class="row selection-rov">
+            <div class="col-lg-7">
+              <div class="selection-img-two selection-top-two">
+                <img src="images/selection-img2.jpg" alt="">
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="selection-text-two selection-top-two">
+                <div class="selection-text-in">
+                  <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка производилось с помощью
+                    лазерных сканеров Faro s70, а также с помощью квадрокоптера. В результате получены облака точек всех
+                    объектов и точные текстурированные модели объектов в среде ArchiCad.</p>
+                  <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка производилось с помощью
+                    лазерных сканеров Faro s70, а также с помощью квадрокоптера. В результате получены облака точек всех
+                    объектов и точные текстурированные модели объектов в среде ArchiCad.</p>
+                  <p>Была проведена сьемка 4 объектов культурного наследия в г. Суздаль. Сьемка производилось с помощью
+                    лазерных сканеров Faro s70, а также с помощью квадрокоптера. В результате получены облака точек всех
+                    объектов и точные текстурированные модели объектов в среде ArchiCad.</p>
+                </div>
+                <div class="service-center-social selection-social">
+                  <a href="#!" class="btn-main order-call">Получить
+                    консультацию</a>
+                  <p>Задать вопрос в мессенджеры</p>
+                  <ul class="social">
+                    <li class="social-item tg">
+                      <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                    </li>
+                    <li class="social-item w">
+                      <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="selection-product">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 title">
+              <h2>Оборудование для <br> обследования сооружений</h2>
+              <p>Можно приобрести или взять в аренду</p>
+            </div>
+          </div>
+
+          <div class="row selection-card-rov">
+            <div class="col-lg-3 col-6 card-col">
+              @include('partials/UI/card-discount.html', {
+              label: 'hits'
+              })
+            </div>
+            <div class="col-lg-3 col-6 card-col">
+              @include('partials/UI/card-discount.html', {
+              label: 'hits'
+              })
+            </div>
+            <div class="col-lg-3 col-6 card-col">
+              @include('partials/UI/card-discount.html', {
+              label: 'discount'
+              })
+            </div>
+            <div class="col-lg-3 col-6 card-col">
+              @include('partials/UI/card-discount.html', {
+              label: 'hits'
+              })
+            </div>
+            <div class="col-lg-3 col-6 card-col">
+              @include('partials/UI/card-rent.html')
+            </div>
+            <div class="col-lg-3 col-6 card-col">
+              @include('partials/UI/card-rent.html')
+            </div>
+            <div class="col-lg-3 col-6 card-col">
+              @include('partials/UI/card-rent.html')
+            </div>
+            <div class="col-lg-3 col-6 card-col">
+              @include('partials/UI/card-rent.html')
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="cta">
+        <div class="container">
+          <div class="cta-wrapper">
+            <img src="images/cta-1.png" alt="img" class="cta-img">
+            <div class="cta-info">
+              <h4><span>Оставьте заявку, мы детально <br> изучим особенности Вашего <br> проекта</span> и подберем <br>
+                оптимальное решение <br> исходя из задач и&nbsp;бюджета</h4>
+              <p class="cta-info__text">Наш менеджер свяжется с&nbsp;вами в течение 15 минут</p>
+            </div>
+            <form action="#" class="cta-form">
+              <input required type="text" placeholder="Ваше имя" class="cta-input">
+              <input required minlength="18" pattern=".{18,18}" type="tel" name="phone" placeholder="Ваш телефон"
+                class="cta-input">
+              <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal" data-bs-target="#thanks">Получить
+                консультацию</button>
+              <label class="cta-label">
+                <input type="checkbox" required checked class="cta-checkbox">
+                <p>Оставляя заявку вы соглашаетесь <br> с <a href="#!">обработкой персональных данных</a></p>
+              </label>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    @include('partials/footer.html')
+
+    <!-- Back to top button -->
+    @include('partials/arrow-top.html')
+  </div>
+
+  @include('partials/modals.html')
+  @include('partials/thanks-modals.html')
+
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

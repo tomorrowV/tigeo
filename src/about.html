@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body>
+    @include('partials/mobile-menu.html')
+
+    @include('partials/header.html')
+
+    <div class="wrapper">
+        <main class="main">
+
+            @include('partials/UI/fixed-socials.html')
+            <section class="about-sec margin-for-header for-all">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li class="active relative drop-container">
+                                        <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Каталог</a></li>
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Подбор оборудования</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><span>О компании</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 title">
+                            <h2>О компании</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="about-video" data-video-url="./video.mp4">
+                                <video preload="auto" no-controls loop autoplay playsinline muted>
+                                    <source src="./video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="about-text">
+                                <div class="about-text-in">
+                                    <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                        специализированными навыками и опытом в данной сфере деятельности. Учитывая
+                                        требования современного строительства, проектирования, промышленности и
+                                        аграрного
+                                        сектора, важно.</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 about-text-in-flex">
+                                        <div class="border-after">
+                                            <div class="about-block border-after-in">
+                                                <h3>8 лет</h3>
+                                                <p>Успешно работаем на рынке геодезического оборудования</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 about-text-in-flex">
+                                        <div class="border-after">
+                                            <div class="about-block border-after-in">
+                                                <h3>12 374</h3>
+                                                <p>Приборов мы продали за все время нашей работы</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 about-text-in-flex">
+                                        <div class="border-after">
+                                            <div class="about-block border-after-in">
+                                                <h3>560</h3>
+                                                <p>Завершенных геодезических проектов</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 about-text-in-flex">
+                                        <div class="border-after">
+                                            <div class="about-block border-after-in">
+                                                <h3>23</h3>
+                                                <p>Награды мы выиграли в области</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-history">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 title">
+                            <h2>Наша история</h2>
+                        </div>
+                    </div>
+
+                    <div class="about-slide">
+                        <div thumbsSlider="" class="swiper slide-date">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div>2014</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>2015</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>2016</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>2017</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>2018</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>2019</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>2020</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>2021</div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div>2022</div>
+                                </div>
+                            </div>
+                            <div class="slide-arrow date-button-next"><img src="images/icons/date-slide-arrow.svg"
+                                    alt="">
+                            </div>
+                            <div class="slide-arrow date-button-prev"><img src="images/icons/date-slide-arrow.svg"
+                                    alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper slide-images">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide about-slider-item">
+                                    <div class="d-flex">
+                                        <div class="about-slide-text about-slide-block">
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                            <p>На сегодняшний день, для проведения геодезических работ мало обладать
+                                                специализированными навыками и опытом в данной сфере деятельности.
+                                                Учитывая
+                                                требования современного строительства, проектирования, промышленности и
+                                                аграрного сектора, важно.</p>
+                                            <p>Открыто 10 представительств компании в крупнейших городах РФ. Этот шаг
+                                                расширил наши возможности и позволил проводить демонстрацию оборудования
+                                                клиентам из регионов, а также осуществлять бесплатную доставку.</p>
+                                        </div>
+                                        <div class="about-slide-img about-slide-block">
+                                            <img src="images/about-slide-img.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="command-sec">
+                <img src="images/command-bg.svg" alt="" class="bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 title">
+                            <h2>Команда</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-6 command-col">
+                            <div class="command-block">
+                                <div class="command-img">
+                                    <img src="images/command-img.jpg" alt="">
+                                </div>
+                                <div class="command-text">
+                                    <h4>Александр <br> Калашников</h4>
+                                    <p>Основатель компании</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 command-col">
+                            <div class="command-block">
+                                <div class="command-img">
+                                    <img src="images/command-img.jpg" alt="">
+                                </div>
+                                <div class="command-text">
+                                    <h4>Александр <br> Калашников</h4>
+                                    <p>Основатель компании</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 command-col">
+                            <div class="command-block">
+                                <div class="command-img">
+                                    <img src="images/command-img.jpg" alt="">
+                                </div>
+                                <div class="command-text">
+                                    <h4>Александр <br> Калашников</h4>
+                                    <p>Основатель компании</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 command-col">
+                            <div class="command-block">
+                                <div class="command-img">
+                                    <img src="images/command-img.jpg" alt="">
+                                </div>
+                                <div class="command-text">
+                                    <h4>Александр <br> Калашников</h4>
+                                    <p>Основатель компании</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-6 command-col">
+                            <div class="command-block">
+                                <div class="command-img">
+                                    <img src="images/command-img.jpg" alt="">
+                                </div>
+                                <div class="command-text">
+                                    <h4>Александр <br> Калашников</h4>
+                                    <p>Основатель компании</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 command-col">
+                            <div class="command-block">
+                                <div class="command-img">
+                                    <img src="images/command-img.jpg" alt="">
+                                </div>
+                                <div class="command-text">
+                                    <h4>Александр <br> Калашников</h4>
+                                    <p>Основатель компании</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 command-col">
+                            <div class="command-block">
+                                <div class="command-img">
+                                    <img src="images/command-img.jpg" alt="">
+                                </div>
+                                <div class="command-text">
+                                    <h4>Александр <br> Калашников</h4>
+                                    <p>Основатель компании</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-6 command-col">
+                            <div class="command-block">
+                                <div class="command-img">
+                                    <img src="images/command-img.jpg" alt="">
+                                </div>
+                                <div class="command-text">
+                                    <h4>Александр <br> Калашников</h4>
+                                    <p>Основатель компании</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="container">
+                    <h2 class="reviews__title">Отзывы наших клиентов</h2>
+                    <div class="reviews-slider swiper">
+                        <div class="reviews-wrap swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div data-video-url="./video-2.mp4" class="reviews-v">
+                                        <video preload="auto" no-controls loop autoplay playsinline muted>
+                                            <source src="./video-2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div class="reviews-i">
+                                        <a href="images/doc-1.png" class="rev-icon"><img src="images/zoom-icon.svg"
+                                                alt=""></a>
+                                        <a href="images/doc-1.png">
+                                            <img src="images/doc-1.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div data-video-url="./video-2.mp4" class="reviews-v">
+                                        <video preload="auto" no-controls loop autoplay playsinline muted>
+                                            <source src="./video-2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div class="reviews-i">
+                                        <a href="images/doc-1.png" class="rev-icon"><img src="images/zoom-icon.svg"
+                                                alt=""></a>
+                                        <a href="images/doc-1.png">
+                                            <img src="images/doc-1.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div data-video-url="./video-2.mp4" class="reviews-v">
+                                        <video preload="auto" no-controls loop autoplay playsinline muted>
+                                            <source src="./video-2.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews-item">
+                                    <div class="reviews-i">
+                                        <a href="images/doc-1.png" class="rev-icon"><img src="images/zoom-icon.svg"
+                                                alt=""></a>
+                                        <a href="images/doc-1.png">
+                                            <img src="images/doc-1.png" alt="img">
+                                        </a>
+                                    </div>
+                                    <p class="reviews-text">Компания ООО “Название”. Описание сотрудничества: <br> что
+                                        делали
+                                        для
+                                        них.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews-arrows">
+                        <div class="swiper-button-prev reviews-arrow--prev">
+                            <img class="reviews-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                        </div>
+                        <div class="swiper-button-next reviews-arrow--next">
+                            <img class="reviews-a" src="images/icons/slider-arrow.svg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @include('partials/footer.html')
+
+        @include('partials/arrow-top.html')
+    </div>
+    @include('partials/video-modal.html')
+    @include('partials/modals.html')
+    @include('partials/thanks-modals.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

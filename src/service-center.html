@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+@include('partials/head.html')
+
+
+<body>
+
+    <div class="mob-menu">
+        <ul class="mob-list">
+            <li>
+                <a href="#">
+                    <img src="images/icons/mob-1.svg" alt="img">
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li class="search-btn">
+                <a href="#">
+                    <img src="images/icons/mob-2.svg" alt="img">
+                    <span>Поиск</span>
+                </a>
+            </li>
+            <li class="mob-m">
+                <a href="#">
+                    <img src="images/icons/mob-3.svg" alt="img">
+                    <span>Меню</span>
+                </a>
+            </li>
+            <li>
+                <a href="tel:+555555555">
+                    <img src="images/icons/mob-4.svg" alt="img">
+                    <span>Телефон</span>
+                </a>
+            </li>
+            <li>
+                <a href="tel:+555555555">
+                    <img src="images/icons/mob-5.svg" alt="img">
+                    <span>Корзина</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    @include('partials/header.html')
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="fixed-socials">
+                <a href="#!" class="tel"><img src="images/icons/te-icon.svg" alt=""></a>
+                <a href="#!" class="telegram"><img src="images/icons/telegram-icon.svg" alt=""></a>
+                <a href="#!" class="whatsapp"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
+            </div>
+
+            <section class="service-center margin-for-header for-all">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li class="active relative drop-container">
+                                        <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Поверка оборудования</a></li>
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Подбор оборудования</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="active relative drop-container">
+                                        <span>Каталог <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Электронные тахеометры</a></li>
+                                                <li><a href="#">Геодезическое оборудование</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><span>Сервисный центр</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="service-center-left service-center-block">
+                                <div class="title">
+                                    <h2>Сервисный центр</h2>
+                                    <p>Ремонт геодезического оборудования по всей территории РФ</p>
+                                </div>
+                                <div class="service-center-right service-center-block for-mob">
+                                    <img src="images/service-center-img.jpg" alt="">
+                                </div>
+                                <div class="service-center-list for-after">
+                                    <div class="list-in">
+                                        <ul>
+                                            <li>Сервисные центры в Москве, Санкт-Петербурге, Краснодаре и Красноярске
+                                            </li>
+                                            <li>Отправка и возврат отремонтированного прибора в пункте выдачи вашего
+                                                города</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="service-center-social">
+                                    <a href="#!" class="btn-main service-trigger" data-bs-toggle="modal"
+                                        data-bs-target="#modal-service">Получить
+                                        консультацию</a>
+                                    <p>Задать вопрос в мессенджеры</p>
+                                    <ul class="social">
+                                        <li class="social-item tg">
+                                            <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                        </li>
+                                        <li class="social-item w">
+                                            <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="service-center-right service-center-block for-pc">
+                                <img src="images/service-center-img.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="service-center-item">
+                                <img src="images/icons/service-center-icon1.svg" alt="">
+                                <div class="sc-item-text">
+                                    <b>Подменное оборудование</b>
+                                    <p>Предоставляем скидку 30% на аренду аппаратуры, аналогичной сданной в ремонт</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="service-center-item">
+                                <img src="images/icons/service-center-icon2.svg" alt="">
+                                <div class="sc-item-text">
+                                    <b>Гарантия 6 месяцев</b>
+                                    <p>Даем гарантию на отремонтированное оборудование</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="service-center-item">
+                                <img src="images/icons/service-center-icon3.svg" alt="">
+                                <div class="sc-item-text">
+                                    <b>Бесплатная диагностика</b>
+                                    <p>Бесплатно производим диагностику оборудования в наших сервисных центрах</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service-repair">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="title">
+                                <h2>Осуществляем ремонт и настройку геодезических приборов:</h2>
+                            </div>
+                            <div class="about-video repair-video for-mob" data-video-url="./video.mp4">
+                                <video preload="auto" no-controls loop autoplay playsinline muted>
+                                    <source src="./video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="service-repair-left service-center-block">
+                                <div class="service-repair-list for-after">
+                                    <div class="list-in">
+                                        <ul>
+                                            <li>Оптические, электронные и лазерные нивелиры</li>
+                                            <li>Электронные тахеометры</li>
+                                            <li>GNSS-приемники</li>
+                                            <li>Лазерные 3Д сканеры</li>
+                                            <li>Электронные и оптические теодолиты</li>
+                                            <li>Лазерные дальномеры</li>
+                                            <li>Прочие измерительные приборы</li>
+                                            <li>Мы можем выполнить проверку измерительных устройств и определить причину
+                                                неисправности, а
+                                                также устранить ее в кратчайшие сроки с гарантией качества выполненных
+                                                работ и используемых
+                                                запасных частей.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="service-repair-text">
+                                    <p>Также наши сотрудники производят профилактику и настройку приборов. Это дает
+                                        возможность постоянно
+                                        сохранять геодезическое оборудование в исправном состоянии и не рисковать
+                                        сорвать заказ из-за
+                                        внезапной неисправности.</p>
+                                </div>
+                                <div class="service-center-social service-trigger">
+                                    <a href="#!" class="btn-main" data-bs-toggle="modal"
+                                        data-bs-target="#modal-service">Получить
+                                        консультацию</a>
+                                    <p>Задать вопрос в мессенджеры</p>
+                                    <ul class="social">
+                                        <li class="social-item tg">
+                                            <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                        </li>
+                                        <li class="social-item w">
+                                            <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="about-video repair-video for-pc" data-video-url="./video.mp4">
+                                <video preload="auto" no-controls loop autoplay playsinline muted>
+                                    <source src="./video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="service-price">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 title">
+                            <h2>Стоимость ремонта геодезического оборудования</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 ser-price-col">
+                            <div class="ser-price for-after">
+                                <div class="service-price-item">
+                                    <img src="images/icons/service-price-icon1.svg" alt="">
+                                    <p>Точную цену на комплектующие и услуги можно определить только после диагностики.
+                                        Сам процесс
+                                        диагностики не оплачивается при заказе ремонта. Сроки выполнения ремонта
+                                        определяются индивидуально.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 ser-price-col">
+                            <div class="ser-price for-after">
+                                <div class="service-price-item">
+                                    <img src="images/icons/service-price-icon2.svg" alt="">
+                                    <p>После окончания работ по ремонту измерительные приборы проходят поверку с
+                                        составлением необходимых
+                                        документов. При приемке оборудования на ремнт составляется акт приема-передачи,
+                                        который служит
+                                        основанием для выдачи отремонтированного устройства заказчику.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 tab-price-col">
+                            <div class="service-price-tab">
+                                <span>1.</span>
+                                <p>Ремонт тахеометра</p>
+                                <h5>от <span>1 000 ₽</span></h5>
+                            </div>
+                            <div class="service-price-tab">
+                                <span>2.</span>
+                                <p>Ремонт тахеометра</p>
+                                <h5>от <span>1 000 ₽</span></h5>
+                            </div>
+                            <div class="service-price-tab">
+                                <span>3.</span>
+                                <p>Ремонт тахеометра</p>
+                                <h5>от <span>1 000 ₽</span></h5>
+                            </div>
+
+                            <div class="service-price-tab hide">
+                                <span>4.</span>
+                                <p>Ремонт тахеометра</p>
+                                <h5>от <span>1 000 ₽</span></h5>
+                            </div>
+                            <div class="service-price-tab hide">
+                                <span>5.</span>
+                                <p>Ремонт тахеометра</p>
+                                <h5>от <span>1 000 ₽</span></h5>
+                            </div>
+                            <div class="service-price-tab hide">
+                                <span>6.</span>
+                                <p>Ремонт тахеометра</p>
+                                <h5>от <span>1 000 ₽</span></h5>
+                            </div>
+                            <div class="service-price-tab hide">
+                                <span>7.</span>
+                                <p>Ремонт тахеометра</p>
+                                <h5>от <span>1 000 ₽</span></h5>
+                            </div>
+
+                            <div class="ser-tab-btn">
+                                <a href="#!" class="btn-main">Посмотреть все</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="examine-form">
+                <div class="container">
+                    <div class="examine-form-block">
+                        <img src="images/examine-form-img.png" alt="" class="examine-img">
+                        <div class="row">
+                            <div class="col-lg-12 title">
+                                <h2>Заполните данные и мы свяжемся с вами в рабочее время</h2>
+                            </div>
+                        </div>
+                        <form action="#!" id="examine-form-id">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="row">
+                                        <div class="col-lg-6 form-group">
+                                            <input type="text" name="inn" id="inn" placeholder="ИНН">
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <input type="tel" name="phone" id="phone" placeholder="Телефон*" required>
+                                        </div>
+
+                                        <div class="col-lg-6 form-group">
+                                            <input type="text" name="name" id="name" placeholder="Имя *" required>
+                                        </div>
+                                        <div class="col-lg-6 form-group">
+                                            <input type="text" name="model" id="model"
+                                                placeholder="Модель прибора и серийный номер">
+                                        </div>
+                                        <div class="col-lg-6 examine-btn">
+                                            <button class="btn-main" type="submit" data-bs-toggle="modal"
+                                                data-bs-target="#thanks">Заказать</button>
+                                        </div>
+                                        <div class="check">
+                                            <label class="control control--checkbox">
+                                                <input type="checkbox" checked="checked" />
+                                                <div class="control__indicator"></div>
+                                                <span>Даю свое согласие на <a href="#!">обработку персональных
+                                                        данных</a></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="examine-service tex">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 title">
+                            <h2>Техобслуживание, поверка оборудования и полезная информация</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-6 pr-10 examine-col">
+                            <div class="examine-service-img">
+                                <img src="images/service-img1.jpg" alt="">
+                            </div>
+                            <div class="examine-service-name">
+                                <p>Инструкции, ПО и сертификаты</p>
+                                <a href="#!" class="service-link">Подробнее <img src="images/icons/arrow-blue.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 pr-10 examine-col">
+                            <div class="examine-service-img">
+                                <img src="images/service-img2.jpg" alt="">
+                            </div>
+                            <div class="examine-service-name">
+                                <p>Техподдержка и обучение</p>
+                                <a href="#!" class="service-link">Подробнее <img src="images/icons/arrow-blue.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-6 pr-10 examine-col">
+                            <div class="examine-service-img">
+                                <img src="images/service-img3.jpg" alt="">
+                            </div>
+                            <div class="examine-service-name">
+                                <p>Поверка оборудования</p>
+                                <a href="#!" class="service-link">Подробнее <img src="images/icons/arrow-blue.svg"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="examine-questions tex">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7 title">
+                            <h2>Ответы на частые вопросы <br> о поверке оборудования</h2>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionExample">
+                        <div class="row">
+                            <div class="col-lg-6 pr-10">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                                                Ответ Ответ Ответ Ответ
+                                                Ответ</span>
+                                            <span class="icon">
+                                                <span class="one"></span>
+                                                <span class="two"></span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Тахеометры используются при проведении геодезических изысканий и во время
+                                                строительных работ
+                                                для определения угловых расстояний между точками и измерения линейных
+                                                расстояний от реперной
+                                                точки до вешки. Современные электронные устройства позволяют выполнять
+                                                измерения на удалении до
+                                                нескольких километров с миллиметровой погрешностью. Однако использовать
+                                                их не всегда возможно,
+                                                так как купить товар этого типа могут позволить себе далеко не все
+                                                геодезические компании.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                                                Ответ Ответ Ответ Ответ
+                                                Ответ</span>
+                                            <span class="icon">
+                                                <span class="one"></span>
+                                                <span class="two"></span>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Тахеометры используются при проведении геодезических изысканий и во время
+                                            строительных работ для
+                                            определения угловых расстояний между точками и измерения линейных расстояний
+                                            от реперной точки до
+                                            вешки. Современные электронные устройства позволяют выполнять измерения на
+                                            удалении до нескольких
+                                            километров с миллиметровой погрешностью. Однако использовать их не всегда
+                                            возможно, так как купить
+                                            товар этого типа могут позволить себе далеко не все геодезические компании.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                                                Ответ Ответ Ответ Ответ
+                                                Ответ</span>
+                                            <span class="icon">
+                                                <span class="one"></span>
+                                                <span class="two"></span>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Тахеометры используются при проведении геодезических изысканий и во время
+                                                строительных работ
+                                                для определения угловых расстояний между точками и измерения линейных
+                                                расстояний от реперной
+                                                точки до вешки. Современные электронные устройства позволяют выполнять
+                                                измерения на удалении до
+                                                нескольких километров с миллиметровой погрешностью. Однако использовать
+                                                их не всегда возможно,
+                                                так как купить товар этого типа могут позволить себе далеко не все
+                                                геодезические компании.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 pl-10">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                                                Ответ Ответ Ответ Ответ
+                                                Ответ</span>
+                                            <span class="icon">
+                                                <span class="one"></span>
+                                                <span class="two"></span>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Тахеометры используются при проведении геодезических изысканий и во время
+                                            строительных работ для
+                                            определения угловых расстояний между точками и измерения линейных расстояний
+                                            от реперной точки до
+                                            вешки. Современные электронные устройства позволяют выполнять измерения на
+                                            удалении до нескольких
+                                            километров с миллиметровой погрешностью. Однако использовать их не всегда
+                                            возможно, так как купить
+                                            товар этого типа могут позволить себе далеко не все геодезические компании.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                                                Ответ Ответ Ответ Ответ
+                                                Ответ</span>
+                                            <span class="icon">
+                                                <span class="one"></span>
+                                                <span class="two"></span>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Тахеометры используются при проведении геодезических изысканий и во время
+                                            строительных работ для
+                                            определения угловых расстояний между точками и измерения линейных расстояний
+                                            от реперной точки до
+                                            вешки. Современные электронные устройства позволяют выполнять измерения на
+                                            удалении до нескольких
+                                            километров с миллиметровой погрешностью. Однако использовать их не всегда
+                                            возможно, так как купить
+                                            товар этого типа могут позволить себе далеко не все геодезические компании.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            <span class="text">Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ Ответ
+                                                Ответ Ответ Ответ Ответ
+                                                Ответ</span>
+                                            <span class="icon">
+                                                <span class="one"></span>
+                                                <span class="two"></span>
+                                            </span>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            <p>Тахеометры используются при проведении геодезических изысканий и во время
+                                                строительных работ
+                                                для определения угловых расстояний между точками и измерения линейных
+                                                расстояний от реперной
+                                                точки до вешки. Современные электронные устройства позволяют выполнять
+                                                измерения на удалении до
+                                                нескольких километров с миллиметровой погрешностью. Однако использовать
+                                                их не всегда возможно,
+                                                так как купить товар этого типа могут позволить себе далеко не все
+                                                геодезические компании.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="examine-end">
+                        <div class="end-in">
+                            <p>Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                                Сео-текст
+                                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                                Сео-текст Сео-текст
+                                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                                Сео-текст Сео-текст
+                                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                                Сео-текст Сео-текст
+                                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео</p>
+                            <p>Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                                Сео-текст
+                                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                                Сео-текст Сео-текст
+                                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                                Сео-текст Сео-текст
+                                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст
+                                Сео-текст Сео-текст
+                                Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео-текст Сео</p>
+                        </div>
+                        <a href="#!" class="btn-main more-text-btn">Подробнее</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @include('partials/footer.html')
+
+        <!-- Back to top button -->
+        @include('partials/arrow-top.html')
+    </div>
+
+    @include('partials/video-modal.html')
+    @include('partials/modals-support.html')
+    @include('partials/thanks-modals.html')
+    <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLabel">Заполните данные и мы свяжемся с вами в рабочее
+                        время</h1>
+                    <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/modal-close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#!" id="modal-form">
+                        <div class="form-group">
+                            <input type="text" name="modal-name" id="modal-name" placeholder="Имя *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="modal-phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="select-block">
+                            <span>Интересующая услуга</span>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="0">Выберите услугу:</option>
+                                    <option value="1">Услуга 1</option>
+                                    <option value="2">Услуга 2</option>
+                                    <option value="3">Услуга 3</option>
+                                    <option value="3">Услуга 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+
+                        <div class="modal-btn">
+                            <button type="submit" class="btn-main" id="modal-form-btn" data-bs-toggle="modal"
+                                data-bs-target="#thanks">Заказать
+                            </button>
+                        </div>
+                        <label class="control control--checkbox">
+                            <input type="checkbox" checked="checked" />
+                            <div class="control__indicator"></div>
+                            <span>Даю свое согласие на <a href="#!">обработку персональных данных</a></span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-service" tabindex="-1" aria-labelledby="modal-service-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="modal-service-label">Заполните данные и мы свяжемся с вами в рабочее
+                        время</h1>
+                    <button type="button" class="modal-close" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="images/icons/modal-close.svg" alt="">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="#!" id="modal-form">
+                        <div class="form-group">
+                            <input type="text" name="modal-inn" id="modal-inn" placeholder="ИНН">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="modal-phone" placeholder="Телефон*" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="modal-tool" id="modal-tool" placeholder="Модель прибора*" required>
+                        </div>
+
+
+                        <div class="form-group serial-group">
+                            <span>Коротко о поломке</span>
+                            <input type="text" name="modal-breakdown" id="modal-breakdown">
+                        </div>
+
+                        <div class="modal-btn">
+                            <button type="submit" class="btn-main" id="modal-form-btn" data-bs-toggle="modal"
+                                data-bs-target="#thanks">Заказать</button>
+                        </div>
+                        <label class="control control--checkbox">
+                            <input type="checkbox" checked="checked" />
+                            <div class="control__indicator"></div>
+                            <span>Даю свое согласие на <a href="#!">обработку персональных данных</a></span>
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<div class="card card--rent">
+    <div class="card-main">
+        <p class="card__label card__label--rent">Аренда</p>
+        <div class="card-arrows">
+            <div class="card-arrow card-arrow--prev">
+                <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+            </div>
+            <div class="card-arrow card-arrow--next">
+                <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+            </div>
+        </div>
+        <div class="card-slider swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery-7" data-src="images/card-3.jpg">
+                        <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a data-fancybox="gallery-7" data-src="images/card-2.jpg">
+                        <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-top card-top-rent">
+            <p class="card-title">Leica TCR 400</p>
+            <p class="card-t card-rent-t">В наличии</p>
+        </div>
+        <div class="card-count">
+            <div class="card-count__w">
+                <p>Дней</p>
+                <input class="card-num" type="number">
+            </div>
+            <p class="card-eq">=</p>
+            <div class="card-count__w">
+                <p class="card-sum">Сумма</p>
+                <input class="card-res" readonly data-perday="1500" value="0" type="text">
+            </div>
+        </div>
+        <button class="card__description">
+            Описание и комплектация
+        </button>
+    </div>
+    <div class="card-bottom">
+        <button data-modal="exampleModal" class="btn-main card-click btn-modal-order">Заказать</button>
+    </div>
+</div>

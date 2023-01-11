@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body>
+    @include('partials/mobile-menu.html')
+
+    @include('partials/header.html')
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="fixed-socials">
+                <a href="#!" class="tel"><img src="images/icons/te-icon.svg" alt=""></a>
+                <a href="#!" class="telegram"><img src="images/icons/telegram-icon.svg" alt=""></a>
+                <a href="#!" class="whatsapp"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
+            </div>
+            <section class="contact-sec margin-for-header for-all">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li class="active relative drop-container">
+                                        <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Поверка оборудования</a></li>
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Подбор оборудования</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><span>Контакты</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 title">
+                            <h2>Контакты</h2>
+                            <p>Головной офис и Сервисный Центр в Москве</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-6 contact-left-col">
+                            <div class="contact-left">
+                                <div class="contact-item">
+                                    <h5>Представительства и Сервисные Центры в регионах РФ, Белоруссии и Казахстане</h5>
+                                    <p>В представительствах и Сервисных Центрах вы можете:</p>
+                                    <p>Заказать доставку оборудования в ваш город, проверить его и оплатить при
+                                        получении.
+                                        Сдать оборудование в ремонт, получить подменный аппарат, забрать
+                                        отремонтированный
+                                        прибор и оформить выкуп оборудования или Trade-In</p>
+                                </div>
+                                <div class="contact-item">
+                                    <h5>Коммуникации с регионами, в которых пока еще нет представительств</h5>
+                                    <p>Доставка оборудования или сдача его в ремонт ( с передачей в ближайший Сервисный
+                                        Центр) осуществляется через точки приема/выдачи заказов транспортных компаний.
+                                        Если
+                                        вы не нашли на карте представительство в вашем регионе - напишите нам в WhatsApp
+                                        или
+                                        оставьте заявку на сайте и наши менеджеры сооринтируют по наиболее оптимальному
+                                        и
+                                        быстрому способу решения вашей проблемы.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 contact-right-col">
+                            <div class="for-after">
+                                <div class="contact-right">
+                                    <div class="row">
+                                        <div class="col-lg-6 contact-col">
+                                            <div class="contact-right-item">
+                                                <span>Адрес:</span>
+                                                <h6>Москва</h6>
+                                                <p>Ул. Амурская 9/6 строение 9</p>
+                                            </div>
+                                            <div class="contact-right-item">
+                                                <span>Номер телефона:</span>
+                                                <h6>8 (800) 000-00-00</h6>
+                                                <p>Пн-Пт: с 9:30 до 19:00</p>
+                                                <p>Сб: с 10:00 до 15:00</p>
+                                            </div>
+                                            <div class="contact-right-item">
+                                                <span>Электронная почта:</span>
+                                                <h6>info@tigeo.ru</h6>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-6 contact-col">
+                                            <div class="contact-right-item">
+                                                <span>WhatsApp</span>
+                                                <div class="contact-social w">
+                                                    <a href="#!"><img src="images/icons/w.svg" alt="icon"></a>
+                                                    <p>Напишите нам в WhatsApp</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-right-item">
+                                                <span>WhatsApp</span>
+                                                <div class="contact-social tg">
+                                                    <a href="#!"><img src="images/icons/tg.svg" alt="icon"></a>
+                                                    <p>Напишите нам в Тегерам</p>
+                                                </div>
+                                            </div>
+                                            <div class="contact-right-item contact-form">
+                                                <span>Форма обратной связи</span>
+                                                <a href="#!" class="btn-main">Заказать звонок</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="cta contact-cta">
+                <div class="container">
+                    <div class="cta-wrapper">
+                        <img src="images/cta-1.png" alt="img" class="cta-img">
+                        <div class="cta-info">
+                            <h4><span>Оставьте заявку, мы детально <br> изучим особенности Вашего <br> проекта</span> и
+                                подберем <br> оптимальное решение <br> исходя из задач и&nbsp;бюджета</h4>
+                            <p class="cta-info__text">Наш менеджер свяжется с&nbsp;вами в течение 15 минут</p>
+                        </div>
+                        <form action="#" class="cta-form">
+                            <input required type="text" placeholder="Ваше имя" class="cta-input">
+                            <input required minlength="18" pattern=".{18,18}" type="tel" name="phone"
+                                placeholder="Ваш телефон" class="cta-input">
+                            <button type="submit" class="btn-main cta-btn" data-bs-toggle="modal"
+                                data-bs-target="#thanks">
+                                Получить консультацию
+                            </button>
+                            <label class="cta-label">
+                                <input type="checkbox" required checked class="cta-checkbox">
+                                <p>Оставляя заявку вы соглашаетесь <br> с <a href="#!">обработкой персональных
+                                        данных</a>
+                                </p>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <section class="map-sec">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 title">
+                            <h2>Карта</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12 p-0">
+                            <div class="myMap">
+                                <iframe
+                                    src="https://yandex.ru/map-widget/v1/?um=constructor%3A4794dfed8abe7f8303110dbb13032e9e745841b056e3e6d8818339b25ce82b56&amp;source=constructor"
+                                    width="100%" height="690" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="russian-map">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 title">
+                            <h2>Представительства в регионах</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="rus-map">
+                                @include('partials/UI/map-svg.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @include('partials/footer.html')
+
+        <!-- Back to top button -->
+        @include('partials/arrow-top.html')
+    </div>
+    @include('partials/modals.html')
+    @include('partials/thanks-modals.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body>
+    @include('partials/mobile-menu.html')
+
+    @include('partials/header.html')
+
+    <div class="wrapper">
+        <main class="main">
+
+            @include('partials/UI/fixed-socials.html')
+            <section class="trade-sec margin-for-header for-all">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li class="active relative drop-container">
+                                        <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Поверка оборудования</a></li>
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Подбор оборудования</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="active relative drop-container">
+                                        <span>Каталог <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Электронные тахеометры</a></li>
+                                                <li><a href="#">Геодезическое оборудование</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><span>Выкуп и Trade-In</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5 trade-col-text">
+                            <div class="service-center-left service-center-block trade-top">
+                                <div class="title for-pc">
+                                    <h2>Выкуп и Trade-In</h2>
+                                    <p>Выкупим или зачетм в Trade-In ваше геодезическое оборудование за 1 день</p>
+                                </div>
+                                <div class="service-center-list trade-list for-after">
+                                    <div class="list-in">
+                                        <ul>
+                                            <li>Более 20 пунктов выкупа геооборудования по РФ</li>
+                                            <li>Предварительная оценка стоимости по фотографии без изменения стоимости,
+                                                если
+                                                в сервисном центре не выявят неисправностей и комплектация будет полной
+                                            </li>
+                                            <li>Любые формы выплаты: наличные, перевод на карту, или на р/с юр.лица в
+                                                день
+                                                обращения
+                                            </li>
+                                            <li>Проверка оборудования всего за 30 минут</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="service-center-social">
+                                    <a href="#!" class="btn-main" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Получить
+                                        консультацию</a>
+                                    <p>Задать вопрос в мессенджеры</p>
+                                    <ul class="social">
+                                        <li class="social-item tg">
+                                            <a href="#"><img src="images/icons/tg.svg" alt="icon"></a>
+                                        </li>
+                                        <li class="social-item w">
+                                            <a href="#"><img src="images/icons/w.svg" alt="icon"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 trade-col-video">
+                            <div class="for-mob">
+                                <div class="title">
+                                    <h2>Выкуп и Trade-In</h2>
+                                    <p>Выкупим или зачетм в Trade-In ваше геодезическое оборудование за 1 день</p>
+                                </div>
+                            </div>
+                            <div class="about-video trade-video" data-video-url="./video.mp4">
+                                <video preload="auto" no-controls loop autoplay playsinline muted>
+                                    <source src="./video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trade-how">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 title">
+                            <h2>Как происходит выкуп или сдача оборудования в Trade-In</h2>
+                        </div>
+                    </div>
+                    <div class="row trade-info-rov">
+                        <div class="col-lg-7">
+                            <div class="trade-how-info">
+                                <img src="images/icons/noun-buy-icon.svg" alt="">
+                                <div class="info-in">
+                                    <p>Производим выкуп геодезического оборудования в любом состоянии</p>
+                                    <p>Сервисный центр нуждается в запчастях всегда</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="trade-how-info">
+                                <img src="images/icons/noun-trade-icon.svg" alt="">
+                                <p>Возможен трейд-ин геодезического оборудования как вашего б/у на новый так и на другой
+                                    б/у.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-6 trade-col">
+                            <div class="trade-item">
+                                <div class="trade-item-img">
+                                    <img src="images/trade-img1.jpg" alt="">
+                                </div>
+                                <div class="trade-item-text">
+                                    <h2>01</h2>
+                                    <p>Отправляете нам фото на почту info@tigeo.ru, в форме заявки или в WhatsApp</p>
+                                    <a href="#!" class="btn-main">Оценить прибор</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 trade-col">
+                            <div class="trade-item">
+                                <div class="trade-item-img">
+                                    <img src="images/trade-img2.jpg" alt="">
+                                </div>
+                                <div class="trade-item-text">
+                                    <h2>02</h2>
+                                    <p>В согласованное время привозите ваш геоприбор к нам в офис в г. Москва ул.
+                                        Амурская
+                                        9/6 стр. 9 или в наше региональное подразделение</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 trade-col">
+                            <div class="trade-item">
+                                <div class="trade-item-img">
+                                    <img src="images/trade-img2.jpg" alt="">
+                                </div>
+                                <div class="trade-item-text">
+                                    <h2>03</h2>
+                                    <p>30 минут пьете кофе пока мастер проверяет оборудование</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-6 trade-col">
+                            <div class="trade-item">
+                                <div class="trade-item-img">
+                                    <img src="images/trade-img3.jpg" alt="">
+                                </div>
+                                <div class="trade-item-text">
+                                    <h2>04</h2>
+                                    <p>Подписываете договор купли-продажи и получаете деньги или приобретаете новое
+                                        оборудование в Trade-In. При себе обязательно нужен паспорт гражданин РФ.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 trade-social">
+                            <span>Задать вопрос в мессенджеры</span>
+                            <ul class="social">
+                                <li class="social-item tg">
+                                    <a href="#">
+                                        <img src="images/icons/tg.svg" alt="icon">
+                                    </a>
+                                </li>
+                                <li class="social-item w">
+                                    <a href="#">
+                                        <img src="images/icons/w.svg" alt="icon">
+                                    </a>
+                                </li>
+                            </ul>
+                            <p>И получаете оценку вашего оборудования</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="russian-map">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 title">
+                            <h2>Пункты выкупа и сдачи оборудования в Trade-In</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="rus-map">
+                                @include('partials/UI/map-svg.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @include('partials/footer.html')
+
+        <!-- Back to top button -->
+        @include('partials/arrow-top.html')
+    </div>
+
+    @include('partials/video-modal.html')
+    @include('partials/trade-in-modal.html')
+    @include('partials/modals.html')
+    @include('partials/thanks-modals.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

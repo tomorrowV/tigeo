@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body>
+    @include('partials/mobile-menu.html')
+
+    @include('partials/header.html')
+
+    <div class="wrapper">
+        <main class="main">
+            <div class="fixed-socials">
+                <a href="#!" class="tel"><img src="images/icons/te-icon.svg" alt=""></a>
+                <a href="#!" class="telegram"><img src="images/icons/telegram-icon.svg" alt=""></a>
+                <a href="#!" class="whatsapp"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
+            </div>
+
+            <section class="payment-shipping margin-for-header for-all">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li class="active relative drop-container">
+                                        <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                                        <div class="drop">
+                                            <ul class="drop-menu">
+                                                <li><a href="#">Поверка оборудования</a></li>
+                                                <li><a href="#">О компании</a></li>
+                                                <li><a href="#">Подбор оборудования</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><span>Оплата и доставка</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12 title">
+                            <h2>Оплата и доставка</h2>
+                            <p>Оплата и доставка по РФ и СНГ</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="payment-shipping-block">
+                                <div class="pay-ship-top">
+                                    <img src="images/icons/payment-shipping-icon1.svg" alt="">
+                                    <p>Оплата</p>
+                                </div>
+                                <div class="pay-ship-text">
+                                    <p>Оплата доступна как для физических лиц: наличные/картой или банковским переводом,
+                                        так
+                                        и для юридических лиц: после подписания Договора и выставления счета на
+                                        рассчетный
+                                        счет.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="payment-shipping-block">
+                                <div class="pay-ship-top">
+                                    <img src="images/icons/payment-shipping-icon2.svg" alt="">
+                                    <p>Доставка в страны СНГ</p>
+                                </div>
+                                <div class="pay-ship-text">
+                                    <p>Возможна в представительства в Белоруссии и Казахстане. В другие регионы -
+                                        согласовывается в индивидуальном порядке.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="payment-shipping-block">
+                                <div class="pay-ship-top">
+                                    <img src="images/icons/payment-shipping-icon3.svg" alt="">
+                                    <p>Доставка по РФ</p>
+                                </div>
+                                <div class="pay-ship-text three">
+                                    <p>Доставляем в любой регион РФ и СНГ транспортной компанией. Стоимость и сроки
+                                        доставки
+                                        рассчитываются индивидуально.
+                                        <span>При заказе от 30 000 ₽ доставка по РФ - БЕСПЛАТНО.
+                                            Доставка курьером по Москве в пределах МКАД - 500 ₽
+
+                                            Самовывоз из офиса в Москве - БЕСПЛАТНО.
+                                            Офис работает по рабочим дням с 9:00 до 18:00. Перед приездом, пожалуйста,
+                                            договоритесь с менеджером о встрече</span>
+                                    </p>
+                                    <a href="#!" class="pay-ship-more">
+                                        <span class="yes">Развернуть</span>
+                                        <span class="no">Свернуть</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="payment-shipping-block">
+                                <div class="pay-ship-top">
+                                    <img src="images/icons/payment-shipping-icon4.svg" alt="">
+                                    <p>Выкуп, Trade-In и Аренда оборудования</p>
+                                </div>
+                                <div class="pay-ship-text">
+                                    <p>Возможны как в офисе в Москве, так и в представительствах по всей территори РФ.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="russian-map">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 title">
+                            <h2>Пункты выкупа и сдачи оборудования в Trade-In</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="rus-map">
+                                @include('partials/UI/map-svg.html')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        @include('partials/footer.html')
+
+        @include('partials/arrow-top.html')
+    </div>
+
+    @include('partials/modals.html')
+    @include('partials/thanks-modals.html')
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

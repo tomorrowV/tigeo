@@ -1,0 +1,148 @@
+.hero {
+  position: relative;
+  box-sizing: border-box;
+
+  &__slide {
+    padding: 110px 0 20px;
+    position: relative;
+    min-height: 600px;
+    max-height: 610px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+
+    @include small-tablet {
+      padding: 60px 0 70px;
+      max-height: 100%;
+    }
+
+
+    &:after {
+      position: absolute;
+      content: "";
+      background: linear-gradient(270deg, #f9f9f9 32.98%, rgba(231, 225, 224, 0) 63.23%);
+      width: 100%;
+      height: 100%;
+      left: -0;
+      top: 0;
+      z-index: 1;
+      transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    padding: 0 85px;
+
+    @media screen and (max-width: 767px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__info {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 70px;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  &-list {
+    margin-top: auto;
+
+    @include small-tablet {
+      margin-top: 30px;
+    }
+  }
+
+  &-arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    width: 100%;
+    z-index: 5;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @include small-tablet {
+      position: static;
+      max-width: 115px;
+      transform: unset;
+      margin: 50px auto 0;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0;
+
+    @include small-tablet {
+      position: static;
+    }
+  }
+
+  .swiper-button-next {
+    right: 0;
+
+    @include small-tablet {
+      position: static;
+    }
+  }
+
+  .swiper-pagination {
+    max-width: max-content;
+    position: absolute;
+    bottom: 70px;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    left: unset;
+    right: calc((100vw - 1300px) / 2);
+  }
+
+  .swiper-pagination-bullet {
+    padding: 0;
+    outline: 0;
+    font-size: 0;
+    opacity: 1;
+    background-color: #fff;
+    border-radius: 2px;
+    width: 16px;
+    height: 16px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+
+    &-active {
+      background-color: #bca59f;
+    }
+  }
+}

@@ -1,0 +1,1958 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Tigeo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="mob-menu">
+    <ul class="mob-list">
+        <li>
+            <a href="main.html">
+                <img src="images/icons/mob-1.svg" alt="img">
+                <span>Главная</span>
+            </a>
+        </li>
+        <li class="search-btn mobile">
+            <a href="#">
+                <img src="images/icons/mob-2.svg" alt="img">
+                <span>Поиск</span>
+            </a>
+        </li>
+        <li class="mob-m">
+            <a href="#">
+                <img src="images/icons/mob-3.svg" alt="img">
+                <span>Меню</span>
+            </a>
+        </li>
+        <li>
+            <a href="tel:+555555555">
+                <img src="images/icons/mob-4.svg" alt="img">
+                <span>Телефон</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="mob-basket">
+                <img src="images/icons/mob-5.svg" alt="img">
+                <span>Корзина</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+  <!-- <div id="preloader"></div> -->
+
+<header class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__w">
+                <p class="header-top__place">Головное подразделение: Москва, Амурская 9/6 строение 9</p>
+                <div class="header-top__block">
+                    <ul class="header-top__list list-reset">
+                        <li>
+                            <a href="#">
+                                О компании
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="mailto:info@tigeo.ru" class="header-mail">info@tigeo.ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-m">
+        <div class="header-main">
+            <div class="container">
+                <div class="header-main__w">
+                    <a href="#" class="logo">
+                        <img width="70" height="70" src="images/icons/logo.png" alt="img">
+                        <p class="header-main__t">
+                            Геодезическое оборудование. <br> Продажа — Аренда — Выкуп — Trade In
+                        </p>
+                    </a>
+                    <div class="header-search--mob">
+                        <img class="search-cross" src="images/icons/cross.svg" alt="icon">
+                        <div class="header-search">
+                            <button>
+                                <img src="images/icons/search.svg" alt="search">
+                            </button>
+                            <input type="search" placeholder="Поиск">
+                        </div>
+                    </div>
+                    <ul class="social list-reset">
+                        <li class="social-item tg">
+                            <a href="#">
+                                <img src="images/icons/tg.svg" alt="icon">
+                            </a>
+                        </li>
+                        <li class="social-item w">
+                            <a href="#">
+                                <img src="images/icons/w.svg" alt="icon">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="contacts-i">
+                        <a href="tel:88000000000">8 (800) 000-00-00</a>
+                        <p>Пн-Пт: с 9:30 до 19:00 <br> Сб: с 10:00 до 15:00</p>
+                    </div>
+                    <button data-modal="exampleModal" class="btn-main header-btn">Заказать
+                        звонок</button>
+                </div>
+            </div>
+        </div>
+        <div class="header-nav">
+            <img class="header-cross" src="images/icons/cross.svg" alt="img">
+            <div class="nav-search for-mob">
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" name="nav-search" id="nav-search" placeholder="Поиск">
+                        <button><img src="images/icons/search.svg" alt=""></button>
+                    </div>
+                </form>
+                <div class="nav-compare">
+                    <a href="#" class="compare-link">
+                        <span class="icon">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M7 17V8H2.59961C2.03956 8 1.75981 8 1.5459 8.10899C1.35774 8.20487 1.20487 8.35786 1.10899 8.54602C1 8.75993 1 9.03992 1 9.59998V17H7ZM7 17H13M7 17V2.59998C7 2.03992 7 1.75993 7.10899 1.54602C7.20487 1.35786 7.35774 1.20487 7.5459 1.10899C7.75981 1 8.03956 1 8.59961 1H11.3996C11.9597 1 12.2405 1 12.4544 1.10899C12.6425 1.20487 12.7948 1.35786 12.8906 1.54602C12.9996 1.75993 13 2.03992 13 2.59998V17M13 17L19 17V6.59998C19 6.03992 18.9996 5.75993 18.8906 5.54602C18.7948 5.35786 18.6425 5.20487 18.4544 5.10899C18.2405 5 17.9601 5 17.4 5H13V17Z"
+                                    stroke="#414042" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                        <p>Сравнения</p>
+                    </a>
+                    <span class="compare-count">0</span>
+                </div>
+            </div>
+            <div class="header__container container">
+                <div class="header-nav__w">
+                    <ul class="header-list list-reset">
+                        <li>
+                            <a class="drop" href="#">Каталог
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none" class="drop-arrow replaced-svg">
+                                    <path
+                                        d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                        fill="white"></path>
+
+                                </svg></a>
+                            <ul class="drop-list">
+                                <li class="drop-list__item drop-list__item--tasks">
+                                    <span>
+                                        Подбор оборудования по задачам
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Обследование сооружений </a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Промышленные обмеры</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Обмеры фасадов</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Дизайнерам интерьера</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для градуировки и последующей поверки резервуаров</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Электронные тахеометры
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Nikon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Sokkia</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Ruide</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">South</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Spectra </a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">South</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Precision</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Topcon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Лазерные сканеры / Системы лазерного сканирования
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Faro</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Topcon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Z+F</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Geomax</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">CHCNAV</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Riegl</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Софт</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Геодезические GNSS приемники
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Sokkia</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Topcon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Prince</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Spectra Precision</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">South</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">EFT</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Geomax</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Javad</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Софт</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Полевые контроллеры
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Sokkia</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Topcon</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Prince</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Spectra Precision</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">South</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Javad</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Geomax</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Getac</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">BlackView</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Софт</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Модемы для GNSS приемников
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Satel</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Trimble</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Pacific Crest</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Нивелиры
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Оптические</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Электронные</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Лазерные</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Ротационные</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Софт</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Теодолиты
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Оптические</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Электронные</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Модемы для GNSS приемников
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">leica</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">RGK</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Bosch</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Condtrol</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аксессуары</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Приборы вертикального проектирования</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Квадранты</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Гравиметры</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Беспилотные воздушные судна / БПЛА</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Трассоискатели</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a class="#">Эхолоты</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a clas="#">Георадары</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Аксессуары
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Отражатели</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Марки</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Вехи</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Рейки</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Штативы</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Кейсы</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Клипсы для кейсов</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Рюкзаки</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Чехлы</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Трегеры</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Адаптеры</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Аккумуляторы</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Зарядные устройства</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Антенны</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Карты памяти</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Рулетки</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Рации</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="drop-list__item">
+                                    <span>
+                                        Софт
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24"
+                                            viewBox="0 0 25 24" fill="none" class="drop-arrow replaced-svg">
+                                            <path
+                                                d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                                fill="white"></path>
+
+                                        </svg>
+                                    </span>
+                                    <ul class="drop-list2 list-reset">
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для тахеометров</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для GNSS приемников</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для контроллеров</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">ДЛЯ сканеров</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для нивелиров</a>
+                                        </li>
+                                        <li class="drop-list2__item">
+                                            <a href="#">Для БПЛА</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="drop" href="#">Аренда
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none" class="drop-arrow replaced-svg">
+                                    <path
+                                        d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+                            <ul class="drop-list list-reset">
+                                <li class="drop-list__item">
+                                    <a href="#">3D сканеры</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#"></a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">GNSS приёмники</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Нивелиры цифровые</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Теодолиты</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Трассоискатели</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Аксессуары</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Акции</a>
+                        </li>
+                        <li>
+                            <a href="#">Выкуп и Trade-in</a>
+                        </li>
+                        <li>
+                            <a class="drop" href="#">Сервис
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
+                                    fill="none" class="drop-arrow replaced-svg">
+                                    <path
+                                        d="M17.2071 10.7071C17.5976 10.3166 17.5976 9.68342 17.2071 9.29289C16.8166 8.90237 16.1834 8.90237 15.7929 9.29289L17.2071 10.7071ZM12.5 14L11.7929 14.7071C12.1834 15.0976 12.8166 15.0976 13.2071 14.7071L12.5 14ZM9.20711 9.29289C8.81658 8.90237 8.18342 8.90237 7.79289 9.29289C7.40237 9.68342 7.40237 10.3166 7.79289 10.7071L9.20711 9.29289ZM15.7929 9.29289L11.7929 13.2929L13.2071 14.7071L17.2071 10.7071L15.7929 9.29289ZM13.2071 13.2929L9.20711 9.29289L7.79289 10.7071L11.7929 14.7071L13.2071 13.2929Z"
+                                        fill="white"></path>
+                                </svg>
+                            </a>
+                            <ul class="drop-list list-reset">
+                                <li class="drop-list__item">
+                                    <a href="#">Сервисный центр</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Техподдержка и обучение</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Инструкции и сертификаты</a>
+                                </li>
+                                <li class="drop-list__item">
+                                    <a href="#">Работы</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Геодезические услуги</a></li>
+                        <li><a href="#">Поверка</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="header-basket">
+                        <a class="header-basket-compare" href="#!">
+                            <span>3</span>
+                            <img src="images/icons/comp-white.svg" alt="">
+                        </a>
+                        <div class="head-basket-block">
+                            <a href="#" class="head-basket-btn">
+                                <div class="inner">
+                                    <img src="images/icons/basket.svg" alt="icon">
+                                    <span class="count">4</span>
+                                </div>
+                                <span>3 333 119 ₽</span>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="header-mob">
+                        <div class="header-top__block">
+                            <ul class="header-top__list">
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Доставка и оплата</a></li>
+                            </ul>
+                            <a href="mailto:info@tigeo.ru" class="header-mail">info@tigeo.ru</a>
+                            <p class="header-top__place">Головное подразделение: Москва, Амурская 9/6 строение 9</p>
+                        </div>
+                        <div class="contacts-i">
+                            <a href="tel:88000000000">8 (800) 000-00-00</a>
+                            <a href="tel:8 (800) 2222-801">8 (800) 2222-801</a>
+                            <p>Пн-Пт: с 9:30 до 19:00 <br> Сб: с 10:00 до 15:00</p>
+                        </div>
+                        <ul class="social">
+                            <li class="social-item tg">
+                                <a href="#">
+                                    <img src="images/icons/tg.svg" alt="icon">
+                                </a>
+                            </li>
+                            <li class="social-item w">
+                                <a href="#">
+                                    <img src="images/icons/w.svg" alt="icon">
+                                </a>
+                            </li>
+                        </ul>
+                        <button class="btn-main header-btn order-call" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Заказать звонок
+                        </button>
+                    </div>
+                </div>
+                <div class="basket-order">
+    <h3>Ваш заказ</h3>
+    <div class="basket-order-block">
+        <div class="basket-order-img">
+            <div class="img-block">
+                <img src="images/your-order-img1.jpg" alt="">
+            </div>
+            <span>Тахеометр Nikon Nivo 5M б/у</span>
+        </div>
+        <div class="basket-order-count">
+            <div class="count">
+                <span class="minus">-</span>
+                <div class="count-in">
+                    <input type='number' min='0' max='1000' step='1' value='1'>
+                    <p>шт.</p>
+                </div>
+                <span class="plus active">+</span>
+            </div>
+            <p>333 119 ₽</p>
+            <a href="#!" class="icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="#414042" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="basket-order-block">
+        <div class="basket-order-img">
+            <div class="img-block">
+                <img src="images/your-order-img1.jpg" alt="">
+            </div>
+            <span>Тахеометр Nikon Nivo 5M б/у</span>
+        </div>
+        <div class="basket-order-count">
+            <div class="count">
+                <span class="minus">-</span>
+                <div class="count-in">
+                    <input type='number' min='0' max='1000' step='1' value='1'>
+                    <p>шт.</p>
+                </div>
+                <span class="plus active">+</span>
+            </div>
+            <p>333 119 ₽</p>
+            <a href="#!" class="icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="#414042" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="basket-order-block">
+        <div class="basket-order-img">
+            <div class="img-block">
+                <img src="images/your-order-img1.jpg" alt="">
+            </div>
+            <span>Тахеометр Nikon Nivo 5M б/у</span>
+        </div>
+        <div class="basket-order-count">
+            <div class="count">
+                <span class="minus">-</span>
+                <div class="count-in">
+                    <input type='number' min='0' max='1000' step='1' value='1'>
+                    <p>шт.</p>
+                </div>
+                <span class="plus active">+</span>
+            </div>
+            <p>333 119 ₽</p>
+            <a href="#!" class="icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="#414042" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="basket-order-block">
+        <div class="basket-order-img">
+            <div class="img-block">
+                <img src="images/your-order-img1.jpg" alt="">
+            </div>
+            <span>Тахеометр Nikon Nivo 5M б/у</span>
+        </div>
+        <div class="basket-order-count">
+            <div class="count">
+                <span class="minus">-</span>
+                <div class="count-in">
+                    <input type='number' min='0' max='1000' step='1' value='1'>
+                    <p>шт.</p>
+                </div>
+                <span class="plus active">+</span>
+            </div>
+            <p>333 119 ₽</p>
+            <a href="#!" class="icon">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 17L1 1M17 1L1 17" stroke="#414042" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </a>
+        </div>
+    </div>
+    <div class="basket-order-total">
+        <p>Сумма заказа</p>
+        <h2>3 333 119 ₽</h2>
+    </div>
+    <div class="basket-order-btn">
+        <button class="btn-main">Перейти к оформлению</button>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+  <div class="wrapper">
+    <main class="main">
+      <div class="fixed-socials">
+    <a href="#!" class="tel"><img src="images/icons/te-icon.svg" alt=""></a>
+    <a href="#!" class="telegram"><img src="images/icons/telegram-icon.svg" alt=""></a>
+    <a href="#!" class="whatsapp"><img src="images/icons/whatsapp-icon.svg" alt=""></a>
+</div>
+      <section class="main-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 pr-10 main-left-col">
+              <div class="main-sidebar out">
+                <form action="#!" id="side-form">
+                  <p>Оставьте заявку, мы детально изучим особенности Вашего проекта и подберем оптимальное решение
+                    исходя из задач и бюджета</p>
+                  <div class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Имя *" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон*" required>
+                  </div>
+                  <div class="form-group">
+                    <textarea name="comment" id="comment" placeholder="Комментарий"></textarea>
+                  </div>
+                  <div class="side-form-send">
+                    <button id="side-form-btn" data-bs-toggle="modal" data-bs-target="#thanks">Отправить заявку</button>
+                  </div>
+                  <div class="form-checkboxk">
+                    <label class="control control--checkbox">
+                      <input type="checkbox" checked="checked" />
+                      <div class="control__indicator"></div>
+                      <span>Оставляя заявку вы соглашаетесь с <a href="#!">обработкой персональных данных</a></span>
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-lg-9 pl-10 main-right-col">
+              <div class="main-content">
+                <div class="breadcrumbs">
+                  <ul>
+                    <li class="active relative drop-container">
+                      <span>Главная <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                      <div class="drop">
+                        <ul class="drop-menu">
+                          <li><a href="#">Поверка оборудования</a></li>
+                          <li><a href="#">О компании</a></li>
+                          <li><a href="#">Подбор оборудования</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="active relative drop-container">
+                      <span>Каталог <img src="images/icons/bread-drop-arrow.svg" alt=""></span>
+                      <div class="drop">
+                        <ul class="drop-menu">
+                          <li><a href="#">Электронные тахеометры</a></li>
+                          <li><a href="#">Геодезическое оборудование</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li><a href="#">Тахеометры</a></li>
+                    <li><span>Trimble-Trimble Trimble S5 5″ Robotic, DR Plus</span></li>
+                  </ul>
+                </div>
+
+                <div class="product-name">
+                  <h1>Электронный тахеометр Trimble S5 5″ Robotic, DR Plus</h1>
+                  <div class="compare">
+                    <a href="#!" class="compare-icon"><img src="images/compare-icon.svg" alt=""></a>
+                    <div class="compare-text">
+                      <p>Сравнить</p>
+                      <a href="#!">Перейти к сравнению</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="product-slide">
+                      <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="images/slide-img1.jpg" />
+                          </div>
+                          <div class="swiper-slide video-full">
+                            <a href="#!" class="play"><img src="images/icons/card-play-icon.svg" alt=""></a>
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </div>
+                        </div>
+
+                        <div class="swiper-button-next"><img src="images/slide-right-arrow.png" alt=""></div>
+                        <div class="swiper-button-prev"><img src="images/slide-left-arrow.png" alt=""></div>
+                      </div>
+
+                      <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="images/slide-img1.jpg" />
+                          </div>
+                          <div class="swiper-slide video">
+                            <a href="#!" class="play"><img src="images/icons/card-play-icon.svg" alt=""></a>
+                            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="col-lg-7 product-col">
+                    <div class="product-info">
+                      <div class="product-info-item">
+                        <img src="images/product-info-icon1.svg" alt="">
+                        <p>Удаленная <br> тех.поддержка через интернет</p>
+                      </div>
+                      <div class="product-info-item">
+                        <img src="images/product-info-icon2.svg" alt="">
+                        <p>Гарантийное <br> и пост. гарантийное обслуживание</p>
+                      </div>
+                      <div class="product-info-item">
+                        <img src="images/product-info-icon3.svg" alt="">
+                        <p>Бесплатная <br> доставка</p>
+                      </div>
+                    </div>
+
+                    <div class="main-characterics for-after">
+                      <div class="characterics">
+                        <h3>Основные характеристики</h3>
+                        <ul>
+                          <li>Угловая точность — 5’‘</li>
+                          <li>Оптический центрир</li>
+                          <li>Радиомодем</li>
+                          <li>Дальность измерения — до 5,5 км по призме, до 1,3 км без отражателя, 1000 м на пленку</li>
+                          <li>Минимальная дистанция — 150 см</li>
+                          <li>Поддержка интерфейсов — USB, Bluetooth и RS-232 °C</li>
+                          <li>Увеличение зрительной трубы — 30 крат</li>
+                          <li>Класс пылевлагозащиты — IP65</li>
+                          <li>Время работы от аккумулятора — 6,5 ч</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="model-removed">
+                      <p>Данная модель снята с производства, ознакомьтесь с ее новой версией</p>
+                      <span>Нет в наличии</span>
+                    </div>
+
+                    <div class="view-new">
+                      <div class="product-social">
+                        <p>Задать вопрос в мессенджеры</p>
+                        <ul class="social">
+                          <li class="social-item tg">
+                            <a href="#">
+                              <img src="images/icons/tg.svg" alt="icon">
+                            </a>
+                          </li>
+                          <li class="social-item w">
+                            <a href="#">
+                              <img src="images/icons/w.svg" alt="icon">
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="new-btn">
+                        <a href="#!" class="btn-main view-new-model">Посмотреть новую модель</a>
+                      </div>
+                    </div>
+
+                    <div class="compare mob">
+                      <a href="#!" class="compare-icon"><img src="images/compare-icon.svg" alt=""></a>
+                      <div class="compare-text">
+                        <p>Сравнить</p>
+                        <a href="#!">Перейти к сравнению</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="main-description">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-one-tab" data-bs-toggle="tab" data-bs-target="#nav-one"
+                      type="button" role="tab" aria-controls="nav-one" aria-selected="true">
+                      Описание и комплектация
+                      <img src="images/dropdow-arrow.svg" alt="">
+                    </button>
+                    <button class="nav-link" id="nav-two-tab" data-bs-toggle="tab" data-bs-target="#nav-two"
+                      type="button" role="tab" aria-controls="nav-two" aria-selected="false">
+                      Технические характеристики
+                      <img src="images/dropdow-arrow.svg" alt="">
+                    </button>
+                    <button class="nav-link" id="nav-three-tab" data-bs-toggle="tab" data-bs-target="#nav-three"
+                      type="button" role="tab" aria-controls="nav-three" aria-selected="false">
+                      Документация
+                      <img src="images/dropdow-arrow.svg" alt="">
+                    </button>
+
+                    <button class="nav-link" id="nav-four-tab" data-bs-toggle="tab" data-bs-target="#nav-four"
+                      type="button" role="tab" aria-controls="nav-four" aria-selected="false">
+                      Видеообзор
+                      <img src="images/dropdow-arrow.svg" alt="">
+                    </button>
+                    <button class="nav-link five-link" id="nav-five-tab" data-bs-toggle="tab" data-bs-target="#nav-five"
+                      type="button" role="tab" aria-controls="nav-five" aria-selected="false">
+                      Аксессуары
+                      <img src="images/dropdow-arrow.svg" alt="">
+                    </button>
+                    <button class="nav-link" id="nav-six-tab" data-bs-toggle="tab" data-bs-target="#nav-six"
+                      type="button" role="tab" aria-controls="nav-six" aria-selected="false">
+                      Оплата и доставка по РФ и СНГ
+                      <img src="images/dropdow-arrow.svg" alt="">
+                    </button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-one" role="tabpanel" aria-labelledby="nav-one-tab"
+                    tabindex="0">
+                    <div class="tab-one">
+                      <img src="images/tab-lines-bg.svg" alt="" class="bg-lines">
+                      <p>Тахеометр Trimble S5 5’‘ Robotic DR Plus оснащен сервоприводами, которые в сочетании с
+                        технологией Robotic позволяют выполнять измерения в автоматизированном режиме. Благодаря этому,
+                        вы можете выполнять задачи по съемке местности без помощника. Кроме того, прибор использует для
+                        работы такие технологии как MagDrive, SurePoint и другие, которые обеспечивают точность и
+                        автоматизацию процесса.</p>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 pr-10 tab-list-col">
+                          <div class="tab-one-info tab-one-text">
+                            <img src="images/description-icon.svg" alt="">
+                            <p>Бесплатное обучение использованию оборудования в офисе в Москве в течение 1 дня</p>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 pl-10 tab-list-col">
+                          <div class="tab-two-info tab-one-text">
+                            <img src="images/description-icon2.svg" alt="">
+                            <p>Бесплатная техническая поддержка на весь срок эксплуатации оборудования</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 pr-10 tab-list-col">
+                          <div class="tab-list">
+                            <div class="tab-list-in">
+                              <h5>Комплектация</h5>
+                              <ul>
+                                <li>Электронный тахеометр с трегером </li>
+                                <li>Отвертка Torx T30 для снятия ручки инструмента</li>
+                                <li>Юстировочные инструменты</li>
+                                <li>Бленда</li>
+                                <li>Краткое руководство по эксплуатации тахеометра</li>
+                                <li>Карточка активации службы Locate2Protect</li>
+                                <li>Мишень из отражающей пленки</li>
+                                <li>Мишень для юстировки лазерного указателя</li>
+                                <li>Чехол от дождя</li>
+                                <li>Транспортировочный кейс с ремнями</li>
+                                <li>Ключи для кейса (2 шт.)</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 pl-10 tab-list-col">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-two" role="tabpanel" aria-labelledby="nav-two-tab" tabindex="0">
+                    <div class="tab-two">
+                      <div class="tech-title">
+                        <h4>Технические характеристики</h4>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Производитель</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>Trimble</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>Состояние</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>Новые</span></div>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Тип тахеометра</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>Роботизированный</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>Угловая точность</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>5»</span></div>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Без отражателя</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>1300</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>На призму</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>5500</span></div>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Точность без отражателя</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>2 + 2 ppm</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>Точность на призму</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>1 + 2 ppm</span></div>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Тип центрира</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>Оптический</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>Целеуказатель</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>Нет</span></div>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Тип компенсатора</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>Двухосевой</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>Увеличение</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>30х</span></div>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Внешний накопитель</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>SD Card</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>Bluetooth</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>Есть</span></div>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Наводящие винты</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>Моторизованые</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>Влагопылезащита</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>IP65</span></div>
+                      </div>
+                      <div class="row tech-item pink">
+                        <div class="col-sm-6 tech-left">
+                          <p>Рабочая температура</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>20 °С… +50 °С</span></div>
+                      </div>
+                      <div class="row tech-item">
+                        <div class="col-sm-6 tech-left">
+                          <p>Гарантийный срок</p>
+                        </div>
+                        <div class="col-sm-6 tech-right"><span>1 год</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-three" role="tabpanel" aria-labelledby="nav-three-tab"
+                    tabindex="0">
+                    <div class="tab-three">
+                      <div class="row">
+                        <div class="col-lg-4 col-sm-6 documents">
+                          <div class="doc-content for-after">
+                            <a href="#!" class="doc-block" target="_blank">
+                              <span class="doc-img"><img src="images/icons/file-icon.svg" alt=""></span>
+                              <span>
+                                <span class="doc-name">Имя документа</span>
+                                <span class="doc-type">PDF 12 Мб</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 documents">
+                          <div class="doc-content for-after">
+                            <a href="#!" class="doc-block" target="_blank">
+                              <span class="doc-img"><img src="images/icons/file-icon.svg" alt=""></span>
+                              <span>
+                                <span class="doc-name">Имя документа</span>
+                                <span class="doc-type">PDF 12 Мб</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 documents">
+                          <div class="doc-content for-after">
+                            <a href="#!" class="doc-block" target="_blank">
+                              <span class="doc-img"><img src="images/icons/file-icon.svg" alt=""></span>
+                              <span>
+                                <span class="doc-name">Имя документа</span>
+                                <span class="doc-type">PDF 12 Мб</span>
+                              </span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="nav-four" role="tabpanel" aria-labelledby="nav-four-tab" tabindex="0">
+                    <div class="tab-four">
+                      <div class="col-lg-12 tab-video">
+                        <div class="swiper tab-video-slide">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div data-video-url="./video-2.mp4" class="tab-v">
+                                <video preload="auto" no-controls loop autoplay playsinline muted>
+                                  <source src="./video-2.mp4" type="video/mp4">
+                                </video>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div data-video-url="./video-2.mp4" class="tab-v">
+                                <video preload="auto" no-controls loop autoplay playsinline muted>
+                                  <source src="./video-2.mp4" type="video/mp4">
+                                </video>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="slide-arrow video-button-next">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" class="brends-a replaced-svg">
+                              <path
+                                d="M9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L9.70711 4.29289ZM16 12L16.7071 12.7071C16.8946 12.5196 17 12.2652 17 12C17 11.7348 16.8946 11.4804 16.7071 11.2929L16 12ZM8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L8.29289 18.2929ZM8.29289 5.70711L15.2929 12.7071L16.7071 11.2929L9.70711 4.29289L8.29289 5.70711ZM15.2929 11.2929L8.29289 18.2929L9.70711 19.7071L16.7071 12.7071L15.2929 11.2929Z"
+                                fill="#BCA59F"></path>
+                            </svg>
+                          </div>
+                          <div class="slide-arrow video-button-prev">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                              fill="none" class="brends-a replaced-svg">
+                              <path
+                                d="M14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L14.2929 4.29289ZM8 12L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L8 12ZM15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L15.7071 18.2929ZM15.7071 5.70711L8.70711 12.7071L7.29289 11.2929L14.2929 4.29289L15.7071 5.70711ZM8.70711 11.2929L15.7071 18.2929L14.2929 19.7071L7.29289 12.7071L8.70711 11.2929Z"
+                                fill="#BCA59F"></path>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-five" role="tabpanel" aria-labelledby="nav-five-tab" tabindex="0">
+                    <div class="tab-five">
+                      <div class="accessory-title">
+                        <h4>Аксессуары</h4>
+                      </div>
+
+                      <div class="accessory-slide-content">
+                        <div class="swiper accessory-slide">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <div class="card card--accessories">
+                                <div class="card-main">
+                                  <div class="card-slider-a">
+                                    <a href="images/card-1.jpg">
+                                      <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                                    </a>
+                                  </div>
+                                  <p class="card-t card-t--mob">В наличии</p>
+                                  <p class="card-title">Алюминиевый штатив RGK S6-D со сферической площадкой</p>
+
+                                  <div class="card-wrap">
+                                    <p class="card-price">318 600 ₽</p>
+                                    <p class="card-t">В наличии</p>
+                                  </div>
+                                </div>
+                                <div class="card-bottom">
+                                  <button class="btn-main card-click">В корзину</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card card--rent">
+                                <div class="card-main">
+                                  <p class="card__label card__label--rent">Аренда</p>
+                                  <div class="card-slider-a">
+                                    <a href="images/card-3.jpg">
+                                      <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                                    </a>
+                                  </div>
+                                  <div class="card-top">
+                                    <p class="card-t card-t--mob">В наличии</p>
+                                    <p class="card-title">Leica TCR 400</p>
+                                    <p class="card-t">В наличии</p>
+                                  </div>
+                                  <div class="card-count">
+                                    <div class="card-count__w">
+                                      <p>Дней</p>
+                                      <input class="card-num" type="text">
+                                    </div>
+                                    <p class="card-eq">=</p>
+                                    <div class="card-count__w">
+                                      <p class="card-sum" class>Сумма</p>
+                                      <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                                    </div>
+                                  </div>
+                                  <button class="card__description">
+                                    Описание и комплектация
+                                  </button>
+                                </div>
+                                <div class="card-bottom">
+                                  <button class="btn-main card-click">Заказать</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card card--accessories">
+                                <div class="card-main">
+                                  <div class="card-slider-a">
+                                    <a href="images/card-1.jpg">
+                                      <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                                    </a>
+                                  </div>
+                                  <p class="card-t card-t--mob">В наличии</p>
+                                  <p class="card-title">Алюминиевый штатив RGK S6-D со сферической площадкой</p>
+
+                                  <div class="card-wrap">
+                                    <p class="card-price">318 600 ₽</p>
+                                    <p class="card-t">В наличии</p>
+                                  </div>
+                                </div>
+                                <div class="card-bottom">
+                                  <button class="btn-main card-click">В корзину</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="swiper-slide">
+                              <div class="card card--accessories">
+                                <div class="card-main">
+                                  <div class="card-slider-a">
+                                    <a href="images/card-1.jpg">
+                                      <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                                    </a>
+                                  </div>
+                                  <p class="card-t card-t--mob">В наличии</p>
+                                  <p class="card-title">Алюминиевый штатив RGK S6-D со сферической площадкой</p>
+
+                                  <div class="card-wrap">
+                                    <p class="card-price">318 600 ₽</p>
+                                    <p class="card-t">В наличии</p>
+                                  </div>
+                                </div>
+                                <div class="card-bottom">
+                                  <button class="btn-main card-click">В корзину</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="slide-arrow accessory-button-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          class="brends-a replaced-svg">
+                          <path
+                            d="M9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L9.70711 4.29289ZM16 12L16.7071 12.7071C16.8946 12.5196 17 12.2652 17 12C17 11.7348 16.8946 11.4804 16.7071 11.2929L16 12ZM8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L8.29289 18.2929ZM8.29289 5.70711L15.2929 12.7071L16.7071 11.2929L9.70711 4.29289L8.29289 5.70711ZM15.2929 11.2929L8.29289 18.2929L9.70711 19.7071L16.7071 12.7071L15.2929 11.2929Z"
+                            fill="#BCA59F"></path>
+                        </svg>
+                      </div>
+                      <div class="slide-arrow accessory-button-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                          class="brends-a replaced-svg">
+                          <path
+                            d="M14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L14.2929 4.29289ZM8 12L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L8 12ZM15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L15.7071 18.2929ZM15.7071 5.70711L8.70711 12.7071L7.29289 11.2929L14.2929 4.29289L15.7071 5.70711ZM8.70711 11.2929L15.7071 18.2929L14.2929 19.7071L7.29289 12.7071L8.70711 11.2929Z"
+                            fill="#BCA59F"></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="nav-six" role="tabpanel" aria-labelledby="nav-six-tab" tabindex="0">
+                    <div class="tab-six">
+                      <div class="six-item">
+                        <h5>Оплата</h5>
+                        <p>Оплата доступна как для физических лиц: наличные/картой или банковским переводом, так и для
+                          юридических лиц: после подписания Договора и выставления счета на рассчетный счет.</p>
+                      </div>
+                      <div class="six-item">
+                        <h5>Доставка по РФ</h5>
+                        <p>Доставляем в любой регион РФ и СНГ транспортной компанией. Стоимость и сроки доставки
+                          рассчитываются индивидуально.</p>
+                      </div>
+                      <div class="six-item">
+                        <h5>Доставка по РФ</h5>
+                        <p>Доставляем в любой регион РФ и СНГ транспортной компанией. Стоимость и сроки доставки
+                          рассчитываются индивидуально.</p>
+                        <p>При заказе от 30 000 ₽ доставка по РФ — БЕСПЛАТНО. Доставка курьером по Москве в пределах
+                          МКАД — 500 ₽</p>
+                        <p>Самовывоз из офиса в Москве — БЕСПЛАТНО. Офис работает по рабочим дням с 9:00 до 18:00. Перед
+                          приездом, пожалуйста, договоритесь с менеджером о встрече</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="similar-products">
+                <div class="row">
+                  <div class="col-lg-12 title">
+                    <h2>Похожие товары</h2>
+                  </div>
+                </div>
+                <div class="similar-slide-content">
+                  <div class="swiper similar-slide">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="card card--hits">
+                          <div class="card-main">
+                            <p class="card__label card__label--discount">% Акция</p>
+                            <div class="card-arrows">
+                              <div class="card-arrow card-arrow--prev">
+                                <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                              </div>
+                              <div class="card-arrow card-arrow--next">
+                                <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                              </div>
+                            </div>
+                            <div class="card-slider">
+                              <a href="images/card-1.jpg">
+                                <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                              </a>
+                              <a href="images/card-2.jpg">
+                                <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                              </a>
+                            </div>
+                            <p class="card-t card-t--mob">В наличии</p>
+                            <p class="card-title">Тахеометр Trimble S5 5″ Robotic, DR Plus</p>
+                            <p class="card-desc">Точность угловых измерений: 2» Дальность без отражателя: 1000 м</p>
+                            <div class="card-wrap">
+                              <p class="card-price">318 600 ₽</p>
+                              <p class="card-t">В наличии</p>
+                            </div>
+                          </div>
+                          <div class="card-bottom">
+                            <button class="btn-main card-click">Купить в 1 клик</button>
+                            <button class="card-basket add-to-cart">
+                              <div class="default"><img src="images/icons/basket.svg" alt="icon"></div>
+                              <div class="success"><img src="images/icons/basket.svg" alt="icon"></div>
+                              <div class="cart">
+                                <div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="dots"></div>
+                            </button>
+                            <button class="card-comparison">
+                              <img src="images/icons/comp.svg" alt="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <g id="checkmark">
+                                  <line class="cls-1" x1="3" x2="12" y1="16" y2="25" />
+                                  <line class="cls-1" x1="12" x2="29" y1="25" y2="7" />
+                                </g>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card card--rent">
+                          <div class="card-main">
+                            <p class="card__label card__label--rent">Аренда</p>
+                            <div class="card-arrows">
+                              <div class="card-arrow card-arrow--prev">
+                                <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                              </div>
+                              <div class="card-arrow card-arrow--next">
+                                <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                              </div>
+                            </div>
+                            <div class="card-slider">
+                              <a href="images/card-3.jpg">
+                                <img class="card-slider__img" src="images/card-3.jpg" alt="img">
+                              </a>
+                              <a href="images/card-2.jpg">
+                                <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                              </a>
+                            </div>
+                            <div class="card-top">
+                              <p class="card-t card-t--mob">В наличии</p>
+                              <p class="card-title">Leica TCR 400</p>
+                              <p class="card-t">В наличии</p>
+                            </div>
+                            <div class="card-count">
+                              <div class="card-count__w">
+                                <p>Дней</p>
+                                <input class="card-num" type="text">
+                              </div>
+                              <p class="card-eq">=</p>
+                              <div class="card-count__w">
+                                <p class="card-sum" class>Сумма</p>
+                                <input class="card-res" readonly data-perday="1500" value="0" type="text">
+                              </div>
+                            </div>
+                            <button class="card__description">
+                              Описание и комплектация
+                            </button>
+                          </div>
+                          <div class="card-bottom">
+                            <button class="btn-main card-click">Заказать</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card card--hits">
+                          <div class="card-main">
+                            <p class="card__label card__label--hits">Хит продаж</p>
+                            <div class="card-arrows">
+                              <div class="card-arrow card-arrow--prev">
+                                <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                              </div>
+                              <div class="card-arrow card-arrow--next">
+                                <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                              </div>
+                            </div>
+                            <div class="card-slider">
+                              <a href="images/card-1.jpg">
+                                <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                              </a>
+                              <a href="images/card-2.jpg">
+                                <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                              </a>
+                            </div>
+                            <p class="card-t card-t--mob">В наличии</p>
+                            <p class="card-title">Тахеометр Trimble S5 5″ Robotic, DR Plus</p>
+                            <p class="card-desc">Точность угловых измерений: 2» Дальность без отражателя: 1000 м</p>
+                            <div class="card-wrap">
+                              <p class="card-price">318 600 ₽</p>
+                              <p class="card-t">В наличии</p>
+                            </div>
+                          </div>
+                          <div class="card-bottom">
+                            <button class="btn-main card-click">Купить в 1 клик</button>
+                            <button class="card-basket add-to-cart">
+                              <div class="default"><img src="images/icons/basket.svg" alt="icon"></div>
+                              <div class="success"><img src="images/icons/basket.svg" alt="icon"></div>
+                              <div class="cart">
+                                <div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="dots"></div>
+                            </button>
+                            <button class="card-comparison">
+                              <img src="images/icons/comp.svg" alt="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <g id="checkmark">
+                                  <line class="cls-1" x1="3" x2="12" y1="16" y2="25" />
+                                  <line class="cls-1" x1="12" x2="29" y1="25" y2="7" />
+                                </g>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="card card--hits">
+                          <div class="card-main">
+                            <p class="card__label card__label--discount">% Акция</p>
+                            <div class="card-arrows">
+                              <div class="card-arrow card-arrow--prev">
+                                <img class="card-a" src="images/icons/slider-arrow-left.svg" alt="img">
+                              </div>
+                              <div class="card-arrow card-arrow--next">
+                                <img class="card-a" src="images/icons/slider-arrow.svg" alt="img">
+                              </div>
+                            </div>
+                            <div class="card-slider">
+                              <a href="images/card-1.jpg">
+                                <img class="card-slider__img" src="images/card-1.jpg" alt="img">
+                              </a>
+                              <a href="images/card-2.jpg">
+                                <img class="card-slider__img" src="images/card-2.jpg" alt="img">
+                              </a>
+                            </div>
+                            <p class="card-t card-t--mob">В наличии</p>
+                            <p class="card-title">Тахеометр Trimble S5 5″ Robotic, DR Plus</p>
+                            <p class="card-desc">Точность угловых измерений: 2» Дальность без отражателя: 1000 м</p>
+                            <div class="card-wrap">
+                              <p class="card-price">318 600 ₽</p>
+                              <p class="card-t">В наличии</p>
+                            </div>
+                          </div>
+                          <div class="card-bottom">
+                            <button class="btn-main card-click">Купить в 1 клик</button>
+                            <button class="card-basket add-to-cart">
+                              <div class="default"><img src="images/icons/basket.svg" alt="icon"></div>
+                              <div class="success"><img src="images/icons/basket.svg" alt="icon"></div>
+                              <div class="cart">
+                                <div>
+                                  <div></div>
+                                  <div></div>
+                                </div>
+                              </div>
+                              <div class="dots"></div>
+                            </button>
+                            <button class="card-comparison">
+                              <img src="images/icons/comp.svg" alt="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                <g id="checkmark">
+                                  <line class="cls-1" x1="3" x2="12" y1="16" y2="25" />
+                                  <line class="cls-1" x1="12" x2="29" y1="25" y2="7" />
+                                </g>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="slide-arrow similar-button-next">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      class="brends-a replaced-svg">
+                      <path
+                        d="M9.70711 4.29289C9.31658 3.90237 8.68342 3.90237 8.29289 4.29289C7.90237 4.68342 7.90237 5.31658 8.29289 5.70711L9.70711 4.29289ZM16 12L16.7071 12.7071C16.8946 12.5196 17 12.2652 17 12C17 11.7348 16.8946 11.4804 16.7071 11.2929L16 12ZM8.29289 18.2929C7.90237 18.6834 7.90237 19.3166 8.29289 19.7071C8.68342 20.0976 9.31658 20.0976 9.70711 19.7071L8.29289 18.2929ZM8.29289 5.70711L15.2929 12.7071L16.7071 11.2929L9.70711 4.29289L8.29289 5.70711ZM15.2929 11.2929L8.29289 18.2929L9.70711 19.7071L16.7071 12.7071L15.2929 11.2929Z"
+                        fill="#BCA59F"></path>
+                    </svg>
+                  </div>
+                  <div class="slide-arrow similar-button-prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                      class="brends-a replaced-svg">
+                      <path
+                        d="M14.2929 4.29289C14.6834 3.90237 15.3166 3.90237 15.7071 4.29289C16.0976 4.68342 16.0976 5.31658 15.7071 5.70711L14.2929 4.29289ZM8 12L7.29289 12.7071C7.10536 12.5196 7 12.2652 7 12C7 11.7348 7.10536 11.4804 7.29289 11.2929L8 12ZM15.7071 18.2929C16.0976 18.6834 16.0976 19.3166 15.7071 19.7071C15.3166 20.0976 14.6834 20.0976 14.2929 19.7071L15.7071 18.2929ZM15.7071 5.70711L8.70711 12.7071L7.29289 11.2929L14.2929 4.29289L15.7071 5.70711ZM8.70711 11.2929L15.7071 18.2929L14.2929 19.7071L7.29289 12.7071L8.70711 11.2929Z"
+                        fill="#BCA59F"></path>
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="main-end-text">
+                  <p>Тахеометры используются при проведении геодезических изысканий и во время строительных работ для
+                    определения угловых расстояний между точками и измерения линейных расстояний от реперной точки до
+                    вешки. Современные электронные устройства позволяют выполнять измерения на удалении до нескольких
+                    километров с миллиметровой погрешностью. Однако использовать их не всегда возможно, так как купить
+                    товар этого типа могут позволить себе далеко не все геодезические компании.</p>
+                  <p>Если приобрести измерительные приборы компания не хочет или не может, оптимальным вариантом будет
+                    аренда тахеометра. Стоимость этой услуги намного меньше, чем затраты на приобретение инструментов.
+                    Но благодаря аренде можно в течение дня получить тахеометр с нужными характеристиками и выполнить
+                    планируемый объем работ.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-wrapper">
+                <a href="#" class="logo">
+                    <img src="images/icons/logo.png" alt="img">
+                    <p class="footer-m ftr-cat-btn">Каталог оборудования <img src="images/icons/cat-arrow.svg" alt=""
+                            class="for-mob"></p>
+
+                </a>
+                <div class="footer-nav">
+                    <p class="footer-nav__title">Каталог оборудования</p>
+                    <div class="footer-nav__w">
+                        <ul class="footer-nav__list">
+                            <li>
+                                <a href="#">
+                                    Электронные тахеометры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Лазерные сканеры <br>/ Системы лазерного <br> сканирования
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Геодезические GNSS приемники
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Геодезические GNSS приемники
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Модемы для GNSS приемников
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Нивелиры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Теодолиты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Модемы для GNSS приемников
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li>
+                                <a href="#">
+                                    Приборы вертикального <br> проектирования
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Квадранты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Гравиметры
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Беспилотные воздушные <br> судна/ БПЛА
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Трассоискатели
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Эхолоты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Георадары
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Аксессуары
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Софт
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-nav__list">
+                            <li>
+                                <a href="#">
+                                    Аренда
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Выкуп и Trade-in
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Сервисный центр
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Техподдержка и обучение
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Поверка оборудования
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Инструкции и сертификаты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Блог
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Услуги по геодезии
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Доставка и оплата
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-block">
+                    <div class="footer-w">
+                        <h4>Контакты</h4>
+                        <div class="contacts-i">
+                            <a href="tel:88000000000">8 (800) 000-00-00</a>
+                            <a href="tel:8 (800) 2222-801">8 (800) 2222-801</a>
+                            <p>Пн-Пт: с 9:30 до 19:00 <br> Сб: с 10:00 до 15:00</p>
+                        </div>
+                        <ul class="social">
+                            <li class="social-item tg">
+                                <a href="#">
+                                    <img src="images/icons/tg.svg" alt="icon">
+                                </a>
+                            </li>
+                            <li class="social-item w">
+                                <a href="#">
+                                    <img src="images/icons/w.svg" alt="icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-w">
+                        <h4>Сервис и техподдержка:</h4>
+                        <div class="contacts-i">
+                            <a href="tel:+79295499535">+7 929 549-95-35</a>
+                        </div>
+                        <ul class="social">
+                            <li class="social-item tg">
+                                <a href="#">
+                                    <img src="images/icons/tg.svg" alt="icon">
+                                </a>
+                            </li>
+                            <li class="social-item w">
+                                <a href="#">
+                                    <img src="images/icons/w.svg" alt="icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-list">
+                        <p>Головное подразделение: <br> Москва, Москва, Амурская <br> 9/6 строение 9</p>
+                        <p class="footer-btn">Представительства в регионах</p>
+                        <p>
+                            <a href="mailto:info@tigeo.ru">info@tigeo.ru</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom__w">
+                <a href="policy.html" class="footer-conf">Политика конфиденциальности</a>
+                <p>@ 2013 — 2022 ТИГЕО | ТРЕЙД-ИН-ГЕО Все права защищены</p>
+                <p class="footer-agency">
+                    <span>Разработка сайта</span>
+                    <a href="#">
+                        <img src="images/icons/agency.svg" alt="img">
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <a href="#" id="scroll-top"><img src="images/icons/top-arrow.svg" alt=""></a>
+  </div>
+
+  <div id="player" class="">
+    <button type="button" class="player-close" aria-label="Close">
+      <img src="images/icons/modal-close.svg" alt="">
+    </button>
+
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
